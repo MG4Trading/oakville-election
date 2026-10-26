@@ -1,0 +1,31 @@
+{
+  "ours": "Bilal Kader",
+  "races": [
+    {"id":"mayor","name":"Mayor","group":"Town-wide","c":["Rob Burton","Arvind Choudhary","Julia Hanna","Jeff Knoll","Sean O'Meara"]},
+    {"id":"w7-reg","name":"Ward 7 Town & Regional","group":"Ward 7","c":["Gaganpreet Darar","Bilal Kader","Nav Nanda","Ajay Rosha","Vick Walia"]},
+    {"id":"w7-town","name":"Ward 7 Town Councillor","group":"Ward 7","c":["Ali Hosny","Zulfi Malik","Scott Xie"]},
+    {"id":"w1-town","name":"Ward 1 Town Councillor","group":"Wards 1 to 6","c":["Alexandra Caldwell","Amir Henry","David Imrie","Pierce Lang","Nancy Ortenburg"]},
+    {"id":"w2-town","name":"Ward 2 Town Councillor","group":"Wards 1 to 6","c":["Ray Chisholm","Ayesha Khawaja","Sana Waqar"]},
+    {"id":"w2-reg","name":"Ward 2 Town & Regional","group":"Wards 1 to 6","c":["Zena Al-Mudaris","Desmond Jordan","Sarah Perkin","Stacey Saunders"]},
+    {"id":"w3-town","name":"Ward 3 Town Councillor","group":"Wards 1 to 6","c":["Morgan Elliott","Jen Zhou"]},
+    {"id":"w4-town","name":"Ward 4 Town Councillor","group":"Wards 1 to 6","c":["Peter Longo","Luba Slanina","Syed Tahir"]},
+    {"id":"w4-reg","name":"Ward 4 Town & Regional","group":"Wards 1 to 6","c":["Kashif (Kash) Chaudry","Suzan Chong","Vandana Giri","Roger Lapworth","Hutchison Lee","Farah Shamim"]},
+    {"id":"w5-town","name":"Ward 5 Town Councillor","group":"Wards 1 to 6","c":["Jerome Adamo","Mirsab Fasih","Sue Heddle","Thane Mitches","Matt Ray Smith","Audrey Wubbenhorst"]},
+    {"id":"w5-reg","name":"Ward 5 Town & Regional","group":"Wards 1 to 6","c":["Mackenzie Grant","Orla Johnston","Michael Reid"]},
+    {"id":"w6-town","name":"Ward 6 Town Councillor","group":"Wards 1 to 6","c":["Natalia Lishchyna","Pierre Sauvageot","Smita Tulsani"]},
+    {"id":"hdsb-57","name":"HDSB Trustee, Wards 5 & 7","group":"School boards","c":["Lily Bharat","Azra Ghumman","Ahmed Gohar","Ashish Maggo","Kim Tait","Jake Zhu"]},
+    {"id":"hdsb-12","name":"HDSB Trustee, Wards 1 & 2","group":"School boards","c":["Carole Baxter","Zafar Kayani","Hamzah Khan"]},
+    {"id":"hdsb-36","name":"HDSB Trustee, Wards 3 & 6","group":"School boards","c":["Rebecca Mayville","Vinay Paramanand","Tausif Sabir"]},
+    {"id":"hdsb-4","name":"HDSB Trustee, Ward 4","group":"School boards","c":["Ira Davidov","Virginia Nsitem","Deepak Pathania","Florin Cristian Vilcu"]},
+    {"id":"hcdsb-123","name":"HCDSB Trustee, Wards 1, 2 & 3","group":"School boards","c":["Martin Gegus","Mario Jelic","Tom Murad"]},
+    {"id":"hcdsb-56","name":"HCDSB Trustee, Wards 5 & 6","group":"School boards","c":["Helena Karabela","Sean McCarthy"]}
+  ],
+  "acclaimed": [
+    "Ward 1 Town & Regional: Jonathan McNeice",
+    "Ward 3 Town & Regional: Janet Haslett-Theall",
+    "Ward 6 Town & Regional: Tom Adams",
+    "HCDSB Wards 4 & 7: Chris Saunders",
+    "Conseil scolaire catholique MonAvenir: Diane Courchesne",
+    "Conseil scolaire Viamonde: Sonia Macaluso"
+  ]
+}

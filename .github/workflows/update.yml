@@ -1,0 +1,39 @@
+name: Update news and results
+
+on:
+  schedule:
+    - cron: "7 * * * *"   # every hour at :07 (UTC); GitHub may start it a few minutes late
+  workflow_dispatch:       # "Run workflow" button in the GitHub app or website
+  push:
+    branches: [main]
+    paths: ["scripts/**", "data/races.json", "data/manual.json", ".github/workflows/update.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Collect news and results
+        env:
+          RESULTS_URL: ${{ vars.RESULTS_URL }}
+        run: node scripts/update.mjs
+      - name: Commit changes
+        run: |
+          git config user.name "election-bot"
+          git config user.email "election-bot@users.noreply.github.com"
+          git add data/news.json data/results.json
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Update news and results $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase origin main
+          git push

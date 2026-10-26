@@ -1,0 +1,9 @@
+{
+  "_help": "Optional overrides. To post numbers by hand, add a race like the example below (remove the leading underscore from the key). Values here win over the automatic count. Edit this file from the GitHub app, commit, and the site updates in a minute or two.",
+  "_w7-reg": {
+    "totals": {"Gaganpreet Darar": 0, "Bilal Kader": 0, "Nav Nanda": 0, "Ajay Rosha": 0, "Vick Walia": 0},
+    "pollsReporting": 0,
+    "pollsTotal": 0,
+    "final": false
+  }
+}

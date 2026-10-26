@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Oakville Election Night</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Oakville Votes">
+<meta name="theme-color" content="#094E8F">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,300..800&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+/* Phone-first election-night board: sticky header with tabs, watch list first, all races below, bottom sheet for detail. */
+:root{
+  --silk:#F2F3F5; --card:#FFFFFF; --ink:#0B3D6E; --muted:#5A6B80; --line:#D9DEE5;
+  --blue:#094E8F; --orange:#DC9040; --orange-text:#A8621A; --onblue:#FFFFFF;
+  --good:#1F7A4A; --warn:#B26A00; --bad:#B3261E; --track:#E4E8EE;
+  --display:"Archivo",system-ui,-apple-system,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root{
+  --silk:#0C1622; --card:#13202F; --ink:#E6EDF5; --muted:#93A4B8; --line:#24374C;
+  --blue:#3E86CF; --orange:#F0A957; --orange-text:#F0A957;
+  --good:#4CC27F; --warn:#F0B44C; --bad:#F2766C; --track:#1E3045; color-scheme:dark}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--silk);color:var(--ink);font:15px/1.45 var(--display);-webkit-font-smoothing:antialiased;padding-bottom:env(safe-area-inset-bottom,0px)}
+.wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));max-width:780px;margin:0 auto}
+header{position:sticky;top:0;z-index:5;background:#094E8F;color:#fff;padding-top:env(safe-area-inset-top,0px)}
+header .wrap{padding-block:12px 0;display:flex;flex-direction:column;gap:10px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{font-weight:800;font-stretch:125%;font-size:17px;letter-spacing:.02em;text-transform:uppercase;line-height:1.1}
+.brand span{color:#F0A957}
+.sub{display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;opacity:.92}
+.dot{width:8px;height:8px;border-radius:50%;background:#F0A957}
+.dot.live{background:#7BE0A4}
+.clock{font-family:var(--mono);font-size:12px;text-align:right;font-variant-numeric:tabular-nums}
+.refresh{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);color:#fff;border-radius:99px;padding:5px 10px;font:600 12px var(--display);cursor:pointer;margin-top:4px}
+nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav button{flex:none;background:none;border:0;color:#fff;opacity:.7;font:600 14px var(--display);padding:10px 12px 12px;border-bottom:3px solid transparent;cursor:pointer}
+nav button[aria-selected="true"]{opacity:1;border-color:#F0A957}
+main .wrap{padding-block:16px 40px;display:flex;flex-direction:column;gap:22px}
+h2{font-weight:800;font-stretch:112%;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0}
+.sect{display:flex;flex-direction:column;gap:10px}
+.alerts{display:flex;flex-direction:column;gap:8px}
+.alert{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:6px;padding:10px 12px;font-size:14px}
+.alert.warn{border-left-color:var(--warn)}.alert.bad{border-left-color:var(--bad)}.alert.good{border-left-color:var(--good)}
+.alert small{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.race{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px;display:flex;flex-direction:column;gap:8px;cursor:pointer;text-align:left;font:inherit;color:inherit;width:100%;min-width:0}
+.race.ours{border-color:var(--blue);box-shadow:0 0 0 1px var(--blue)}
+button:focus-visible,a:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+.rhead{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.rname{font-weight:700}
+.chip{font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;padding:2px 7px;border-radius:99px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.chip.close{border-color:var(--warn);color:var(--warn)}.chip.final{border-color:var(--good);color:var(--good)}.chip.lead{border-color:var(--blue);color:var(--blue)}
+.row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 10px;align-items:center;font-size:14px}
+.nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nm.ours{color:var(--orange-text);font-weight:700}
+.v{font-family:var(--mono);font-size:12.5px;font-variant-numeric:tabular-nums;color:var(--muted);text-align:right}
+.bar{grid-column:1/-1;height:6px;background:var(--track);border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--blue);border-radius:3px}
+.bar i.ours{background:var(--orange)}
+.meta{display:flex;justify-content:space-between;gap:8px;font-family:var(--mono);font-size:11px;color:var(--muted)}
+.empty{background:var(--card);border:1px dashed var(--line);border-radius:8px;padding:16px;color:var(--muted);font-size:14px}
+.acc{font-size:13px;color:var(--muted);display:flex;flex-direction:column;gap:4px}
+.seg{display:flex;gap:6px;flex-wrap:wrap}
+.seg button{background:var(--card);border:1px solid var(--line);color:var(--ink);border-radius:99px;padding:6px 12px;font:600 13px var(--display);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#fff}
+.list{background:var(--card);border:1px solid var(--line);border-radius:8px;display:flex;flex-direction:column}
+.item{display:flex;justify-content:space-between;gap:10px;padding:11px 12px;border-bottom:1px solid var(--line);font-size:14px}
+.item:last-child{border-bottom:0}
+.item a{color:var(--ink);text-decoration:none;font-weight:600}
+.item .note{display:block;margin-top:3px}
+.when{font-family:var(--mono);font-size:11.5px;color:var(--muted);white-space:nowrap}
+.note{font-size:12.5px;color:var(--muted)}
+a{color:var(--blue)}
+.scrim{position:fixed;inset:0;background:rgba(5,15,28,.45);z-index:20}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:21;background:var(--silk);border-radius:14px 14px 0 0;max-height:88%;overflow-y:auto;padding-bottom:calc(24px + env(safe-area-inset-bottom,0px));box-shadow:0 -8px 30px rgba(0,0,0,.25)}
+.sheet .wrap{padding-block:12px 0;display:flex;flex-direction:column;gap:14px}
+.grab{width:40px;height:5px;border-radius:3px;background:var(--line);margin:0 auto}
+.sheet h3{font-weight:800;font-stretch:112%;font-size:20px;margin:0}
+.btn{background:var(--blue);color:#fff;border:0;border-radius:10px;padding:13px 16px;font:700 15px var(--display);cursor:pointer;width:100%}
+.btn.ghost{background:transparent;color:var(--blue);border:1px solid var(--blue)}
+.hidden{display:none!important}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <div class="brand">Oakville <span>Election Night</span></div>
+        <div class="sub"><i class="dot" id="dot"></i><span id="updated">Loading</span></div>
+      </div>
+      <div class="clock"><div id="clock">--:--</div><div id="countdown"></div><button class="refresh" id="refresh">Refresh</button></div>
+    </div>
+    <nav role="tablist">
+      <button role="tab" data-tab="watch" aria-selected="true">Watch</button>
+      <button role="tab" data-tab="races" aria-selected="false">All races</button>
+      <button role="tab" data-tab="news" aria-selected="false">News</button>
+      <button role="tab" data-tab="sources" aria-selected="false">Sources</button>
+    </nav>
+  </div>
+</header>
+<main><div class="wrap" id="view"></div></main>
+<div class="scrim hidden" id="scrim"></div>
+<div class="sheet hidden" id="sheet" role="dialog" aria-modal="true"><div class="wrap" id="sheetBody"></div></div>
+
+<script>
+const SOURCES=[
+  {t:"Official",n:"Town of Oakville elections",u:"https://elections.oakville.ca"},
+  {t:"Results",n:"Poliwave live tracker, Oakville",u:"https://www.poliwave.com/ca/on/live/municipal-2026/oakville"},
+  {t:"Press",n:"Oakville News election coverage",u:"https://www.oakvillenews.org/2026-municipal-election-news"},
+  {t:"Press",n:"Inside Halton, Oakville",u:"https://www.insidehalton.com/oakville"},
+  {t:"TV",n:"CHCH 2026 municipal elections",u:"https://www.chch.com/news-categories/2026-municipal-elections/"},
+  {t:"TV",n:"YourTV Burlington and Oakville",u:"https://yourtv.tv/burlington-oakville"},
+  {t:"YouTube",n:"YouTube: latest Oakville election videos",u:"https://www.youtube.com/results?search_query=Oakville+election+2026&sp=CAI%253D"},
+  {t:"YouTube",n:"CHCH News on YouTube",u:"https://www.youtube.com/@CHCHNews11/videos"},
+  {t:"Social",n:"X: Oakville election, latest",u:"https://x.com/search?q=Oakville%20election&f=live"},
+  {t:"Social",n:"Instagram: #oakvillevotes",u:"https://www.instagram.com/explore/tags/oakvillevotes/"},
+  {t:"Social",n:"Reddit r/oakville",u:"https://www.reddit.com/r/oakville/new/"},
+  {t:"Social",n:"Facebook: Oakville election posts",u:"https://www.facebook.com/search/posts?q=Oakville%20election"},
+];
+let CFG={races:[],acclaimed:[],ours:""}, RES={races:{}}, NEWS={items:[]};
+let BY={}, tab=location.hash.slice(1)||"watch", newsFilter="All";
+const DEFAULT_WATCH=["w7-reg","w7-town","mayor","hdsb-57"];
+const store={get(k,d){try{const v=JSON.parse(localStorage.getItem("oen-"+k));return v??d}catch(e){return d}},set(k,v){try{localStorage.setItem("oen-"+k,JSON.stringify(v))}catch(e){}}};
+let watch=store.get("watch",DEFAULT_WATCH);
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt=n=>Number(n||0).toLocaleString("en-CA");
+function ago(iso){if(!iso)return"";const m=Math.round((Date.now()-new Date(iso))/60000);if(m<1)return"just now";if(m<60)return m+" min ago";if(m<1440)return Math.round(m/60)+" h ago";return new Date(iso).toLocaleDateString("en-CA",{month:"short",day:"numeric"})}
+
+async function getJSON(p){const r=await fetch(p+"?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error(r.status);return r.json()}
+async function loadAll(){
+  $("#updated").textContent="Updating";
+  try{
+    const [c,r,n]=await Promise.all([getJSON("data/races.json"),getJSON("data/results.json").catch(()=>({races:{}})),getJSON("data/news.json").catch(()=>({items:[]}))]);
+    CFG=c;RES=r;NEWS=n;BY=Object.fromEntries(CFG.races.map(x=>[x.id,x]));
+    const last=[r.generatedAt,n.generatedAt].filter(Boolean).sort().pop();
+    $("#updated").textContent=last?"Updated "+ago(last):"Waiting for first update";
+    $("#dot").classList.toggle("live",!!last&&Date.now()-new Date(last)<75*60000);
+  }catch(e){$("#updated").textContent="Offline, showing last data"}
+  render();
+}
+
+function ranked(id){
+  const race=BY[id],r=RES.races?.[id];
+  const rows=race.c.map(n=>({n,v:Number(r?.totals?.[n])||0})).sort((a,b)=>b.v-a.v);
+  return {r,rows,sum:rows.reduce((a,b)=>a+b.v,0)};
+}
+function status(id){
+  const k=ranked(id);if(!k.sum)return{label:"No results yet",cls:""};
+  if(k.r?.final)return{label:"Final",cls:"final"};
+  const m=k.rows[0].v-(k.rows[1]?.v||0);
+  return m/k.sum<.03?{label:"Too close",cls:"close"}:{label:"Leading",cls:"lead"};
+}
+function rowsHtml(rows,sum){
+  const top=Math.max(1,rows[0]?.v||0),O=CFG.ours;
+  return rows.map(x=>`<div class="row"><span class="nm ${x.n===O?"ours":""}">${esc(x.n)}</span><span class="v">${fmt(x.v)}${sum?` · ${(x.v/sum*100).toFixed(1)}%`:""}</span><div class="bar"><i class="${x.n===O?"ours":""}" style="width:${(x.v/top*100).toFixed(1)}%"></i></div></div>`).join("");
+}
+function card(id){
+  const race=BY[id];if(!race)return"";const k=ranked(id),st=status(id);
+  const src=k.r?`${esc(k.r.source||"")}${k.r.pollsTotal?` · ${k.r.pollsReporting}/${k.r.pollsTotal} polls`:""} · ${ago(k.r.updatedAt)}${k.r.stale?" · last known":""}`:"Results after 8 p.m.";
+  return `<button class="race ${race.c.includes(CFG.ours)?"ours":""}" data-race="${id}"><div class="rhead"><span class="rname">${esc(race.name)}</span><span class="chip ${st.cls}">${st.label}</span></div>${rowsHtml(k.rows,k.sum)}<div class="meta"><span>${src}</span><span>${k.sum?fmt(k.sum)+" votes":""}</span></div></button>`;
+}
+function alerts(){
+  const out=[],O=CFG.ours,k=BY["w7-reg"]&&ranked("w7-reg");
+  if(k&&k.sum){
+    const i=k.rows.findIndex(x=>x.n===O),me=k.rows[i];
+    if(i===0){const m=me.v-(k.rows[1]?.v||0);out.push({c:m/k.sum<.03?"warn":"good",t:`Bilal leads Ward 7 Regional by ${fmt(m)} votes`,s:`${(m/k.sum*100).toFixed(1)} pt margin over ${esc(k.rows[1]?.n)}`})}
+    else{const g=k.rows[0].v-me.v;out.push({c:g/k.sum<.03?"warn":"bad",t:`Bilal trails ${esc(k.rows[0].n)} by ${fmt(g)} votes`,s:`Place ${i+1} of ${k.rows.length} · ${(g/k.sum*100).toFixed(1)} pt gap`})}
+  }
+  for(const r of CFG.races){if(r.id==="w7-reg")continue;if(status(r.id).cls==="close"){const q=ranked(r.id);out.push({c:"warn",t:`${esc(r.name)} is too close to call`,s:`${esc(q.rows[0].n)} ahead of ${esc(q.rows[1].n)} by ${fmt(q.rows[0].v-q.rows[1].v)}`})}}
+  const fin=CFG.races.filter(r=>RES.races?.[r.id]?.final).length;
+  if(fin)out.push({c:"",t:`${fin} of ${CFG.races.length} races final`,s:"From the Town of Oakville"});
+  if(RES.pollsText)out.push({c:"",t:esc(RES.pollsText),s:"Town-wide"});
+  const fresh=(NEWS.items||[]).filter(n=>Date.now()-new Date(n.at)<6*3600000).length;
+  if(fresh)out.push({c:"",t:`${fresh} new news item${fresh>1?"s":""} in the last 6 hours`,s:"See the News tab"});
+  if(!out.length)out.push({c:"",t:"No results yet",s:"Polls close at 8 p.m. The app checks the Town of Oakville and other sources every hour."});
+  return out.map(a=>`<div class="alert ${a.c}"><b>${a.t}</b><small>${a.s}</small></div>`).join("");
+}
+function render(){
+  document.querySelectorAll("nav button").forEach(b=>b.setAttribute("aria-selected",b.dataset.tab===tab));
+  const v=$("#view");
+  if(!CFG.races.length){v.innerHTML=`<div class="empty">Loading races…</div>`;return}
+  if(tab==="watch"){
+    v.innerHTML=`<section class="sect"><h2>Alerts</h2><div class="alerts">${alerts()}</div></section>
+    <section class="sect"><h2>Watch list</h2><div class="grid">${watch.map(card).join("")}</div><p class="note">Tap any race for detail or to pin it here.</p></section>`;
+  }else if(tab==="races"){
+    const groups=[...new Set(CFG.races.map(r=>r.group))];
+    v.innerHTML=groups.map(g=>`<section class="sect"><h2>${esc(g)}</h2><div class="grid">${CFG.races.filter(r=>r.group===g).map(r=>card(r.id)).join("")}</div></section>`).join("")+
+      `<section class="sect"><h2>Acclaimed</h2><div class="acc">${CFG.acclaimed.map(a=>`<div>${esc(a)}</div>`).join("")}</div></section>`;
+  }else if(tab==="news"){
+    const types=["All","Official","Press","TV","YouTube","Social"];
+    const items=(NEWS.items||[]).filter(x=>newsFilter==="All"||x.type===newsFilter);
+    v.innerHTML=`<section class="sect"><h2>Oakville election news</h2><div class="seg">${types.map(t=>`<button data-nf="${t}" aria-pressed="${newsFilter===t}">${t}</button>`).join("")}</div>
+    ${items.length?`<div class="list">${items.slice(0,120).map(x=>`<div class="item"><span><span class="chip">${esc(x.type)}</span> <a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a><span class="note">${esc(x.source)}</span></span><span class="when">${ago(x.at)}</span></div>`).join("")}</div>`:`<div class="empty">No ${newsFilter==="All"?"":newsFilter+" "}items yet. The feed checks press, TV, YouTube and Reddit every hour.</div>`}</section>`;
+  }else{
+    v.innerHTML=`<section class="sect"><h2>Go to the source</h2><div class="list">${SOURCES.map(s=>`<div class="item"><a href="${s.u}" target="_blank" rel="noopener">${esc(s.n)}</a><span class="chip">${s.t}</span></div>`).join("")}</div>
+    <p class="note">X, Instagram and Facebook do not allow automatic reading, so they open as live searches.</p></section>`;
+  }
+}
+function openRace(id){
+  const race=BY[id],k=ranked(id),pinned=watch.includes(id);
+  $("#sheetBody").innerHTML=`<div class="grab"></div><div class="rhead"><h3>${esc(race.name)}</h3><span class="chip ${status(id).cls}">${status(id).label}</span></div>
+  <div class="list" style="padding:12px;gap:8px">${rowsHtml(k.rows,k.sum)}</div>
+  <p class="note">${k.r?`Source: ${k.r.url?`<a href="${esc(k.r.url)}" target="_blank" rel="noopener">${esc(k.r.source)}</a>`:esc(k.r.source)} · ${ago(k.r.updatedAt)}${k.sum?` · ${fmt(k.sum)} votes counted`:""}`:"No numbers posted yet."}</p>
+  <button class="btn ghost" id="pin">${pinned?"Remove from watch list":"Add to watch list"}</button><button class="btn" id="close">Done</button>`;
+  $("#scrim").classList.remove("hidden");$("#sheet").classList.remove("hidden");$("#sheet").scrollTop=0;
+  $("#close").onclick=closeSheet;
+  $("#pin").onclick=()=>{watch=pinned?watch.filter(x=>x!==id):[...watch,id];store.set("watch",watch);closeSheet();render()};
+}
+function closeSheet(){$("#scrim").classList.add("hidden");$("#sheet").classList.add("hidden")}
+$("#scrim").onclick=closeSheet;
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeSheet()});
+document.addEventListener("click",e=>{
+  const t=e.target.closest("[data-tab]");if(t){tab=t.dataset.tab;history.replaceState(null,"","#"+tab);render();scrollTo(0,0);return}
+  const nf=e.target.closest("[data-nf]");if(nf){newsFilter=nf.dataset.nf;render();return}
+  const r=e.target.closest("[data-race]");if(r)openRace(r.dataset.race);
+});
+$("#refresh").onclick=loadAll;
+function tick(){
+  const now=new Date();
+  $("#clock").textContent=now.toLocaleTimeString("en-CA",{hour:"numeric",minute:"2-digit",timeZone:"America/Toronto"});
+  const d=new Date("2026-10-26T20:00:00-04:00")-now;
+  $("#countdown").textContent=d>0?`Polls close in ${Math.floor(d/3600000)}h ${Math.floor(d%3600000/60000)}m`:"Polls closed";
+}
+tick();setInterval(tick,30000);
+loadAll();
+setInterval(()=>{if(document.visibilityState==="visible")loadAll()},5*60000);
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")loadAll()});
+</script>
+</body>
+</html>
