@@ -294,7 +294,7 @@ function tick(){
 }
 tick();setInterval(tick,30000);
 loadAll();
-setInterval(()=>{if(document.visibilityState==="visible")loadAll()},5*60000);
+setInterval(()=>{if(document.visibilityState==="visible")loadAll()},2*60000);
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")loadAll()});
 </script>
 </body>
