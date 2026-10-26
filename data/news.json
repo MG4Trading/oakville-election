@@ -1,6 +1,698 @@
-{"generatedAt":"2026-10-26T12:30:00.000Z","items":[
-{"title":"Close to 15,000 ballots cast during advance voting for 2026 Municipal Election","url":"https://www.oakville.ca/town-hall/news-notices/2026-news-releases-archive/close-to-15-000-ballots-cast-during-advance-voting-for-2026-municipal-election/","type":"Official","source":"Town of Oakville","at":"2026-10-26T12:00:00.000Z"},
-{"title":"Voters across Ontario head to the polls for 2026 municipal elections","url":"https://www.chch.com/chch-news/voters-across-ontario-head-to-the-polls-for-2026-municipal-elections/","type":"TV","source":"CHCH News","at":"2026-10-26T12:05:00.000Z"},
-{"title":"Doubling down: Oakville's mayoral candidates attend two separate debates in one day","url":"https://www.oakvillenews.org/2026-municipal-election-news/doubling-down-oakvilles-mayoral-candidates-attend-two-separate-debates-in-one-day-12909194","type":"Press","source":"Oakville News","at":"2026-10-22T16:00:00.000Z"},
-{"title":"OAKVILLE ELECTION 2026: Meet your Ward 7 Town Councillor candidates","url":"https://www.oakvillenews.org/2026-municipal-election-news/oakville-election-2026-meet-your-ward-7-town-councillor-candidates-12888660","type":"Press","source":"Oakville News","at":"2026-10-15T16:00:00.000Z"}
-]}
+{
+ "generatedAt": "2026-10-26T13:05:16.807Z",
+ "items": [
+  {
+   "title": "Vote between 10 a.m. and 8 p.m.",
+   "url": "https://www.oakville.ca/town-hall/elections/voters/know-before-you-vote/",
+   "type": "Official",
+   "source": "Town of Oakville",
+   "at": "2026-10-26T13:05:16.807Z"
+  },
+  {
+   "title": "Oakville moves forward with data centre planning review",
+   "url": "https://www.oakville.ca/town-hall/news-notices/2026-news-releases-archive/oakville-moves-forward-with-data-centre-planning-review/",
+   "type": "Official",
+   "source": "Town of Oakville",
+   "at": "2026-10-26T13:05:16.807Z"
+  },
+  {
+   "title": "Vote to shape Oakville’s future on October 26, 2026",
+   "url": "https://www.oakville.ca/town-hall/news-notices/2026-news-releases-archive/vote-to-shape-oakville%E2%80%99s-future-on-october-26-2026/",
+   "type": "Official",
+   "source": "Town of Oakville",
+   "at": "2026-10-26T13:05:16.807Z"
+  },
+  {
+   "title": "Statement from Mayor Rob Burton on the passing of Councillor Marc Grant",
+   "url": "https://www.oakville.ca/town-hall/news-notices/2026-mayor-s-news-archive/statement-from-mayor-rob-burton-on-the-passing-of-councillor-marc-grant/",
+   "type": "Official",
+   "source": "Town of Oakville",
+   "at": "2026-10-26T13:05:16.807Z"
+  },
+  {
+   "title": "Statement from Mayor Burton on the Ontario government’s Minister’s Zoning Orders (MZOs) for a Transit-Oriented Community (TOC) near the Oakville GO Station",
+   "url": "https://www.oakville.ca/town-hall/news-notices/2026-mayor-s-news-archive/statement-from-mayor-rob-burton-on-the-ontario-government%E2%80%99s-minister%E2%80%99s-zoning-orders/",
+   "type": "Official",
+   "source": "Town of Oakville",
+   "at": "2026-10-26T13:05:16.807Z"
+  },
+  {
+   "title": "Mayor Burton welcomes province’s new Halton courthouse announcement",
+   "url": "https://www.oakville.ca/town-hall/news-notices/2025-mayor-s-news-archive/mayor-burton-welcomes-province%E2%80%99s-new-halton-courthouse-announcement/",
+   "type": "Official",
+   "source": "Town of Oakville",
+   "at": "2026-10-26T13:05:16.807Z"
+  },
+  {
+   "title": "Mayor proclaims April 17, 2025, as Equality Day",
+   "url": "https://www.oakville.ca/town-hall/news-notices/mayoral-proclamation/mayor-proclaims-april-17-2025-as-equality-day/",
+   "type": "Official",
+   "source": "Town of Oakville",
+   "at": "2026-10-26T13:05:16.807Z"
+  },
+  {
+   "title": "Mayoral Proclamation",
+   "url": "https://www.oakville.ca/town-hall/news-notices/mayoral-proclamation/",
+   "type": "Official",
+   "source": "Town of Oakville",
+   "at": "2026-10-26T13:05:16.807Z"
+  },
+  {
+   "title": "Today is voting day! (Monday, Oct 26.) Don’t forget to vote!",
+   "url": "https://www.reddit.com/r/oakville/comments/1xfw1z2/today_is_voting_day_monday_oct_26_dont_forget_to/",
+   "type": "Social",
+   "source": "/u/Brian1337",
+   "at": "2026-10-26T12:56:46.000Z"
+  },
+  {
+   "title": "Oakville Election Day 2026:  Everything you need to know for voting today",
+   "url": "https://www.oakvillenews.org/2026-municipal-election-news/oakville-election-day-2026-how-to-cast-your-vote-101-12934132",
+   "type": "Press",
+   "source": "Oakville News",
+   "at": "2026-10-26T12:15:00.000Z"
+  },
+  {
+   "title": "Voters across Ontario head to the polls for 2026 municipal elections",
+   "url": "https://www.chch.com/chch-news/voters-across-ontario-head-to-the-polls-for-2026-municipal-elections/",
+   "type": "TV",
+   "source": "CHCH News",
+   "at": "2026-10-26T12:05:00.000Z"
+  },
+  {
+   "title": "Close to 15,000 ballots cast during advance voting for 2026 Municipal Election",
+   "url": "https://www.oakville.ca/town-hall/news-notices/2026-news-releases-archive/close-to-15-000-ballots-cast-during-advance-voting-for-2026-municipal-election/",
+   "type": "Official",
+   "source": "Town of Oakville",
+   "at": "2026-10-26T12:00:00.000Z"
+  },
+  {
+   "title": "Election Recap: Read interviews with all the Oakville candidates",
+   "url": "https://www.oakvillenews.org/2026-municipal-election-news/election-recap-how-to-read-interviews-with-all-the-oakville-candidates-12929200",
+   "type": "Press",
+   "source": "Oakville News",
+   "at": "2026-10-26T12:00:00.000Z"
+  },
+  {
+   "title": "It's election day in Halton Hills - here's what you need to know",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxONHZfNzRfNkZGWC04dmxmdzBUUEFFdlpCOEEzRENGUFlDU2hfYVRuMnV6ckdmUmVpeEM4ckJhVk83eWZTSzVZeVVzZExxRTItNHVxZnBIUTJ6NlRFMVgzOVRVTGEzTGRVa1cxSkRsQkJSdXNFLWEweVVkV2xBLWVrb2hmOVdBS1BkRF9lMFhiNDdMOWtFSjNEODh0a3Q1ampmbVJIYWJUTTFjS1RoZ2lka3FpVTQ5cTExVEI3TXU2bUZnSzRWT21qRy1R?oc=5",
+   "type": "Press",
+   "source": "Halton Hills News",
+   "at": "2026-10-26T12:00:00.000Z"
+  },
+  {
+   "title": "Timbercreek Financial to Release Q3 2026 Results November 11; Conference Call Scheduled November 12",
+   "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOS05sZ2YzTzlveEp6LW9od0ppUUw3RXl3RjRFTVJPYVJ3N0thZnBZMDlCbzBGVWV5b25JVXZpYnRjVkpTRFE3b1NLeTlXNGRfT2pBZVpjbFZTUjM0S1diS2ViWjluanlMeG1OZlA3c3E0dUJPQm1UR1JpRFQ3MnFDWU9Tam52UVpFTjg1LXUxMVdmNlNSTFFDRjJ1TjVOSmE3Nzh0di1QblIyNlMySllPVjEzellwV0FhR0NPLU5BUDVHTGVFakNCYUNnUlNRZVNuaDY5WEhxd1F0TFBkcnludTdwTWZ0dVdnZ3NCV1ppQ0J4aWZWOFdyUTJlWjBSU3FBSHBySlhQb0prX3ZEM3h1QTdrQkJYTVJzLTkw?oc=5",
+   "type": "Press",
+   "source": "Inside Halton",
+   "at": "2026-10-26T12:00:00.000Z"
+  },
+  {
+   "title": "Tackling homelessness will be a key challenge for incoming Ontario mayors, councils",
+   "url": "https://www.oakvillenews.org/local-news/tackling-homelessness-will-be-a-key-challenge-for-incoming-ontario-mayors-councils-12937354",
+   "type": "Press",
+   "source": "Oakville News",
+   "at": "2026-10-26T11:05:00.000Z"
+  },
+  {
+   "title": "Oakville election day 2026: What you need to know to vote",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQNFpUcmNwd2tycUYxRENkdFNUVUxSc3lQLWtlWHI1Nm5tZTduSU1PT3BSWkFHNHAta1hFMEpNV2VjaFpnSEI1SDFOX203Q19BM2JfTTZ5VUd4OXl0cDJMUzR0Y0hYenBHQVdEbmRJOGJhbWFkNGg3Y0J1QkM5bHNyUGNEV1JtM2czdUZnVXhrMFU2Y01MRWJORXVxc2hwRmlXdXJwbHktaUl3ckZROW9jcUJGMEJaNXFpTFl5RjlrcmpMWWltOEhn?oc=5",
+   "type": "Press",
+   "source": "Inside Halton",
+   "at": "2026-10-26T10:15:00.000Z"
+  },
+  {
+   "title": "Everything you need to know for voting day in Milton municipal election 2026",
+   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPWlM4akpCY0w1TG5qQmdEbHBrQ01qNW5qTnV4N1BXS3ppMTlKR21Ram83bmRNbURNaWY2UVhYRU8tWGdnMWI4Um14Z212SGhQMHdvRVJVamtFYUY1M2tZMUltYVJBZTFKZlRLU1d5TmhjZENJelBMcWpNbkZvQmVOZFVvY2gzY3NPTWY3UktsRTRySVgzTVVQUmpPdjIwVFZkSDZ2anBPWmRMNUxuQnBGV0ROeGxWMDNWa19sVXFLbmpLZnVDMl9UWWVMRjFZelNZXzFiT0ZkNV85R1lENGJJaQ?oc=5",
+   "type": "Press",
+   "source": "Inside Halton",
+   "at": "2026-10-26T10:15:00.000Z"
+  },
+  {
+   "title": "It's election day in Burlington. Polls are open 10 a.m. to 8 p.m. Here's everything you need to know to vote today.",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxONmJ4QXBoak53djV2YWVoNzBnN1JxeHlOaTBBeVowb2F5YzlyZy1YOTEwUUhkN2tPWWwyWkVEYXhqcHFUSWRQSGtITHVHaUlvSTBPWWV1SmR0Tl80MEN0OEo0NmV6bUlEVWhWS0JWQm5PMUcta1BMSUw2NUlaZWlKV3BiQ21kZ1haaDg1NW1hMlk0czFrbV9YTVU2aFNONnZ2MW9PdUhvR2xlSTZLSnVDdmxESm9wajBwbHRIUGkwVHdHVG9PUllLejMtaGZzeGM?oc=5",
+   "type": "Press",
+   "source": "Inside Halton",
+   "at": "2026-10-26T10:15:00.000Z"
+  },
+  {
+   "title": "What Portage voters need to know before heading to the polls on Wednesday",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQOWZiRWhDLUs2WU9YdDV2RHRhVWdBWlQxSjExUy01S2ZiMnZvcnhrTDIwRW1jRkFVRDJyWlJyRk9xbVdyWlpsbHlXRThTY21FLXFCYUg4UEZlQjczLWZLRFRiSF9tUDJQSHVLSVRHUFdiRmhJb2RweEZsenM5UWNrSGVrMzZqbjN1ZmNUb0RzWE1mS0htVkVwU1VSREotZmo4T21MQUpBaWJwT0Z6?oc=5",
+   "type": "Press",
+   "source": "PortageOnline",
+   "at": "2026-10-26T09:02:10.000Z"
+  },
+  {
+   "title": "MUNICIPAL ELECTION 2026: What time do polls open in my Ontario community on Monday?",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPWk9Vc09IRklVMWJRdURFa3VkTGl4MFJDTHkzT2YzcGdzZEc3Y3lvVWZIQ1I2bnpPZ2Vnc1hWM1ZlT1NHVm1zR1BPVFNmVGs4cVVsUG1BRm03ZmNWRVFJaTM2ai1CVnBMc1VqX3FVOU51XzZYVjRsTENvX2ZlNHIwMUJXTHptUXJpSTJ5d2J0TFFEQzRFeEpKdXpSdlctdUZUdEp5NkxLcU1WWkpuX2t3NGlCWV92cnRYeVZHVl9YZC1mTVpQNUo1SG54VkVJdHYzLUhYaEZLTXRRNmNfYmFJ?oc=5",
+   "type": "Press",
+   "source": "Inside Halton",
+   "at": "2026-10-26T09:00:00.000Z"
+  },
+  {
+   "title": "In the news today: Tories target tanker ban, Ontario votes, OSAP fallout",
+   "url": "https://www.oakvillenews.org/national-news/in-the-news-today-tories-target-tanker-ban-ontario-votes-osap-fallout-12937435",
+   "type": "Press",
+   "source": "Oakville News",
+   "at": "2026-10-26T08:29:38.000Z"
+  },
+  {
+   "title": "Doerkson won't rule out shortened fall session after provincial election win",
+   "url": "https://www.oakvillenews.org/national-news/doerkson-wont-rule-out-shortened-fall-session-after-provincial-election-win-12937436",
+   "type": "Press",
+   "source": "Oakville News",
+   "at": "2026-10-26T08:26:48.000Z"
+  },
+  {
+   "title": "Toronto votes in tight mayoral race as Chow looks to hold off Bradford",
+   "url": "https://www.oakvillenews.org/ontario-news/toronto-votes-in-tight-mayoral-race-as-chow-looks-to-hold-off-bradford-12937422",
+   "type": "Press",
+   "source": "Oakville News",
+   "at": "2026-10-26T08:00:05.000Z"
+  },
+  {
+   "title": "Toronto LIVE: Sunday Evening in Downtown with Friends! Happy Birthday MargD! (October 25th, 2026)",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBJMUdnMGVzckRqVHFjMWMtUEhBaU1wTXpLSmxCeUJKajhoMzBOUDZSNktGbjU3YjJPalZKZHZTN29PTGFoR2FhREVQWUxBR0NFYUpNVHZn?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-26T05:03:41.000Z"
+  },
+  {
+   "title": "The PQ’s tepid mandate",
+   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBQZDVUQTdkZnE0ekZsbGhCWXQ0Q3VkcU1rVUhOYk5vOVMtX0FGMjlGU2NjVm1KRWctTjVKNTFjamdNcFl2bFQ0S1l3dUl1YmZoYTNpb2xGeGNHek5XQ0trY1A3dkloYmN4N3A2SWk5ZExMTTRw?oc=5",
+   "type": "Press",
+   "source": "The Hill Times",
+   "at": "2026-10-26T05:03:13.000Z"
+  },
+  {
+   "title": "(Official Audio) | Toronto Drill",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0wWjBCZGpSRXNYVjN0eG1UUTB4YTN4WkRMVktaSXZwaVNoMk82U3BOV1dkdk0zRE44VTI3VTZ3X09kOE9TeHN2TGpYVkRmMGJsMW1qbWxn?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-26T03:11:22.000Z"
+  },
+  {
+   "title": "Give me your predictions for the election",
+   "url": "https://www.reddit.com/r/oakville/comments/1xflm7b/give_me_your_predictions_for_the_election/",
+   "type": "Social",
+   "source": "/u/AccountForTIFF",
+   "at": "2026-10-26T03:01:33.000Z"
+  },
+  {
+   "title": "REVIEW: Wild rewards abound in Laika's masterpiece  Wildwood",
+   "url": "https://www.oakvillenews.org/columns/reviews/review-a-wild-heart-and-rewards-abound-in-wildwood-12928617",
+   "type": "Press",
+   "source": "Oakville News",
+   "at": "2026-10-26T02:24:00.000Z"
+  },
+  {
+   "title": "PRABH GILL’s POWERFUL RALLY in BRAMPTON! 🔥 | Mayor Election 2026 | RPD24 TV",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBGRkFvODAtcjg3UzFWZzlVSFpYTEFGYmlDQy1PUjJrRnBpcHVpZzIzRV9nQnFFbVJUNlc0UXlUcGRfLVFqME1NUzlXWEJUcUlpMU9jT0ZR?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-26T01:06:49.000Z"
+  },
+  {
+   "title": "Living London with Rizwan Rashid, Guest: Tariq Khan, London Mayor Candidate",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9feFBwRVYzRTU0RXhuZUllb1Fmd0Y0cW54RGg5bEFwM195c0xpaTdURUdLOFJMbVVOMWM2V0JDZ1UyQTZzZUJ6TW83X0xnQk15NG1aVWtn?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-26T00:43:30.000Z"
+  },
+  {
+   "title": "Frost Blue Expresses l Cineplex Cinemas l Oakville ON l",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1MNmF3V2FLYTd6UEZhY3M0WmRzZktGMlZ5R0pqWEE3UEpNODdmOW5jUkFLckdhN0o0SkZHVnRMSmMyVmdwUnFtejZwaFhPTHlLYlJfbDV3?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-26T00:29:16.000Z"
+  },
+  {
+   "title": "Predicting the Toronto Election",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9qcXZzRm1oZEtoZXlxbFVYbWF3bFJmZ09UenIzOEJ4SWt3bW42VW5fWXU5ZG9MZFBwWEloR2pjcXVNY1hrc0h3U0pLMlJXaTFiNGsteWxn?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-26T00:21:55.000Z"
+  },
+  {
+   "title": "Everyone Hates AI Data Centers. Are They Right? (Part 1)",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5GaENjaDIwV0pKMHl6dFlsM2JzYnBKalllUmhUQWhaNW1KSjJFUnVRT1duWE9qbVVxcE1IVlFTY3VNMnMwblVwbmJVMEZOVHpiR2xaVQ?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-26T00:04:01.000Z"
+  },
+  {
+   "title": "Sunday Service | Jan 31st 2027 | Sparrow Baptist Church, Toronto",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBZRENDRWJsQmFfQ1U2UXMtcG90UE5VRlJBZjNaUjdEdlR2UGhna0swbkdvdExuRUdqMUdac2FSMGV0QVNSVUZLelBKWlJsZURRODByOXd3?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-25T23:56:24.000Z"
+  },
+  {
+   "title": "Toronto vs Rockford IceHogs - AHL - Live Scoreboard",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBwbFpUa3pZR3BXX1E5RlE3Z0o0c2RodWlEX1RHamZWeVUxa2xpa3JtN0ZRWllSb0g3UVo1bU9xSlpCVHd0LUVHMmVPb3JxTEFjM0xjUmFn?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-25T19:04:22.000Z"
+  },
+  {
+   "title": "Can You Reverse Arthritis? 3 Ways to Slow It Down",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9oT200Q0dnUDBaOUdPLS1sdnZfVEFyX3dyeUt4bmhMM0NCeDVXNlE3Y1hZSzVmRzBjSUE1enlpa3hzdXM4SDZMeEpTMV80WW5sMGF3bnFR?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-25T19:00:34.000Z"
+  },
+  {
+   "title": "PSA - Oakville Ward 4 Regional Councillor candidate - Roger Lapworth info",
+   "url": "https://www.reddit.com/r/oakville/comments/1xf9jf1/psa_oakville_ward_4_regional_councillor_candidate/",
+   "type": "Social",
+   "source": "/u/Ok_Hornet2072",
+   "at": "2026-10-25T18:15:30.000Z"
+  },
+  {
+   "title": "전기 자전거 타고 토론토 구경해요 10/25/2026",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5tMDZRc3F0NFdVX1ViaTV4NzlXNFJPd19mM21Wd2hYQmZPT0Z5cVZkblRNT01seDlGTlpicEJvZzJWdDkwYzh6WXpvV3k5TlpjOVFCLWFB?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-25T18:00:45.000Z"
+  },
+  {
+   "title": "Driver seriously injured after collision with hydro pole in Oakville, police say",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPUFREazdmbFVSRGdKOW1iMDJ1a0hXYXZQLVVnSVZ6X05mWFp6UHdjQ3NGU2d1dFhzNjFhVHNHWl9NMmtCR0xJSTBRcjE2UmV5WkpQaE9faFZ6NGJhcTJ2Z083eG5RODJ1NFFnTmFkc25iRnY5VFhGaU94TkpkM0VOSUIwdkZUdXdCcFdIcGtmVWhNaFc1QmJ4ZzQ3bF9WTFVCRGQya3g4RW56WW0yOWVfS0MyY2FBZWxvUFFWUEdWSEp0a3MyQjhQcDlBS2k?oc=5",
+   "type": "TV",
+   "source": "CTV News",
+   "at": "2026-10-25T17:50:26.000Z"
+  },
+  {
+   "title": "GAHUNIA FAMILY HOSTED ELECTION CANDIDATES | BRAMPTON VOTES 2026",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1MQ0kxWVB1el81YTZHa1Z0S0RrN25wUHdjQWlmZTBiWXFSVGNLNE9URHk4cnJybERwUUt5TWhsdU0wUDQ5Q1UyUFZvSHB5NFppUFlSUG1R?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-25T17:15:12.000Z"
+  },
+  {
+   "title": "First Baptist Church Brampton",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5xLXZQalhEZElQUjF3OTdKTktVZFl3czEwRVhYUHU1QURoUXBEbDNuUDk3UmZmNEFUN3FZOXVfdzhCUlBUeHpjdWRVOUhWZHBSTkU0alBR?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-25T14:43:12.000Z"
+  },
+  {
+   "title": "Burdah Night at KYPC - October 24th | Toronto, Canada",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE14Yzg2ZTRCZ19vTERCdVdWSWxUbm1uRjRqbVZhNXVNT3FWRGNORXBaeVc3MURZVXlzUWhlRlc2dzFkR3pzbUZCRmlic3VMOHBiWjlVbWdn?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-25T14:32:53.000Z"
+  },
+  {
+   "title": "OAKVILLE VOTES 2026: 10 questions with mayoral candidate Jeff Knoll",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPR2VPMUdxLXJBa3hlZFhmY3FIbkpQNnNKaUJfS1pNRHQyVFNuenB2TU11TnV3andJT1FCNklIb0NnTkhscEdQRGJ6NlZBRDN0ckhqZHBFcmVEcDljQ19XQlFvc2VRbWNiQVpPVGNlX1JiTy05RS1IUWZBZmt6Um1wbS1GczNyOGlweUV4ZHFtWUlWUGhWWDdRemllcUUzRk9HZTh1Y2xfenNBVFJpWnRLbkpPcUd4cVZhVHJiUWczVk80UVlqWTlSbUlYREMtQQ?oc=5",
+   "type": "Press",
+   "source": "Oakville News",
+   "at": "2026-10-25T12:34:00.000Z"
+  },
+  {
+   "title": "OAKVILLE VOTES 2026: 10 questions with mayoral candidate Julia Hanna",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOdWtVeGdzajkycW1DaTNZU2JCWE9ueEtHc3pJXzVBTTlUc1dIcHJhUmZIQk1zLUtXdm9FWUZNdDdJaDZGRjQ3ZTVGX1lDNzdjNFMtSUY0YkFzTDZ0bVNtVFBYRWJnQzliX1JFckRqS1h3WGJxZk0xYWwwLTEzTlVBcXJSd3dFNmFQa3h6eXA2OVozbUtrT2RNQnhxZjVIUVEyWVB1VmFQSW5ZQ3M3OGFQdjJUOVN6cG4zc2pTb25FSVk2S1FOZFpPbEhwTW9vMGM?oc=5",
+   "type": "Press",
+   "source": "Oakville News",
+   "at": "2026-10-25T12:33:00.000Z"
+  },
+  {
+   "title": "OAKVILLE VOTES 2026: 10 questions with mayoral candidate Sean O'Meara",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNRlZ3TFJIMXV6Y2p4RTREU3dnRElCb1V3NDRoTGlyYnpISlZRZnpycmEydzVnNzNoOVFJajcwZFY4VUpVLWotUGd2UmpSQXY3cWgydkx1b3lzaVh0d0IxejVSaUoxUFNFWElDQmd0NzhxQXJUMVQ2MnN1bVh2c3ZjLVdxSzJkODkzM3YweTMtU1FLSkZLWVdCMFVBZDlBWjZWM2hrYlhCUmRzMmR6d2ZpYUVYb1lERjhOWnpPQktKOGRCLS1JeGZacFlMOEhXZnc?oc=5",
+   "type": "Press",
+   "source": "Oakville News",
+   "at": "2026-10-25T12:30:00.000Z"
+  },
+  {
+   "title": "VIDEO: Are we about to see a lot fewer gambling ads on TV?",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWDdxNlBiLXpLYjhOTW9MNktmTDlOQ0FLbW50aWpQNWtHSUplcEwyTFZIVGNPQWFEVVZxRk5xcVJsbmVTSlVoMjJ5NkFQSVY0aDFVelJJTF9sdGRYQXZMOVByTmFva2VJS0RVZWppSXFONUh3VzJsZ3ZGUDNzN2x1Q0l3NndzOTBwM0Q4WnlxZTlyR3l0aTE1WkZmY002eXJ1WWdUUl9SSGpMZw?oc=5",
+   "type": "Press",
+   "source": "Oakville News",
+   "at": "2026-10-25T12:15:19.000Z"
+  },
+  {
+   "title": "TOFF OCT 25th CYTZ TORONTO",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0zalFnU3JkbTRBUWlvN0tGby1TWGp6NGcyMG5VYUFYbXNHeGhlU0t3ZVRqdU4zYlJCLWVrNnNKaE83QW1XTWV6dU5BY1FfVE9xRWZRWnV3?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-25T11:46:21.000Z"
+  },
+  {
+   "title": "Ontario votes Oct. 26: Everything you need to know before voting in your municipal election",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPWUNGVlhtblJLa2RkOTB2MzVidGtIdm9aYk5LSUV5YWtMSjl2YUV4SkxGei1BNC1sQUtSbVROM0Z6ckQ4U2hkQUwxOVZjMTJDWjVaaWVJZTNsbjhISUlMdzBKa201ZTVmNjFxeExuU1NvTGhjWUh5dzVUVkhsSGdadzZSNUE3azJWcWVfa0xuQTM4aEt3Slo1RGM2U1N0NnV3Zlp1YjdnTk05QjByeThGMFZKTV93WEs1dnNNWmY0cVFoMHdoX0RuREdmNTR1YlRJTXc?oc=5",
+   "type": "Press",
+   "source": "Inside Halton",
+   "at": "2026-10-25T11:30:00.000Z"
+  },
+  {
+   "title": "How to find your polling station in your Ontario town or city in Monday's municipal election",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOWjVHcnMxRGtnMFJKd3F0WTd0QjFpVnZxUWNnbDIzNTJmQ05GSENhbVg3ZmlhS0taanFlNmZ1TWtDa3paX1ptVnhYcGZUWlBac1MtWHVoclpiUTdZOERwRXlMZGlfUnJYRGZWQzJvel85aXNmT0FibTZZRWtBUWwyM2pzNlN5QmFPemY1eUpWdWhBVHF4b1l0Y01hZ2FCWWdEcVNiUmtpc1MtV1d0M3V1RWNVSjNZVnlYQUhZcVU0Y3FpQTN3RWlEY2R5cXBNb05JSjU3WVllTXNkdDZaZnYwZjJLcnk?oc=5",
+   "type": "Press",
+   "source": "Inside Halton",
+   "at": "2026-10-25T10:30:00.000Z"
+  },
+  {
+   "title": "Environment Canada forecast puts southern Ontario highs above seasonal on election day",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNZ2sxRXhaSzJwZE5IMWxKRmtmRTBVZ0sycGVUcWF6V0VwUE1kNGhXYUU2Q2hHRVdEOTdJT1FCaURLTGxoam9lbC1HMTRaaGVqNUtxeUNBN3dtZjU4YWVxVlNBWW1SWFFaazVhWHVUQ0ZPbVlBZURkcmVZLVdrT1lGRzF6SGdwUmpfdzQ0ZlNiSVZiRkJWWkszLXdnT1RNQ042aGdtUW5RZUVpdmVJaWhvSGNZVjNzbGI4TjFaNFp3?oc=5",
+   "type": "Press",
+   "source": "Inside Halton",
+   "at": "2026-10-25T10:00:00.000Z"
+  },
+  {
+   "title": "Rangers U14 AA Live Stream - @Kanata Blazers",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9SekpRbkpuRlBrMGg1dk9RYnhzTG5NaW5iSEdoaVlSMW1uUHFTNVMycHYtYjR2U1l0N0l3LTRZTTMxTVNjdlIwc2lrMWJ5THRfVzdYWnNR?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-25T08:04:04.000Z"
+  },
+  {
+   "title": "Ballots re-issued to some Grays Harbor County voters after levies left out",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPRWdvVERXTEI2Z0hqMkc5ckNTSGtzRkZ3Yy1mV0xfMGhwTVZ3NFE2NmFZQlFrVnlzazM1Rm4wOXZTTFNqc01mMV9rdExUbUZTZ215MXp1NGkzb1dzZml1OEhlQmtVZGxwcUU3M2dEMnZsb1J2anhxSDdoaGRzb3M4RE8tdF9HVGI3Qi1ocTh1cV9QMEtISWFSbTIyenVzQjdCVmtoWFgtSnRlTkFwSDZmZENjVkpjN3JfT2k4ZnRyR0pudmJ2YkhUYXNHZW40dGo5MWpES1lKTEU0Q3VuLTl0Z1h2Vml6aW1TNUN0OQ?oc=5",
+   "type": "Press",
+   "source": "KING5.com",
+   "at": "2026-10-25T06:43:00.000Z"
+  },
+  {
+   "title": "LONDON TFC Vs SIGMA FC BOYS 2013 OCTOBER 17 2026 W 2-4",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9sWnNBZU96cmN2UFVUdzZIV05zU0ItVGtESHduSEc4MjU3cFlWUUVISHRnVEdkVFNtUlZmQzFDeTk5b2ozQzUwUUNtM2NEVFptd2VEMXV3?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-25T05:26:41.000Z"
+  },
+  {
+   "title": "Oakville Crusaders fall just short in thrilling provincial rugby final",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQcGUwcHdlV1dKQTV6MHo4bzhhR01FeVpyWjhRSHFaODJNQ0tUS3c5ZHIxNi1aTjQ4dVFzQkVIcS1McXhWU1I0Ukg3am9oU0pBVGxrb1pqVTVBOVpQWUVxN19OMGI0THhQMEZZVlBVZ0NEWTR0UkhwV2UtYzJnSEpIMmI2N3pYYVBFMDFEVHZPYXRFQlpQT2NJYy1KbUZWdkRqV3pDRlAydVlPc2U4OXhNS0NhdWozcWs?oc=5",
+   "type": "Press",
+   "source": "Oakville News",
+   "at": "2026-10-25T02:05:45.000Z"
+  },
+  {
+   "title": "Is your neighborhood still safe? The reality of crime in Oakville revealed.",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE15eldkZFQ1NWtJd0dSM1NoNTRxT29KaEp4b3lYNU1YaHVFcFZ3Tml1VFBRdlZDLWRPYmpYWjh3Y1hBZVh5TmJMYUtQYkZDX2ZGanNNcg?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-24T23:40:49.000Z"
+  },
+  {
+   "title": "Meet & Greet with Zainab Azim | Candidate for Mayor of Milton | Organized by Shanawaz & Shista",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE40YkFDYVhVdVlZaDlnVGppem1Qby0tN2RGb3J6empfTlFSQ1ZTaUNRd0k1VlEtanIxR2Vpdlg2N2ZnbElyTXlPbjBmaTUwSDBZRG14Wm9R?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-24T23:23:02.000Z"
+  },
+  {
+   "title": "Candidate Transportation Survey Responses + Scores",
+   "url": "https://www.reddit.com/r/oakville/comments/1xehtub/candidate_transportation_survey_responses_scores/",
+   "type": "Social",
+   "source": "/u/FutureProg",
+   "at": "2026-10-24T19:40:20.000Z"
+  },
+  {
+   "title": "Oakville Snooker Club",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBSLUU3RS01THdfSS1MdURwaFhRQzhfVUJpam04enRudWNPMERUY3JTRnZWMG4xZ0toZ1p6dGZVWVFYRHYtbWUtRjk5bEpka0w1dUV3aTZR?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-24T18:51:54.000Z"
+  },
+  {
+   "title": "7th Grade - Northwest vs Oakville",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1EWVozWE15Vm9uMjNGRldaWU1BTUpIbTJJVmE0QjR6dzhScnVMT3pYZkhBeXhtdG5PTm9zb2FYeGl4ZjJ4eUpXQXd4QW9rWklDOFBuTXN3?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-24T17:01:03.000Z"
+  },
+  {
+   "title": "MUST READ: It's the final day for online advance voting in Halton Hills",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOa05hb3k5UHFwMkxUZGUxcXRQOHhWNlBnelNlLTU5MTZDUFlKTm5uQmxOVF9mNUZqbDNDRGJhaTBLNENBOXpLRFhUWmRsRmVZVU1xM0EtZEV6UV9zSlBrN2M4dmpPQjlNeE5faTE1cVA2U3R5ZlJWeTVZU2F0RkpxX3FpTUlnVzRzX0JvZHUxaUlWWVBrQ1lsbS0teVc5R2JXVi1CN1BTRHZUZG9JUkdEOXZmVHRQUXJ3RW9KUmJJNVd2d29kYUl1ZWpPZjkyX0Z0Z0N3NzR3?oc=5",
+   "type": "Press",
+   "source": "Halton Hills News",
+   "at": "2026-10-24T16:30:00.000Z"
+  },
+  {
+   "title": "Oakville NIMBYs endorse candidate who told them they can’t have their cake and eat it too on Midtown",
+   "url": "https://www.reddit.com/r/oakville/comments/1xebo6b/oakville_nimbys_endorse_candidate_who_told_them/",
+   "type": "Social",
+   "source": "/u/NIMBYville",
+   "at": "2026-10-24T15:33:09.000Z"
+  },
+  {
+   "title": "Ward 2 debate leads to discussions of transit, services and growth",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNbGpLdkZ5YmRnMjMyNWgtNVFEWGczdG1HZUROTnlaZjNMUGlHX240RzBmeThrcmVTS1ZCMlhHOEp6RXFUcFpxbm1pZE11NTBUUF93Vl9DclVqbE90bW1mcFFWWTVJNndOZE02aXF4dklrZkNyeXExOGJ1TVZnSWRwd3JueFc0c0F1QXYzQnJkU0NHVFQ5RjVha0tNWEdKQ3BJNGdZNnVkel9UM1JPZFh2a25LWGFlaDN0ZkxiSTBOaFYzSk5OTjVPc0JxWXE?oc=5",
+   "type": "Press",
+   "source": "Oakville News",
+   "at": "2026-10-24T13:30:00.000Z"
+  },
+  {
+   "title": "Beethoven’s Seventh Symphony, Drawn Live: Scarborough Philharmonic x Urban Sketchers Toronto",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBmZ2hNREtzTXBUVnZBU0IwT2VXZmNfbHY4SVRSb1N4dHktSmpvNFRQMUZvLTNZY1BBOXEycHJEWEIwWUtmMVRoRHhHY0tHSF9URkdIeVJB?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-24T11:45:27.000Z"
+  },
+  {
+   "title": "Saturday Liturgy, Oct. 24th. 2026, SPSPO",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBvVnpVOGpQQWl5bHRxMnpMNkItZ1Q4X01IN1lOdWxhWFB5em9sOXRZQ3pPaHZmaVRrRFRnX0M3VVI1MHBQWGlZYkVFRWloVTVNeno4RnNn?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-24T11:40:05.000Z"
+  },
+  {
+   "title": "Election Day approaches after hundreds vote early in Portage and RM",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNbmdCZldIUnpMd0dHejk0QndCSl9YWlY5eXVXWEJKWmJjSDNSV0RkaWlzd2ctZjZmUHU1bXBoLTF2QzltX0c0ZTBxcWlUczRib0dKeWt2NHpGSGJfaHRZdm9ZMVVCOVFHN09CbXpDVU13bTQ1TlpBZ1lTY0hMaTlpR3ZtWTRVSWs4Qm5Ud2F0VXVqQjZhQzM1eEdZX3A0UE56ZWJBQXJCaUxSQQ?oc=5",
+   "type": "Press",
+   "source": "PortageOnline",
+   "at": "2026-10-24T09:05:49.000Z"
+  },
+  {
+   "title": "Under $1M in Joshua Creek, Oakville | Townhouse Backing onto Trees",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0wclJDZTlvd2llalBRMlNsVC11UHlXSkdHZHFPUDBEeU9IR0pXaHJ6OF83VWlyYU5iSUlkNmhaSFhhU21zcHVaVjJES3d3QXdMeGFBb0Z3?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-24T01:08:10.000Z"
+  },
+  {
+   "title": "Alvin Tedjo Latest Interview |Tax Freeze, Housing & Transit | Mississauga Mayoral Candidate | T360TV",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1MQmdGOFEtLVl5c1h4bXYtWUttaDJPeGNGMml5R1EyODJsak1LRHNtMkpUQmpLZDA3UnBtb0ROSlp2WFBwUlFsNmpNRkpjbXVQeFJtT0h3?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-24T01:03:43.000Z"
+  },
+  {
+   "title": "Live With CDP Talk Show, Guest: Sarah Perkin, (Oakville Ward #2 Candidate), Season #15, Episode #...",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1TSnBpY1lOamYyb1RVemxveUlSSXg5WmtsNFR4ZXJQaU9JN0dVLTZSS1JjaVlLVHg0S2xTWmVUdTVOTk9JWlE0OHY0MmdrYUtMU3dJQkxR?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-24T00:37:14.000Z"
+  },
+  {
+   "title": "Local residents asked to weigh in on paving Gladeside Pond pathway",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNY0VWRVJCOVE0NEJyRno3eFpjRktMVmhQY2h1S1NRcC1jSmloNFFlM09MdkJLNE53emd6bXNKMTlWM1F5V1hKX0xvZExUTEo3NXp3eXRSSnpOY19JNDI2amlYWno5YWZfZ1VwQ3A2LXJTcmllY1RrOXVHazNRdnl1cGx1MnRtRGdnTkpkbF9rNDJNcF9YR09YamZjTjNmYUVyV2dLSnlWb0dHSVdYTjNaVW5BWVZQYzc2bTg5UA?oc=5",
+   "type": "Press",
+   "source": "Oakville News",
+   "at": "2026-10-23T21:24:32.000Z"
+  },
+  {
+   "title": "Does Creatine Damage Your Kidneys? (The Truth)",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA1aE1GaWVjeVJMdHdVTHdWNmZvc05wYnVqWmNJT1dCbWROaFYycW5iNlhOSzJ3bmptS1Z5TjJsc0JkWU1uYlYwS2NIcTVjbnp0U0hKcGZR?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-23T19:00:31.000Z"
+  },
+  {
+   "title": "LIVE: Toronto mayoral election results 2026",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBIeHA4ZzEwVWdfcjhxWUdSMXNCYW9Lb2d4bTZjMnNUQjlWSDFwUGZzTFRCRDZNWGpIUlBvSDZuTXpURzhPSW1KRUFUa09taWhCQ3dnMEhR?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-23T19:00:08.000Z"
+  },
+  {
+   "title": "Mississauga Mayoral Candidate Alvin Tedjo:Press Roundtable&Campaign Rally-Special @TAGTVCanadaUSA",
+   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA4NHFTa1J3UExHdFk4dXVQX3liaUZPRFBBQXh0bVNBa3FiQWJwbGdpemdiX0lsV3hQa2E3dndEQVZVZTRqZEJxSzJQbTJwZUp2ZjJKbF8xWWhYRi1GMWc?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-23T17:15:06.000Z"
+  },
+  {
+   "title": "Community Endorsement: Manjinder (RE/MAX) Supports Navneet Singh Lotey for Brampton Wards 3 & 4",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5oV0xqS2JhazhKS1k5ejZLTkVwak9VcENGZlNpNGx3NHNWa3k2U0h2Z0w5SjF5aWJLc0czaDFGeW1nclNyV0gyRXpKTExMUWIxS0liMUZn?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-23T14:30:11.000Z"
+  },
+  {
+   "title": "Special Election Transmission hosted by Badar Munir Chaudhary, Guest: Mirsab Fasih",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBqcVA5QU94YXBxX3c0eVZxOEVfNDBNdlZiT3RzSFdnUDJUeHVBR3A3dGJrNTFEQWJVV3lYcjJod3RySG1lYmtPVWt5b3o0amdXbGY4WUZn?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-22T22:22:17.000Z"
+  },
+  {
+   "title": "Dr. Farah Shamim | Oakville Ward 4 Town & Regional Councillor Candidate || Ek Mehmaan| | Awaz Ent",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1wYTVyaTF4eHgxOVFwX2NJZlFRLUhJTlNlbVhHVk05MFBFSVJIcnViSkk3RF96cFlRc3Jya2RhS1BfamZSVkVhM2RxcU9tRlRfOVk0LVZR?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-22T22:12:59.000Z"
+  },
+  {
+   "title": "Stephen Crawford Re-Election",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1vdHRGT1NjTFdfanYzT1lnNWYzVDNub0plelNTa05JX0JONVAxVUxsLWpoamxwRVVkZVM0MkhQbGRUZWZaRHBCQlAwWTJ3aDJURWF5VDc1YnJCRXZmUHN4SmJHd2JvWXpQZVpTRlJhNA?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-22T18:11:49.000Z"
+  },
+  {
+   "title": "You can't manage something unless you deeply understand it. Nancy Ortenburg has 30 years of exp.",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1KTXo0VEJNTXJ6cFFMUHRwd1JNSkh4ZzBsbGc4enRLUHJzQkpiU1BpZHVGcDVCOUZ4eTk3R0hKQ2RCYzE0NWhuSy1kemd2QzJrbWZ5UEx3?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-22T18:00:10.000Z"
+  },
+  {
+   "title": "OAKVILLE ELECTION 2026: Meet your Ward 7 Town and Regional Councillor candidates",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQUXdueTNWX1IwamVuenUxclFHdHpWZDlYRlhWYUltZ0c2Zll0ajdqTWlXV3dOYzVuVUlBUkI2bThTNkt5dVZnQlNXeE1jVVVXVENGM1dqZlRhZERkT05rVmxqZ1NPem1ldmY0Y1ZHVnRGeC1pVnpYNmFEakdsLWExRTMxNXhuRlhHU0tMbHJSMm9QMlJnRzJqV1J1cVNMTEVtUTh2RzBBWDlkTUU5N1VMRldOUzVtZHBrOUdBb09Jc3VjbnIxSlllQlBMU3dqZHJBdTczeVBYQUxTeVdTQnlF?oc=5",
+   "type": "Press",
+   "source": "Oakville News",
+   "at": "2026-10-22T18:00:00.000Z"
+  },
+  {
+   "title": "Car vs. Transit in Oakville. Is transit working for us? A comparison of bus vs. car. #bronte #bvra",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBJZVNSWlhwSmtaSERvVElnVWdBSW9ObHlVcDhfM29IN21zR0J2bXpJU29ianpFaWlVS3N3d1JWWENfcHVqdTF4SDl2TFRib3ZYMUVfQw?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-22T17:52:28.000Z"
+  },
+  {
+   "title": "Doubling down: Oakville's mayoral candidates attend two separate debates in one day",
+   "url": "https://www.oakvillenews.org/2026-municipal-election-news/doubling-down-oakvilles-mayoral-candidates-attend-two-separate-debates-in-one-day-12909194",
+   "type": "Press",
+   "source": "Oakville News",
+   "at": "2026-10-22T16:00:00.000Z"
+  },
+  {
+   "title": "London Living with Rizwan Rashid, Guest: Susan Stevenson, Mayor Candidate London, Ontario",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBpYXh0Z0s1V1Jjc2Y5c09jNUowRzlRWUJ5OHhfcW14akE0UnZMbXJlbndJWkpxeUJpLXEzUDdpMXpwTEktbnlFSjZ5SmZ3RXUxWUNrV3hB?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-22T13:42:19.000Z"
+  },
+  {
+   "title": "Braaksma aims to build stronger future through RM of Portage council",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSDh5eVRCUnNOcU05SVNwRnY4N19DLVpfQlRxVzNjRldaZ2dzSVlyWGVrRHZZbGc1WVRtQmNqcTdXOGJTLU4ta0VXcHhZYTliOGY2dXk4cmhJVlZGaFBQc1lqd0NyN09pYzdLX1p6SXJJY2c3S1RlTUh2OGtFeFdnNzdRbDNZa1QtNDZJZW12end5MzcyeWUwaVVTejk3WDNZTU5rVUhXZi12cG8?oc=5",
+   "type": "Press",
+   "source": "PortageOnline",
+   "at": "2026-10-22T09:05:50.000Z"
+  },
+  {
+   "title": "Oakville's Mayoral Election Preview",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9vT3VOMWI2b0x5a2Ffc2ZLVDdKMW52d3F3NktYS2FKeTVFRnZiZFZfTjNyYVNoZDN6YmI1S2NfYjBBWDFHNjZ3WndnVDUxUWE4dC03SktR?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-21T21:59:26.000Z"
+  },
+  {
+   "title": "Call for Volunteers",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1PcnBjbS16X24ybDh1aVE3d0VDblFOY2VqcXhWTUZyNlRod0lqbExmQjNuSHFmVHhaOTFGclNGcWxOZERvTTFjTFZDaVA0VVZlN1BlSUR3?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-21T19:22:45.000Z"
+  },
+  {
+   "title": "Planning a Clinic or MedSpa Refresh? Watch this first!",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE16NldKUUxiNmtYTmZXR3JFWGZUeVdZeG8ta2VpQ2VWcThkZVVHV2NMaWNYUU1ZMnZaejVyOEl3NnkyNGxWaEs0NEJySm1SN29LQjZxZUJR?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-21T19:05:20.000Z"
+  },
+  {
+   "title": "Halton Region News",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5rWXJkc3pIbkVPTC1mbVpFdG1zWVZ6NkVva0JWcDVldzJHUHB2Y0NGUDh2bzlnMXlabHNVdTRXZU42UFhhX2RpeTdwMGFRRUlMYXVNc2xtZk16TEg5SWhmem5wOGIwcENjbXhFSG5xZEpXd2lhck8xRURETXI?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-21T11:15:55.000Z"
+  },
+  {
+   "title": "U16 Boys | North Mississauga SC vs Vaughan | OPDL Gary Miller Charity Shield 2026",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE54a1BHdi1MaXliQWRFRnpNeFVsYWwyRVdoX3lSSmlNLTg3aE1YQmZWMEVWWU9CSzJSQy1uMzRndXlZNGFTcWtHWGZSaWptTUpyQ0tIT0hEOENRWE45NGRBY3NFN2JDRThBd21qeg?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-21T02:19:34.000Z"
+  },
+  {
+   "title": "Regional Town Councillor Candidates top 3 issues for region",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBwRGNjS1dmMkotOWtSUmVDQ1Vrb2c0eXB1bEJGeHhNNDBlaXFiRUFRVDVoaXZGMHlSREE4VFpfSXVfeWYyX2JqbEhqQkVpZ2NQaEtsMk5B?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-20T23:39:51.000Z"
+  },
+  {
+   "title": "Halton Hills Mayoral Election Preview",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9Zd21oVHVHVTJ6VGpJY0t2VnBMZTF0TjdzSnVrd0dNZHNsTWdtb3FnYUlBTkxzYkNWSUtWalBhVWU5NEk0NFllNDBzcTBEdVdKckRkcXNB?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-20T22:07:55.000Z"
+  },
+  {
+   "title": "LIVE | Toronto & GTA municipal election results 2026",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9qdlJYYnFwNzl6ZkVxbnBTRW05MzFLNm9YOG9SVmM1UTktRTdNbE9CWXBPc3ZxTFpELVdwZzZES09GSS1KN2xVMVFBUFRsSmxzMHZkTDlB?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-20T21:14:12.000Z"
+  },
+  {
+   "title": "yourVOTE Burlington Mayoral Debate 2026",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBOclRQeXJCRVJXTENwclpITkdDWDg4a0ZhVGxUQ3NNX1QycDVlMkZndHhIM3RELUpZTWpubmVrYjNGQTMxYm9McExDdTlLaUNiT2pHTTNB?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-20T15:45:55.000Z"
+  },
+  {
+   "title": "yourVote 2026",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1rZXhCQUN6WWxpaTFzLUV5RWs3WE9xWm80RzZoRmh3R2djeVE5VWpMMUxycE5SQ210Z2VZN2lfaWw2OVh1UzdOUGUxNTB2QWdsWEhFYkNR?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-20T15:25:27.000Z"
+  },
+  {
+   "title": "Can You Trust What You See Online Before You Vote? | The Rundown",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1iT0I2bU5Ed0NmYnJScC12bWMzSzRMaVNRNGlYVXB4NFdNODBuY2ZHY2N4Xzc3ZjRPQ0tLdzVISmtaZk5VMGd0dmlVTGdEWThiOEs1Mktn?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-20T00:00:17.000Z"
+  },
+  {
+   "title": "Burlington's Mayoral Election Preview",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE01Zk10dTlBQkN2LWpFTUlrV3d5cHR0VzZiREtSSGdvRmZZNXhMeHdoNjhNSTBSMDFaQjlvaEFQcXRQZFlwU0VoQjZCeFhUSmlMNzRUczJR?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-19T21:49:48.000Z"
+  },
+  {
+   "title": "Detroit Is Leaving Canada. Toyota Just Did the Exact Opposite",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBTMERIM240alpuOEQ2NDlsSWZ0ZVhfaXdWbXB4ZnV1QmVLOVkwQkpreGM4QkpUX1ZSbmpRa1Q2LUEwbi1LTFRTLTctQWZzd3VHLVdTRTdR?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-19T19:00:39.000Z"
+  },
+  {
+   "title": "Final Open House on Friday, October 23rd!",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5iOW01STZvZ1ZuTzFSY3NkUHFJM3lNVllTUl81Nk1EN0g0NllHQUtEMFRaRExyNFVhUzA5dERCVEhxdVgyd3liNGp1cFhXN1NlRkZjeDF3?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-19T16:19:32.000Z"
+  },
+  {
+   "title": "Fall Brawl 2026 - Hunterdon Central 1 v. Notre Dame",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5PT0FRaUNTelFKMWZWZm5rVDZtZl9XMXcwU0RNVWhZZWtZSWM0SmVpS0NINE90ZThXRzVSc0M3THpDWVJZSVBmU3JjX0pMdWdPZTg0WUR3?oc=5",
+   "type": "YouTube",
+   "source": "YouTube",
+   "at": "2026-10-19T13:51:28.000Z"
+  },
+  {
+   "title": "OAKVILLE ELECTION 2026: Meet your Ward 7 Town Councillor candidates",
+   "url": "https://www.oakvillenews.org/2026-municipal-election-news/oakville-election-2026-meet-your-ward-7-town-councillor-candidates-12888660",
+   "type": "Press",
+   "source": "Oakville News",
+   "at": "2026-10-15T16:00:00.000Z"
+  }
+ ]
+}
