@@ -46,7 +46,23 @@ export function parseFeed(xml) {
 }
 
 const ELECTION = /(elect|vote|voting|voter|ballot|poll|mayor|council|ward|candidate|trustee|acclaim|recount|turnout|campaign)/i;
+const STRICT = /(elect|vote|voting|voter|ballot|candidate|trustee|acclaim|recount|turnout|\bpolls?\b|debate|councillor|mayoral|ward\s*\d)/i;
 const OAKVILLE = /(oakville|halton)/i;
+const LOCAL_SOURCES = /^(Oakville News|Town of Oakville|Reddit r\/oakville|Team)$/i;
+let CANDIDATE_RE = null; // built from data/races.json
+
+// Final relevance test applied to every item, old and new
+export function relevant(i) {
+  const t = i.title || "";
+  if (CANDIDATE_RE && CANDIDATE_RE.test(t)) return true;
+  if (/reddit\.com\/r\/oakville/i.test(i.url)) i.source = "Reddit r/oakville";
+  const core = /(elect|vote|voting|voter|ballot|candidate|trustee|acclaim|recount|turnout|\bpolls?\b|debate)/i;
+  if (/^(Town of Oakville|Reddit r\/oakville|Team)$/i.test(i.source || "")) return core.test(t);
+  if (/oakville/i.test(t)) return STRICT.test(t);
+  // Oakville News also carries national wire stories; keep only local race items
+  if (/^Oakville News$/i.test(i.source || "")) return /ward\s*\d|mayoral candidate/i.test(t) && core.test(t);
+  return false;
+}
 
 const q = s => encodeURIComponent(s);
 const gnews = (s, when = "2d") => `https://news.google.com/rss/search?q=${q(s + " when:" + when)}&hl=en-CA&gl=CA&ceid=CA:en`;
@@ -94,11 +110,14 @@ async function ytChannelFeed(handle) {
 
 async function collectNews() {
   const prev = await readJson("data/news.json", { items: [] });
+  const cfg = await readJson("data/races.json", { races: [], acclaimed: [] });
+  const names = [...cfg.races.flatMap(r => r.c.map(n => n.replace(/\s*\(.*?\)\s*/g, " ").trim())), ...(cfg.acclaimed || []).map(a => a.split(": ").pop())];
+  CANDIDATE_RE = new RegExp("\\b(" + names.map(n => n.replace(/[.*+?^${}()|[\]\\']/g, "\\$&").replace(/\s+/g, "\\s+")).join("|") + ")\\b", "i");
   const found = [];
   const tasks = FEEDS.map(async f => {
     try {
       const items = parseFeed(await get(f.url)).filter(i => keep(i, f.filter));
-      for (const i of items) found.push({ title: cleanTitle(i.title, i.source), url: i.url, type: typeFor(i, f.type), source: i.source || f.src || "", at: toIso(i.at) });
+      for (const i of items) found.push({ title: cleanTitle(i.title, i.source), url: i.url, type: typeFor(i, f.type), source: f.src || i.source || "", at: toIso(i.at) });
       log("feed ok", items.length, f.src || f.url.slice(0, 80));
     } catch (e) { log("feed skip", e.message.slice(0, 120)); }
   });
@@ -114,7 +133,7 @@ async function collectNews() {
       const html = await get(u);
       for (const m of html.matchAll(/<a[^>]+href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi)) {
         const title = htmlToText(m[2]).trim();
-        if (title.length < 20 || !ELECTION.test(title)) continue;
+        if (title.length < 20 || !STRICT.test(title)) continue;
         found.push({ title, url: new URL(decode(m[1]), u).href, type: "Official", source: "Town of Oakville", at: NOW });
       }
     } catch (e) { log("official skip", e.message.slice(0, 120)); }
@@ -126,7 +145,7 @@ async function collectNews() {
   // existing items first so their original timestamps are kept
   for (const i of [...(prev.items || []), ...found]) {
     const t = norm(i.title);
-    if (!t || seenU.has(i.url) || seenT.has(t)) continue;
+    if (!t || seenU.has(i.url) || seenT.has(t) || !relevant(i)) continue;
     seenU.add(i.url); seenT.add(t); merged.push(i);
   }
   const cutoff = Date.now() - 45 * 864e5;
@@ -156,8 +175,14 @@ export function extractRace(text, race) {
       let idx = lower.indexOf(v.toLowerCase());
       while (idx !== -1 && val === null) {
         const after = text.slice(idx + v.length, idx + v.length + 140);
-        const m = after.match(NUM);
-        if (m) val = parseInt(m[1].replace(/,/g, ""), 10);
+        // skip numbers that are labels (Ward 7, Poll 704, 2026), not vote counts
+        const re = new RegExp(NUM.source, "g"); let m;
+        while ((m = re.exec(after))) {
+          const before = after.slice(Math.max(0, m.index - 12), m.index);
+          if (/(ward|wards|poll|polls|district|area|seat|no\.|#|&)\s*$/i.test(before)) continue;
+          if (/^20\d\d$/.test(m[1])) continue;
+          val = parseInt(m[1].replace(/,/g, ""), 10); break;
+        }
         idx = lower.indexOf(v.toLowerCase(), idx + 1);
       }
       if (val !== null) break;
@@ -165,8 +190,10 @@ export function extractRace(text, race) {
     totals[c] = val ?? 0;
     if (val !== null) hits++;
   }
-  const sum = Object.values(totals).reduce((a, b) => a + b, 0);
-  return hits >= Math.ceil(race.c.length / 2) && sum > 0 ? totals : null;
+  const vals = Object.values(totals), sum = vals.reduce((a, b) => a + b, 0);
+  // identical numbers for every candidate means we read a label, not votes
+  if (new Set(vals).size === 1 && race.c.length > 1) return null;
+  return hits >= Math.ceil(race.c.length / 2) && sum >= 10 ? totals : null;
 }
 
 async function resultPages() {
@@ -194,7 +221,10 @@ async function collectResults() {
   const prev = await readJson("data/results.json", { races: {} });
   const manual = await readJson("data/manual.json", {});
   const out = { generatedAt: NOW, pollsText: "", sources: [], races: {} };
-  const pages = await resultPages();
+  // no counts exist before polls close (8 p.m. Toronto); skip reading pages until then
+  const pollsClosed = Date.now() >= Date.parse("2026-10-26T20:00:00-04:00") || process.env.FORCE_RESULTS === "1";
+  const pages = pollsClosed ? await resultPages() : [];
+  if (!pollsClosed) log("results: polls still open, skipping");
   for (const p of pages) {
     const text = htmlToText(p.html);
     const polls = text.match(/(\d+)\s*(?:of|\/)\s*(\d+)\s*(?:polls|voting locations|precincts)/i);
@@ -208,7 +238,7 @@ async function collectResults() {
     if (used) out.sources.push(p.url);
   }
   // keep last known numbers for races the pages did not return this run
-  for (const [id, r] of Object.entries(prev.races || {})) if (!out.races[id] && r.source !== "Team entry") out.races[id] = { ...r, stale: true };
+  if (pollsClosed) for (const [id, r] of Object.entries(prev.races || {})) if (!out.races[id] && r.source !== "Team entry") out.races[id] = { ...r, stale: true };
   // manual overrides win
   for (const [id, r] of Object.entries(manual)) {
     if (id.startsWith("_") || !r?.totals) continue;
