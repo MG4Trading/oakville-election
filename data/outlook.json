@@ -1,0 +1,65 @@
+{
+ "updated": "2026-10-26T13:20:00.000Z",
+ "turnout": {
+  "advance2026": 14787,
+  "advancePct2026": 8.35,
+  "electors2026": 177000,
+  "advance2022": 10812,
+  "total2022": 41021,
+  "sourceAdvance2026": "https://www.oakville.ca/town-hall/news-notices/2026-news-releases-archive/close-to-15-000-ballots-cast-during-advance-voting-for-2026-municipal-election/",
+  "source2022": "https://cmstest.oakville.ca/town-hall/elections/past-elections/2022-municipal-election/2022-municipal-election-ballots-cast-per-location/"
+ },
+ "calculator": { "label": "Ward 7 Town & Regional", "electors": 19700, "candidates": 5 },
+ "races": [
+  {
+   "id": "w7-reg",
+   "title": "Ward 7 Town & Regional",
+   "baseline2022": [["Nav Nanda", 1984, 57.71], ["Pavan Parmar", 1454, 42.29]],
+   "facts": [
+    "Nav Nanda is the incumbent. He won in 2022 with 57.7% in a two-candidate race.",
+    "About 3,440 votes were cast in this race in 2022. A five-way field this year means the winning share is likely well under 50%.",
+    "Ajay Rosha ran for Ward 7 Town Councillor in 2022 and placed third with 482 votes (13.7%).",
+    "Ward 7 covers fast-growing North Oakville, so a large share of voters may be casting their first Oakville municipal ballot."
+   ]
+  },
+  {
+   "id": "mayor",
+   "title": "Mayor",
+   "baseline2022": [["Rob Burton", 19949, 49.24], ["Julia Hanna", 19063, 47.06], ["Jack Kukolic", 1498, 3.7]],
+   "facts": [
+    "2022 was effectively a two-way race. Rob Burton won by 886 votes over Julia Hanna.",
+    "Rob Burton (mayor since 2006) filed late, making it a five-way race.",
+    "Two sitting councillors are running: Jeff Knoll (Ward 5 since 2000) and Sean O'Meara (Ward 1 since 2014).",
+    "Julia Hanna is running again after finishing a close second in 2022. Arvind Choudhary is a first-time mayoral candidate.",
+    "No public opinion poll for this race was found. With five candidates, vote splitting will decide the outcome."
+   ]
+  },
+  {
+   "id": "w7-town",
+   "title": "Ward 7 Town Councillor",
+   "baseline2022": [["Scott Xie", 820, 23.25], ["Amir Henry", 687, 19.48], ["Ajay Rosha", 482, 13.67]],
+   "facts": [
+    "Scott Xie is the incumbent. He won in 2022 with 23.3% in a nine-way race, a 133-vote margin.",
+    "This year it is a three-way race: Ali Hosny, Zulfi Malik and Scott Xie.",
+    "Amir Henry, the 2022 runner-up, is running in Ward 1 this time."
+   ]
+  },
+  {
+   "id": "hdsb-57",
+   "title": "HDSB Trustee, Wards 5 & 7",
+   "baseline2022": [["Kelly Amos", 4290, 64.26], ["Gemma Ahn", 2386, 35.74]],
+   "facts": [
+    "The 2022 winner is not on the 2026 ballot, so this is an open seat with six candidates."
+   ]
+  }
+ ],
+ "reading": [
+  {"t": "Oakville News: interviews with all Oakville candidates", "u": "https://www.oakvillenews.org/2026-municipal-election-news/election-recap-how-to-read-interviews-with-all-the-oakville-candidates-12929200", "type": "Press"},
+  {"t": "Oakville News: mayoral candidates at two debates in one day", "u": "https://www.oakvillenews.org/2026-municipal-election-news/doubling-down-oakvilles-mayoral-candidates-attend-two-separate-debates-in-one-day-12909194", "type": "Press"},
+  {"t": "Oakville News: Ward 1 mayoral debate on growth and transparency", "u": "https://www.oakvillenews.org/local-news/bronte-projects-growth-and-transparency-dominate-ward-1-mayoral-debate-12906591", "type": "Press"},
+  {"t": "insauga: five-way race for mayor", "u": "https://www.insauga.com/big-political-shakeup-in-oakville-includes-five-way-race-for-mayor/", "type": "Press"},
+  {"t": "Reddit r/oakville: residents' predictions thread", "u": "https://www.reddit.com/r/oakville/comments/1xflm7b/give_me_your_predictions_for_the_election/", "type": "Social"},
+  {"t": "Reddit r/oakville: candidate transportation survey scores", "u": "https://www.reddit.com/r/oakville/comments/1xehtub/candidate_transportation_survey_responses_scores/", "type": "Social"},
+  {"t": "Town of Oakville: full 2022 results with percentages", "u": "https://www.oakville.ca/town-hall/elections/past-elections/2022-municipal-election/2022-municipal-election-results-summary-with-percentages/", "type": "Official"}
+ ]
+}

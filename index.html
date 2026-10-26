@@ -88,6 +88,18 @@ a{color:var(--blue)}
 .btn{background:var(--blue);color:#fff;border:0;border-radius:10px;padding:13px 16px;font:700 15px var(--display);cursor:pointer;width:100%}
 .btn.ghost{background:transparent;color:var(--blue);border:1px solid var(--blue)}
 .hidden{display:none!important}
+.race.static{cursor:default}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px;display:flex;flex-direction:column;gap:4px}
+.stat b{font-weight:800;font-stretch:112%;font-size:22px;color:var(--blue);font-variant-numeric:tabular-nums}
+.stat span{font-size:12.5px;color:var(--muted)}
+.facts{margin:0;padding-left:18px;font-size:13.5px;display:flex;flex-direction:column;gap:4px}
+.calc{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600}
+.calc input[type=number]{font:16px var(--mono);padding:9px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
+.calc input[type=range]{width:100%;accent-color:var(--orange)}
+.kv{display:flex;justify-content:space-between;gap:10px;font-size:14px;padding:4px 0;border-bottom:1px solid var(--line)}
+.kv b{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.kv.big b{color:var(--blue);font-size:17px}
 </style>
 </head>
 <body>
@@ -101,6 +113,7 @@ a{color:var(--blue)}
       <div class="clock"><div id="clock">--:--</div><div id="countdown"></div><button class="refresh" id="refresh">Refresh</button></div>
     </div>
     <nav role="tablist">
+      <button role="tab" data-tab="outlook" aria-selected="false">Outlook</button>
       <button role="tab" data-tab="watch" aria-selected="true">Watch</button>
       <button role="tab" data-tab="races" aria-selected="false">All races</button>
       <button role="tab" data-tab="news" aria-selected="false">News</button>
@@ -127,8 +140,10 @@ const SOURCES=[
   {t:"Social",n:"Reddit r/oakville",u:"https://www.reddit.com/r/oakville/new/"},
   {t:"Social",n:"Facebook: Oakville election posts",u:"https://www.facebook.com/search/posts?q=Oakville%20election"},
 ];
-let CFG={races:[],acclaimed:[],ours:""}, RES={races:{}}, NEWS={items:[]};
-let BY={}, tab=location.hash.slice(1)||"watch", newsFilter="All";
+let CFG={races:[],acclaimed:[],ours:""}, RES={races:{}}, NEWS={items:[]}, OUT=null;
+const CLOSE=new Date("2026-10-26T20:00:00-04:00");
+let BY={}, tab=location.hash.slice(1)||(Date.now()<CLOSE?"outlook":"watch"), newsFilter="All";
+let calcTurnout=25, calcElectors=null;
 const DEFAULT_WATCH=["w7-reg","w7-town","mayor","hdsb-57"];
 const store={get(k,d){try{const v=JSON.parse(localStorage.getItem("oen-"+k));return v??d}catch(e){return d}},set(k,v){try{localStorage.setItem("oen-"+k,JSON.stringify(v))}catch(e){}}};
 let watch=store.get("watch",DEFAULT_WATCH);
@@ -141,8 +156,8 @@ async function getJSON(p){const r=await fetch(p+"?t="+Date.now(),{cache:"no-stor
 async function loadAll(){
   $("#updated").textContent="Updating";
   try{
-    const [c,r,n]=await Promise.all([getJSON("data/races.json"),getJSON("data/results.json").catch(()=>({races:{}})),getJSON("data/news.json").catch(()=>({items:[]}))]);
-    CFG=c;RES=r;NEWS=n;BY=Object.fromEntries(CFG.races.map(x=>[x.id,x]));
+    const [c,r,n,o]=await Promise.all([getJSON("data/races.json"),getJSON("data/results.json").catch(()=>({races:{}})),getJSON("data/news.json").catch(()=>({items:[]})),getJSON("data/outlook.json").catch(()=>null)]);
+    CFG=c;RES=r;NEWS=n;OUT=o;BY=Object.fromEntries(CFG.races.map(x=>[x.id,x]));
     const last=[r.generatedAt,n.generatedAt].filter(Boolean).sort().pop();
     $("#updated").textContent=last?"Updated "+ago(last):"Waiting for first update";
     $("#dot").classList.toggle("live",!!last&&Date.now()-new Date(last)<75*60000);
@@ -190,6 +205,12 @@ function render(){
   document.querySelectorAll("nav button").forEach(b=>b.setAttribute("aria-selected",b.dataset.tab===tab));
   const v=$("#view");
   if(!CFG.races.length){v.innerHTML=`<div class="empty">Loading races…</div>`;return}
+  if(tab==="outlook"){
+    v.innerHTML=outlook();
+    const t=$("#c-turn"),e=$("#c-elec");
+    if(t){t.oninput=()=>{calcTurnout=+t.value;$("#c-out").innerHTML=calcOut()};e.oninput=()=>{calcElectors=+e.value||0;$("#c-out").innerHTML=calcOut()}}
+    return;
+  }
   if(tab==="watch"){
     v.innerHTML=`<section class="sect"><h2>Alerts</h2><div class="alerts">${alerts()}</div></section>
     <section class="sect"><h2>Watch list</h2><div class="grid">${watch.map(card).join("")}</div><p class="note">Tap any race for detail or to pin it here.</p></section>`;
@@ -206,6 +227,45 @@ function render(){
     v.innerHTML=`<section class="sect"><h2>Go to the source</h2><div class="list">${SOURCES.map(s=>`<div class="item"><a href="${s.u}" target="_blank" rel="noopener">${esc(s.n)}</a><span class="chip">${s.t}</span></div>`).join("")}</div>
     <p class="note">X, Instagram and Facebook do not allow automatic reading, so they open as live searches.</p></section>`;
   }
+}
+/* ---- Outlook (before results) ---- */
+function calcOut(){
+  const c=OUT.calculator, el=calcElectors??c.electors, cast=Math.round(el*calcTurnout/100);
+  const rows=[30,35,40].map(p=>`<div class="kv"><span>Winning with ${p}% of the vote</span><b>${fmt(Math.round(cast*p/100))} votes</b></div>`).join("");
+  return `<div class="kv big"><span>Expected votes cast</span><b>${fmt(cast)}</b></div>${rows}`;
+}
+function outlook(){
+  if(!OUT)return`<div class="empty">Outlook data is loading.</div>`;
+  const T=OUT.turnout, share22=T.advance2022/T.total2022, growth=(T.advance2026/T.advance2022-1)*100;
+  const hi=Math.round(T.advance2026/share22), lo=Math.round(T.advance2026/0.32);
+  const pct=n=>(n/T.electors2026*100).toFixed(0);
+  const O=CFG.ours;
+  const raceBlock=r=>{
+    const top=Math.max(...r.baseline2022.map(x=>x[1]));
+    return `<div class="race static"><div class="rhead"><span class="rname">${esc(r.title)}</span><span class="chip">2022 result</span></div>
+    ${r.baseline2022.map(([n,v,p])=>`<div class="row"><span class="nm ${n===O?"ours":""}">${esc(n)}</span><span class="v">${fmt(v)} · ${p.toFixed(1)}%</span><div class="bar"><i style="width:${(v/top*100).toFixed(1)}%"></i></div></div>`).join("")}
+    <ul class="facts">${r.facts.map(f=>`<li>${esc(f)}</li>`).join("")}</ul></div>`;
+  };
+  return `<section class="sect"><h2>Turnout clues</h2>
+    <div class="stats">
+      <div class="stat"><b>${fmt(T.advance2026)}</b><span>advance ballots cast (${T.advancePct2026}% of electors)</span></div>
+      <div class="stat"><b>+${growth.toFixed(0)}%</b><span>vs ${fmt(T.advance2022)} advance ballots in 2022</span></div>
+      <div class="stat"><b>${fmt(lo)} to ${fmt(hi)}</b><span>projected total ballots (${pct(lo)}% to ${pct(hi)}% turnout)</span></div>
+    </div>
+    <p class="note">How the projection works: in 2022, advance votes were ${(share22*100).toFixed(0)}% of the ${fmt(T.total2022)} ballots cast. If that share holds, today's total is about ${fmt(hi)}. If more people voted early this year (32% share), the total is about ${fmt(lo)}. Advance ballots are counted only after polls close, so no candidate totals exist yet. Sources: <a href="${T.sourceAdvance2026}" target="_blank" rel="noopener">Town 2026 release</a>, <a href="${T.source2022}" target="_blank" rel="noopener">2022 ballots by location</a>.</p>
+  </section>
+  <section class="sect"><h2>Win number: ${esc(OUT.calculator.label)}</h2>
+    <div class="race static">
+      <label class="calc">Electors in the ward<input id="c-elec" type="number" inputmode="numeric" value="${calcElectors??OUT.calculator.electors}"></label>
+      <label class="calc">Turnout: <b>${calcTurnout}%</b><input id="c-turn" type="range" min="12" max="45" value="${calcTurnout}"></label>
+      <div id="c-out">${calcOut()}</div>
+      <p class="note">With ${OUT.calculator.candidates} candidates, winners usually land between 30% and 40% of votes cast. Drag turnout to see how the target moves. This is a rough guide, not a poll.</p>
+    </div></section>
+  <section class="sect"><h2>Race by race</h2><div class="grid">${OUT.races.map(raceBlock).join("")}</div></section>
+  <section class="sect"><h2>Polls and expert views</h2>
+    <div class="alert"><b>No public poll found for any Oakville race</b><small>Local coverage has focused on candidate interviews and debates rather than predictions. These are the most useful reads before results.</small></div>
+    <div class="list">${OUT.reading.map(x=>`<div class="item"><a href="${esc(x.u)}" target="_blank" rel="noopener">${esc(x.t)}</a><span class="chip">${esc(x.type)}</span></div>`).join("")}</div>
+  </section>`;
 }
 function openRace(id){
   const race=BY[id],k=ranked(id),pinned=watch.includes(id);
