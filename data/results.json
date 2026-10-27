@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-27T02:56:31.316Z",
+ "generatedAt": "2026-10-27T03:51:56.618Z",
  "pollsText": "57 of 57 tabulators reporting",
  "sources": [
   "https://www.oakville.ca/2026results/data/arearesults.json"
@@ -36,7 +36,7 @@
    "final": true,
    "source": "Town of Oakville",
    "url": "https://www.oakville.ca/2026results/",
-   "updatedAt": "2026-10-27T02:56:31.316Z"
+   "updatedAt": "2026-10-27T03:51:56.618Z"
   },
   "w2-town": {
    "totals": {
@@ -51,7 +51,7 @@
    "final": true,
    "source": "Town of Oakville",
    "url": "https://www.oakville.ca/2026results/",
-   "updatedAt": "2026-10-27T02:56:31.316Z"
+   "updatedAt": "2026-10-27T03:51:56.618Z"
   },
   "w3-town": {
    "totals": {
@@ -65,7 +65,7 @@
    "final": true,
    "source": "Town of Oakville",
    "url": "https://www.oakville.ca/2026results/",
-   "updatedAt": "2026-10-27T02:56:31.316Z"
+   "updatedAt": "2026-10-27T03:51:56.618Z"
   },
   "w4-town": {
    "totals": {
@@ -80,7 +80,7 @@
    "final": true,
    "source": "Town of Oakville",
    "url": "https://www.oakville.ca/2026results/",
-   "updatedAt": "2026-10-27T02:56:31.316Z"
+   "updatedAt": "2026-10-27T03:51:56.618Z"
   },
   "w5-town": {
    "totals": {
@@ -98,7 +98,7 @@
    "final": true,
    "source": "Town of Oakville",
    "url": "https://www.oakville.ca/2026results/",
-   "updatedAt": "2026-10-27T02:56:31.316Z"
+   "updatedAt": "2026-10-27T03:51:56.618Z"
   },
   "w6-town": {
    "totals": {
@@ -113,7 +113,7 @@
    "final": true,
    "source": "Town of Oakville",
    "url": "https://www.oakville.ca/2026results/",
-   "updatedAt": "2026-10-27T02:56:31.316Z"
+   "updatedAt": "2026-10-27T03:51:56.618Z"
   },
   "w7-town": {
    "totals": {
@@ -128,7 +128,7 @@
    "final": true,
    "source": "Town of Oakville",
    "url": "https://www.oakville.ca/2026results/",
-   "updatedAt": "2026-10-27T02:56:31.316Z"
+   "updatedAt": "2026-10-27T03:51:56.618Z"
   },
   "w2-reg": {
    "totals": {
@@ -144,7 +144,7 @@
    "final": true,
    "source": "Town of Oakville",
    "url": "https://www.oakville.ca/2026results/",
-   "updatedAt": "2026-10-27T02:56:31.316Z"
+   "updatedAt": "2026-10-27T03:51:56.618Z"
   },
   "w4-reg": {
    "totals": {
@@ -162,7 +162,7 @@
    "final": true,
    "source": "Town of Oakville",
    "url": "https://www.oakville.ca/2026results/",
-   "updatedAt": "2026-10-27T02:56:31.316Z"
+   "updatedAt": "2026-10-27T03:51:56.618Z"
   },
   "w5-reg": {
    "totals": {
@@ -177,7 +177,7 @@
    "final": true,
    "source": "Town of Oakville",
    "url": "https://www.oakville.ca/2026results/",
-   "updatedAt": "2026-10-27T02:56:31.316Z"
+   "updatedAt": "2026-10-27T03:51:56.618Z"
   },
   "w7-reg": {
    "totals": {
@@ -194,7 +194,7 @@
    "final": true,
    "source": "Town of Oakville",
    "url": "https://www.oakville.ca/2026results/",
-   "updatedAt": "2026-10-27T02:56:31.316Z"
+   "updatedAt": "2026-10-27T03:51:56.618Z"
   },
   "hdsb-12": {
    "totals": {
@@ -209,7 +209,7 @@
    "final": true,
    "source": "Town of Oakville",
    "url": "https://www.oakville.ca/2026results/",
-   "updatedAt": "2026-10-27T02:56:31.316Z"
+   "updatedAt": "2026-10-27T03:51:56.618Z"
   },
   "hdsb-36": {
    "totals": {
@@ -224,7 +224,7 @@
    "final": true,
    "source": "Town of Oakville",
    "url": "https://www.oakville.ca/2026results/",
-   "updatedAt": "2026-10-27T02:56:31.316Z"
+   "updatedAt": "2026-10-27T03:51:56.618Z"
   },
   "hdsb-4": {
    "totals": {
@@ -240,7 +240,7 @@
    "final": true,
    "source": "Town of Oakville",
    "url": "https://www.oakville.ca/2026results/",
-   "updatedAt": "2026-10-27T02:56:31.316Z"
+   "updatedAt": "2026-10-27T03:51:56.618Z"
   },
   "hdsb-57": {
    "totals": {
@@ -258,7 +258,7 @@
    "final": true,
    "source": "Town of Oakville",
    "url": "https://www.oakville.ca/2026results/",
-   "updatedAt": "2026-10-27T02:56:31.316Z"
+   "updatedAt": "2026-10-27T03:51:56.618Z"
   },
   "hcdsb-123": {
    "totals": {
@@ -273,7 +273,7 @@
    "final": true,
    "source": "Town of Oakville",
    "url": "https://www.oakville.ca/2026results/",
-   "updatedAt": "2026-10-27T02:56:31.316Z"
+   "updatedAt": "2026-10-27T03:51:56.618Z"
   },
   "hcdsb-56": {
    "totals": {
@@ -287,7 +287,7 @@
    "final": true,
    "source": "Town of Oakville",
    "url": "https://www.oakville.ca/2026results/",
-   "updatedAt": "2026-10-27T02:56:31.316Z"
+   "updatedAt": "2026-10-27T03:51:56.618Z"
   },
   "mayor": {
    "totals": {
@@ -304,7 +304,7 @@
    "final": true,
    "source": "Town of Oakville",
    "url": "https://www.oakville.ca/2026results/",
-   "updatedAt": "2026-10-27T02:56:31.316Z"
+   "updatedAt": "2026-10-27T03:51:56.618Z"
   }
  }
 }
