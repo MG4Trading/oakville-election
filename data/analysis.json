@@ -1,7 +1,105 @@
 {
- "updated": "2026-10-27T03:00:00.000Z",
- "status": "Unofficial results with all 57 tabulators reported. The Town Clerk declares the official results.",
- "sections": [
+ "updated": "2026-10-27T10:45:00.000Z",
+ "status": "Unofficial results from the Town of Oakville, all 57 tabulators reported. The Town Clerk declares the official results.",
+ "ward7": [
+  {
+   "id": "w7-participation",
+   "title": "Who voted in Ward 7",
+   "headline": "Ward 7 cast the fewest ballots in Oakville and turned out below the town rate",
+   "cards": [
+    {"v": "5,846", "l": "ballots cast, lowest of the 7 wards (average 8,663)"},
+    {"v": "~29.6%", "l": "estimated turnout vs 34.3% town-wide"},
+    {"v": "11.1% / 9.6%", "l": "Ward 7's share of Oakville electors vs share of ballots"},
+    {"v": "+58% to +61%", "l": "growth in votes cast in Ward 7 races since 2022"}
+   ],
+   "points": [
+    "Ward 7 has about 11.1% of Oakville's electors (19,718 on the September voters' list) but cast only 9.6% of the ballots. The turnout figure is an estimate, because the Town does not publish electors by ward and the list changes up to election day.",
+    "Votes in Ward 7 races grew 58% to 61% since 2022, faster than ballots town-wide (+48%). As North Oakville fills in, Ward 7 is catching up, but its turnout rate still trails the town.",
+    "If Ward 7 had voted at the town rate, about 910 more ballots would have been cast, more than twice the 376-vote margin in the Town & Regional race.",
+    "5.0% of Ward 7 ballots skipped the Town Councillor race and 5.1% skipped Town & Regional, close to the council average. Ward 7 voters who came out did vote down the ballot."
+   ]
+  },
+  {
+   "id": "w7-reg",
+   "title": "Ward 7 Town & Regional",
+   "race": "w7-reg",
+   "headline": "Nav Nanda re-elected with 40.5%. Bilal Kader second, 376 votes behind",
+   "cards": [
+    {"v": "59.5%", "l": "voted for a challenger (42.3% in 2022's two-way race)"},
+    {"v": "376", "l": "vote margin (6.8 points), third-closest race in Oakville"},
+    {"v": "3.3", "l": "effective candidates: in practice a three-way race"},
+    {"v": "+415", "l": "Bilal Kader's votes vs the 2022 runner-up (1,869 vs 1,454)"}
+   ],
+   "points": [
+    "A majority voted against the incumbent. The challengers' share rose from 42.3% in 2022 to 59.5%, but it split four ways, and the incumbent held the seat with a plurality.",
+    "Nanda's base held and grew slightly: +261 votes (+13%). Votes in the race grew 61%, so almost all the new votes went to challengers.",
+    "Nanda's 40.5% is the lowest share of the five councillors re-elected. It is also below the 44.9% average winning share in Oakville's open council seats.",
+    "Bilal Kader's 33.7% is the highest share any challenger won against a sitting councillor in Oakville this year. His 1,869 votes beat the 2022 runner-up's total by 415 in a far more crowded field.",
+    "Vick Walia (833, 15.0%), Ajay Rosha (401, 7.2%) and Gaganpreet Darar (202, 3.6%) together took 1,436 votes, almost four times the margin.",
+    "The size of the gap: 189 voters switching from Nanda to Kader, or 377 more net votes for Kader, would have changed the result."
+   ]
+  },
+  {
+   "id": "w7-town",
+   "title": "Ward 7 Town Councillor",
+   "race": "w7-town",
+   "headline": "Scott Xie went from a 23% plurality to a 54.5% majority",
+   "cards": [
+    {"v": "+2,207", "l": "votes gained by Scott Xie since 2022 (820 to 3,027)"},
+    {"v": "1,382", "l": "vote margin over Zulfi Malik (24.9 points)"},
+    {"v": "2.4", "l": "effective candidates"}
+   ],
+   "points": [
+    "In 2022, Xie won a nine-way race with 23.3% and a 133-vote margin. This time the field shrank to three and he took a clear majority. Four years in office turned a narrow plurality into a safe seat.",
+    "Zulfi Malik placed second with 29.6% in his first run for this seat, and Ali Hosny third with 15.9%.",
+    "Several 2022 candidates for this seat ran elsewhere this year: Ajay Rosha for Ward 7 Town & Regional, Amir Henry for Ward 1 Town Councillor, and Kashif Chaudry for Ward 4 Town & Regional."
+   ]
+  },
+  {
+   "id": "w7-cross",
+   "title": "Reading the two Ward 7 races together",
+   "headline": "Same ballots, very different results for the two incumbents",
+   "cards": [
+    {"v": "782", "l": "more votes for Xie than for Nanda on the same 5,846 ballots"},
+    {"v": "54.5% vs 40.5%", "l": "incumbent share: Town Councillor vs Town & Regional"}
+   ],
+   "points": [
+    "Both races were on every Ward 7 ballot, so turnout cannot explain the gap between them. Voters treated the two incumbents differently.",
+    "There was no general mood against incumbents in Ward 7. Xie strengthened his hold while Nanda weakened, which points to weakness specific to the Regional seat.",
+    "The Town reports only totals, not how individual ballots combined the two races. Any read on which Xie voters chose which Regional candidate is an inference, not a measurement."
+   ]
+  },
+  {
+   "id": "w7-trustees",
+   "title": "School board races on Ward 7 ballots",
+   "race": "hdsb-57",
+   "headline": "Ward 7 shares the most fragmented race in Oakville: HDSB Trustee, Wards 5 & 7",
+   "cards": [
+    {"v": "27.5%", "l": "winning share for Kim Tait, lowest of any race in Oakville"},
+    {"v": "432", "l": "vote margin over Jake Zhu (4.0 points)"},
+    {"v": "4.6", "l": "effective candidates, the highest in Oakville"},
+    {"v": "10.6%", "l": "of ballots skipped this race"}
+   ],
+   "points": [
+    "An open seat with six candidates produced a four-way contest: Tait 27.5%, Zhu 23.6%, Lily Bharat 21.8% and Azra Ghumman 19.1%.",
+    "HCDSB Trustee for Wards 4 & 7 was acclaimed (Chris Saunders), so Catholic school supporters in Ward 7 had no trustee vote.",
+    "The Town does not split trustee results by ward, so Ward 7's own preference in this race cannot be separated from Ward 5's."
+   ]
+  },
+  {
+   "id": "w7-decided",
+   "title": "What decided Ward 7 Town & Regional",
+   "headline": "A divided opposition, a ward that under-voted and an incumbent base that held",
+   "points": [
+    "Split opposition: 59.5% voted for a challenger, but four challengers shared it. In 2022's two-way race, the single challenger took 42.3%.",
+    "Turnout: Ward 7 cast the fewest ballots in Oakville. About 910 ballots went uncast compared with the town rate, more than twice the margin.",
+    "Incumbent floor: Nanda's 2,245 votes were 261 more than in 2022. His base turned out even as his share fell.",
+    "Challenger strength: Bilal Kader's 33.7% was the best challenger result against any sitting councillor in Oakville this year, which makes Ward 7 Town & Regional one of the most competitive seats going into 2030.",
+    "What to watch for 2030: the number of challengers, Ward 7 turnout as new neighbourhoods fill in, and whether the anti-incumbent vote consolidates behind one candidate."
+   ]
+  }
+ ],
+ "overview": [
   {
    "id": "turnout",
    "title": "Turnout",
@@ -13,72 +111,80 @@
     {"v": "+52%", "l": "election-day ballots: 45,851 vs 30,209 in 2022"}
    ],
    "points": [
-    "Two in three eligible electors did not vote. That is why winners can take office with a small share of residents: the new mayor's 21,866 votes equal 12.4% of eligible electors.",
-    "Advance voting grew 37%, yet its share of all ballots fell from 26.4% to 24.4%. Election-day voting grew even faster, which points to late deciders and a high-interest race at the top of the ballot.",
-    "Ward 7 cast the fewest ballots of any ward: 5,846, or 9.6% of the town total, against an average of 8,663 per ward. Ward 4 cast the most at 12,400. The Town does not publish electors by ward, so exact ward turnout cannot be calculated from its results.",
-    "Some voters skip races further down the ballot. 422 ballots (0.7%) had no vote for mayor, against 296 (5.1%) for Ward 7 Town and Regional and 290 (5.0%) for Ward 7 Town Councillor.",
-    "In Ward 7, the Town and Regional race drew 61% more votes than in 2022 (3,438 to 5,550), and the Town Councillor race 58% more (3,527 to 5,556)."
+    "Two in three eligible electors did not vote. The new mayor's 21,866 votes equal 12.4% of eligible electors.",
+    "Advance voting grew 37%, yet its share of all ballots fell from 26.4% to 24.4%. Election-day voting grew faster, a sign of late deciders drawn out by an open-feeling mayoral race.",
+    "Turnout beat this app's pre-election projection of 46,000 to 56,000 ballots. The election-day surge was the part the projection missed.",
+    "Ward 4 cast the most ballots (12,400) and Ward 7 the fewest (5,846). The Town does not publish electors by ward, so turnout by ward cannot be calculated exactly from its results."
    ]
   },
   {
    "id": "mayor",
    "title": "Mayor",
    "race": "mayor",
-   "headline": "Jeff Knoll elected mayor with 36.3%. Rob Burton, mayor since 2006, finishes third",
+   "headline": "Jeff Knoll elected with 36.3%. Rob Burton, mayor since 2006, finishes third",
    "cards": [
-    {"v": "21,866", "l": "votes for Jeff Knoll (36.3%)"},
     {"v": "8,299", "l": "vote margin over Sean O'Meara (13.8 points)"},
-    {"v": "-38.6%", "l": "Rob Burton's votes vs 2022 (19,949 to 12,254)"}
+    {"v": "79.6%", "l": "voted for someone other than the incumbent"},
+    {"v": "-7,695", "l": "Rob Burton's votes vs 2022 (19,949 to 12,254)"},
+    {"v": "3.9", "l": "effective candidates"}
    ],
    "points": [
-    "A clear change vote: 79.6% of voters chose someone other than the incumbent, while turnout rose almost 48%.",
-    "Knoll won a plurality, not a majority. 63.7% voted for another candidate, which is normal in a five-way race.",
-    "Vote splitting did not decide the winner. The anti-incumbent vote spread across Knoll, O'Meara and Hanna, but Knoll still finished 8,299 votes ahead of second place.",
-    "The two sitting councillors in the race finished first and second. Years of ward-level name recognition carried them town-wide.",
-    "Julia Hanna fell from 47.1% in the 2022 two-way race to 17.7%. A crowded field changes the math completely.",
-    "The Town publishes the mayoral result town-wide only, so there is no ward-by-ward mayor breakdown."
+    "A clear change vote: four in five voters chose someone other than the incumbent while turnout rose almost 48%.",
+    "Knoll won a plurality, not a majority (63.7% voted for another candidate). That is normal in a five-way race, and vote splitting did not decide the winner: Knoll finished 8,299 votes ahead of second place.",
+    "Both councillors who gave up their Town & Regional seats to run, Knoll (Ward 5) and O'Meara (Ward 1), finished first and second. Their ward-level profile carried them town-wide.",
+    "Julia Hanna fell from 47.1% in the 2022 two-way race to 17.7%. In a crowded field the 2022 result was not a guide.",
+    "The Town reports the mayoral result town-wide only, so there is no ward-by-ward breakdown."
    ]
   },
   {
-   "id": "w7-town",
-   "title": "Ward 7 Town Councillor",
-   "race": "w7-town",
-   "headline": "Scott Xie re-elected with a majority of 54.5%",
+   "id": "council",
+   "title": "Council",
+   "headline": "Every councillor who sought re-election to council won. Six of 15 council members are new",
    "cards": [
-    {"v": "3,027", "l": "votes for Scott Xie (54.5%)"},
-    {"v": "1,382", "l": "vote margin over Zulfi Malik (24.9 points)"},
-    {"v": "+269%", "l": "Xie's votes vs 2022 (820 to 3,027)"}
+    {"v": "5 of 5", "l": "councillors re-elected in contested races"},
+    {"v": "6 of 15", "l": "council members new to council"},
+    {"v": "62.7% vs 44.9%", "l": "average winning share: incumbent seats vs open seats"},
+    {"v": "3", "l": "seats acclaimed (Ward 1, 3 and 6 Town & Regional; no vote held)"}
    ],
    "points": [
-    "Xie went from 23.3% in a nine-way race in 2022 to a majority in a three-way race. Four years in office let him consolidate.",
-    "Zulfi Malik placed second with 29.6% and Ali Hosny third with 15.9%.",
-    "Both Ward 7 races were on the same 5,846 ballots. The gap between the two incumbents (Xie 54.5%, Nanda 40.5%) comes from the candidates, not from turnout."
+    "Voters replaced the mayor but kept every councillor who sought re-election in a contested race: Chisholm (Ward 2), Longo (Ward 4), Lishchyna (Ward 6), Xie and Nanda (Ward 7).",
+    "New to council: Alexandra Caldwell (Ward 1 Town), Morgan Elliott (Ward 3 Town), Audrey Wubbenhorst (Ward 5 Town), Stacey Saunders (Ward 2 Town & Regional), Roger Lapworth (Ward 4 Town & Regional) and Mackenzie Grant (Ward 5 Town & Regional).",
+    "Jeff Knoll moves from Ward 5 to the mayor's chair, and Jonathan McNeice from Ward 1 Town to Ward 1 Town & Regional (acclaimed).",
+    "Incumbent margins varied widely. Longo held at 80.4% (79.6% in 2022). Lishchyna fell 20 points to 65.1%, and Nanda fell 17 points to 40.5%.",
+    "Open seats drew bigger, more divided fields. Ward 5 Town had six candidates and was decided by 202 votes."
    ]
   },
   {
-   "id": "w7-reg",
-   "title": "Ward 7 Town & Regional",
-   "race": "w7-reg",
-   "headline": "Nav Nanda re-elected with 40.5%. Bilal Kader second, 376 votes behind",
+   "id": "competitive",
+   "title": "Closest races",
+   "headline": "Ward 5 Town, HDSB Wards 5 & 7 and Ward 7 Town & Regional were the tightest contests",
+   "table": "margins",
+   "points": [
+    "The three closest races all involved Ward 5 or Ward 7, and each had five or six candidates.",
+    "Effective candidates measures how divided a race was: 1.0 means one candidate took every vote, and 4.0 means a vote split evenly four ways. The most divided races were HDSB Wards 5 & 7 (4.6), Ward 5 Town (4.5) and Ward 4 Town & Regional (4.3)."
+   ]
+  },
+  {
+   "id": "boards",
+   "title": "School boards",
+   "headline": "Many voters skip trustee races, and two thirds of the trustee seats were open",
    "cards": [
-    {"v": "2,245", "l": "votes for Nav Nanda (40.5%)"},
-    {"v": "1,869", "l": "votes for Bilal Kader (33.7%)"},
-    {"v": "376", "l": "vote margin (6.8 points)"},
-    {"v": "1,436", "l": "votes for the other three candidates (25.9%)"}
+    {"v": "6% to 15%", "l": "of ballots left blank in trustee races (0.7% for mayor)"},
+    {"v": "2 of 2", "l": "trustees re-elected in contested races (Baxter, Karabela)"}
    ],
    "points": [
-    "Second-closest council race in Oakville tonight by votes, after Ward 5 Town Councillor (202 votes).",
-    "The incumbent held the seat but lost ground. His share fell from 57.7% to 40.5%. He added 261 votes (+13%) while total votes in the race rose 61%, so almost all new votes went to challengers.",
-    "Of the five races with a sitting councillor on the ballot, this gave the incumbent his lowest share (40.5%) and the challenger his highest (33.7%). The others: Chisholm 73.1%, Longo 80.4%, Lishchyna 65.1%, Xie 54.5%.",
-    "The other three candidates took 1,436 votes, almost four times the winning margin. Vick Walia led them with 833 (15.0%).",
-    "The arithmetic of the gap: 189 voters switching from Nanda to Kader, or 377 more net votes for Kader, would have changed the result."
+    "HDSB Wards 1 & 2 had the highest skip rate in Oakville: 14.8% of eligible ballots left that race blank.",
+    "Open trustee seats produced new trustees in HDSB Wards 3 & 6 (Mayville), Ward 4 (Davidov), Wards 5 & 7 (Tait) and HCDSB Wards 1, 2 & 3 (Jelic).",
+    "Catholic board races draw far fewer ballots because only Catholic school supporters vote in them: 5,018 ballots in Wards 1, 2 & 3 and 4,379 in Wards 5 & 6."
    ]
   }
  ],
  "sources": [
   {"t": "Town of Oakville 2026 results", "u": "https://www.oakville.ca/2026results/"},
+  {"t": "Town of Oakville 2026 results data file", "u": "https://www.oakville.ca/2026results/data/arearesults.json"},
   {"t": "Town of Oakville 2022 results with percentages", "u": "https://www.oakville.ca/town-hall/elections/past-elections/2022-municipal-election/2022-municipal-election-results-summary-with-percentages/"},
   {"t": "2022 ballots cast per location", "u": "https://cmstest.oakville.ca/town-hall/elections/past-elections/2022-municipal-election/2022-municipal-election-ballots-cast-per-location/"},
-  {"t": "Town release: 2026 advance voting", "u": "https://www.oakville.ca/town-hall/news-notices/2026-news-releases-archive/close-to-15-000-ballots-cast-during-advance-voting-for-2026-municipal-election/"}
+  {"t": "Town release: 2026 advance voting", "u": "https://www.oakville.ca/town-hall/news-notices/2026-news-releases-archive/close-to-15-000-ballots-cast-during-advance-voting-for-2026-municipal-election/"},
+  {"t": "CHCH: 2026 candidates and incumbents", "u": "https://www.chch.com/chch-news/everything-you-need-to-know-about-oakvilles-2026-municipal-election/"}
  ]
 }

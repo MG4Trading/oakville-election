@@ -1,12 +1,9 @@
-name: Update news and results
+name: Update results
 
 on:
   schedule:
-    - cron: "*/15 * 26 10 *"     # election day: every 15 min (UTC times)
-    - cron: "*/5 0-5 27 10 *"    # results night 8 p.m. to 1 a.m. Toronto: every 5 min
-    - cron: "*/15 6-23 27 10 *"  # day after: every 15 min
-    - cron: "7 * * * *"          # all other days: hourly
-  workflow_dispatch:       # "Run workflow" button in the GitHub app or website
+    - cron: "17 */6 * * *"   # every 6 hours, to pick up the Town's official declaration
+  workflow_dispatch:         # "Run workflow" button in the GitHub app or website
   push:
     branches: [main]
     paths: ["scripts/**", "data/races.json", "data/manual.json", ".github/workflows/update.yml"]
@@ -27,16 +24,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Collect news and results
-        env:
-          RESULTS_URL: ${{ vars.RESULTS_URL }}
+      - name: Read the Town of Oakville results file
         run: node scripts/update.mjs
       - name: Commit changes
         run: |
           git config user.name "election-bot"
           git config user.email "election-bot@users.noreply.github.com"
-          git add data/news.json data/results.json
+          git add data/results.json
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
-          git commit -m "Update news and results $(date -u +%Y-%m-%dT%H:%MZ)"
+          git commit -m "Update results $(date -u +%Y-%m-%dT%H:%MZ)"
           git pull --rebase origin main
           git push

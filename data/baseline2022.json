@@ -1,0 +1,23 @@
+{
+ "source": "https://www.oakville.ca/town-hall/elections/past-elections/2022-municipal-election/2022-municipal-election-results-summary-with-percentages/",
+ "races": {
+  "mayor":   {"seat": "Incumbent defeated", "incumbent": "Rob Burton", "r2022": [["Rob Burton",19949],["Julia Hanna",19063],["Jack Kukolic",1498]]},
+  "w1-town": {"seat": "Open seat", "note": "2022 winner Jonathan McNeice moved to Ward 1 Town & Regional (acclaimed).", "r2022": [["Jonathan McNeice",3137],["Beth Robertson",2755],["John Florio",476],["Oliver Vadas",157]]},
+  "w2-town": {"seat": "Incumbent re-elected", "incumbent": "Ray Chisholm", "note": "Acclaimed in 2022, so no prior vote count.", "r2022": []},
+  "w3-town": {"seat": "Open seat", "note": "2022 winner Dave Gittings did not run.", "r2022": [["Dave Gittings",4438],["Dyanne Dumas",898]]},
+  "w4-town": {"seat": "Incumbent re-elected", "incumbent": "Peter Longo", "r2022": [["Peter Longo",5465],["Gordon Brennan",1398]]},
+  "w5-town": {"seat": "Open seat", "note": "2022 winner Marc Grant passed away during the term.", "r2022": [["Marc Grant",2769],["Michael Reid",1951],["Angela Parsons",970],["Pierre Sauvageot",368]]},
+  "w6-town": {"seat": "Incumbent re-elected", "incumbent": "Natalia Lishchyna", "r2022": [["Natalia Lishchyna",4238],["Lama Aggad",739]]},
+  "w7-town": {"seat": "Incumbent re-elected", "incumbent": "Scott Xie", "r2022": [["Scott Xie",820],["Amir Henry",687],["Ajay Rosha",482],["Shahab Khan",385],["Nabil Bin Arif",380],["Melody Wong-Gonsalves",315],["Gregory Park",293],["Kashif Chaudry",126],["Faryal Ghazanfar",39]]},
+  "w2-reg":  {"seat": "Open seat", "note": "2022 holder Cathy Duddeck (acclaimed) did not run.", "r2022": []},
+  "w4-reg":  {"seat": "Open seat", "note": "2022 winner Allan Elgar did not run.", "r2022": [["Allan Elgar",5806],["Gilbert Jubinville",1050]]},
+  "w5-reg":  {"seat": "Open seat", "note": "2022 winner Jeff Knoll ran for mayor.", "r2022": [["Jeff Knoll",4529],["Alicia Bedford",1592]]},
+  "w7-reg":  {"seat": "Incumbent re-elected", "incumbent": "Nav Nanda", "r2022": [["Nav Nanda",1984],["Pavan Parmar",1454]]},
+  "hdsb-12": {"seat": "Incumbent re-elected", "incumbent": "Carole Baxter", "r2022": [["Carole Baxter",6276],["Zena Al-Mudaris",953],["Abdullahi Jama",710]]},
+  "hdsb-36": {"seat": "Open seat", "note": "2022 trustee Tanya Rocha (acclaimed) did not run.", "r2022": []},
+  "hdsb-4":  {"seat": "Open seat", "note": "2022 winner Joanna Oliver did not run.", "r2022": [["Joanna Oliver",3535],["Cheryl De Lugt",822]]},
+  "hdsb-57": {"seat": "Open seat", "note": "2022 winner Kelly Amos did not run.", "r2022": [["Kelly Amos",4290],["Gemma Ahn",2386]]},
+  "hcdsb-123": {"seat": "Open seat", "note": "2022 winner Robert Kennedy did not run.", "r2022": [["Robert Kennedy",1843],["Alice Anne LeMay",816],["Alex Power",651],["Garrett Dennie",192]]},
+  "hcdsb-56": {"seat": "Incumbent re-elected", "incumbent": "Helena Karabela", "r2022": [["Helena Karabela",2171],["Sylvia Agorua-Uzonwanne",860]]}
+ }
+}

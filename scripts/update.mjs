@@ -232,7 +232,7 @@ export function fromTown(d, cfg) {
       if (!hit) continue;
       const totals = {}; for (const x of ch) totals[hit.r.c.find(n => n.toLowerCase() === clean(x.choiceName).toLowerCase())] = x.votes;
       const winner = ch.find(x => x.isWinner); const s = a.statistics || {};
-      out.races[hit.r.id] = { totals, ballots: s.ballotCast, winner: winner ? clean(winner.choiceName) : null,
+      out.races[hit.r.id] = { totals, ballots: c.ballotCast || s.ballotCast, wardBallots: s.ballotCast, winner: winner ? clean(winner.choiceName) : null,
         pollsReporting: s.closedTabulators, pollsTotal: s.tabulators, final: s.tabulators > 0 && s.closedTabulators === s.tabulators,
         source: "Town of Oakville", url: "https://www.oakville.ca/2026results/", updatedAt: NOW };
       const w = String(c.contestName).match(/^TOWN COUNCILLOR - WARD (\d)/i);
@@ -291,7 +291,7 @@ async function collectResultsFromPages() {
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  const only = process.argv[2];
-  if (!only || only === "news") await collectNews();
-  if (!only || only === "results") await collectResults();
+  // News collection retired after election night; results only.
+  if (process.argv[2] === "news") await collectNews();
+  else await collectResults();
 }
