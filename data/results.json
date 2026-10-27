@@ -1,6 +1,22 @@
 {
- "generatedAt": "2026-10-26T23:40:21.938Z",
+ "generatedAt": "2026-10-27T02:16:06.646Z",
  "pollsText": "",
- "sources": [],
- "races": {}
+ "sources": [
+  "https://www.poliwave.com/ca/on/live/municipal-2026/oakville"
+ ],
+ "races": {
+  "mayor": {
+   "totals": {
+    "Rob Burton": 12254,
+    "Arvind Choudhary": 1887,
+    "Julia Hanna": 10642,
+    "Jeff Knoll": 21866,
+    "Sean O'Meara": 13567
+   },
+   "source": "Poliwave",
+   "url": "https://www.poliwave.com/ca/on/live/municipal-2026/oakville",
+   "updatedAt": "2026-10-27T02:16:06.646Z",
+   "final": false
+  }
+ }
 }
