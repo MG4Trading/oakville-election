@@ -89,6 +89,7 @@ a{color:var(--blue)}
 .btn.ghost{background:transparent;color:var(--blue);border:1px solid var(--blue)}
 .hidden{display:none!important}
 .race.static{cursor:default}
+.lede{margin:0;font-weight:800;font-stretch:112%;font-size:19px;line-height:1.25;text-wrap:balance}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}
 .stat{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px;display:flex;flex-direction:column;gap:4px}
 .stat b{font-weight:800;font-stretch:112%;font-size:22px;color:var(--blue);font-variant-numeric:tabular-nums}
@@ -113,6 +114,7 @@ a{color:var(--blue)}
       <div class="clock"><div id="clock">--:--</div><div id="countdown"></div><button class="refresh" id="refresh">Refresh</button></div>
     </div>
     <nav role="tablist">
+      <button role="tab" data-tab="analysis" aria-selected="false">Analysis</button>
       <button role="tab" data-tab="outlook" aria-selected="false">Outlook</button>
       <button role="tab" data-tab="watch" aria-selected="true">Watch</button>
       <button role="tab" data-tab="races" aria-selected="false">All races</button>
@@ -140,9 +142,9 @@ const SOURCES=[
   {t:"Social",n:"Reddit r/oakville",u:"https://www.reddit.com/r/oakville/new/"},
   {t:"Social",n:"Facebook: Oakville election posts",u:"https://www.facebook.com/search/posts?q=Oakville%20election"},
 ];
-let CFG={races:[],acclaimed:[],ours:""}, RES={races:{}}, NEWS={items:[]}, OUT=null;
+let CFG={races:[],acclaimed:[],ours:""}, RES={races:{}}, NEWS={items:[]}, OUT=null, ANA=null;
 const CLOSE=new Date("2026-10-26T20:00:00-04:00");
-let BY={}, tab=location.hash.slice(1)||(Date.now()<CLOSE?"outlook":"watch"), newsFilter="All";
+let BY={}, tab=location.hash.slice(1)||(Date.now()<CLOSE?"outlook":"analysis"), newsFilter="All";
 let calcTurnout=25, calcElectors=null;
 const DEFAULT_WATCH=["w7-reg","w7-town","mayor","hdsb-57"];
 const store={get(k,d){try{const v=JSON.parse(localStorage.getItem("oen-"+k));return v??d}catch(e){return d}},set(k,v){try{localStorage.setItem("oen-"+k,JSON.stringify(v))}catch(e){}}};
@@ -157,7 +159,8 @@ async function loadAll(){
   $("#updated").textContent="Updating";
   try{
     const [c,r,n,o]=await Promise.all([getJSON("data/races.json"),getJSON("data/results.json").catch(()=>({races:{}})),getJSON("data/news.json").catch(()=>({items:[]})),getJSON("data/outlook.json").catch(()=>null)]);
-    CFG=c;RES=r;NEWS=n;OUT=o;BY=Object.fromEntries(CFG.races.map(x=>[x.id,x]));
+    CFG=c;RES=r;NEWS=n;OUT=o;
+    ANA=await getJSON("data/analysis.json").catch(()=>null);BY=Object.fromEntries(CFG.races.map(x=>[x.id,x]));
     const last=[r.generatedAt,n.generatedAt].filter(Boolean).sort().pop();
     $("#updated").textContent=last?"Updated "+ago(last):"Waiting for first update";
     $("#dot").classList.toggle("live",!!last&&Date.now()-new Date(last)<75*60000);
@@ -172,7 +175,7 @@ function ranked(id){
 }
 function status(id){
   const k=ranked(id);if(!k.sum)return{label:"No results yet",cls:""};
-  if(k.r?.final)return{label:"Final",cls:"final"};
+  if(k.r?.final)return{label:k.r.winner?"Elected: "+k.r.winner.split(" ").slice(-1)[0]:"Final",cls:"final"};
   const m=k.rows[0].v-(k.rows[1]?.v||0);
   return m/k.sum<.03?{label:"Too close",cls:"close"}:{label:"Leading",cls:"lead"};
 }
@@ -189,9 +192,11 @@ function alerts(){
   const out=[],O=CFG.ours,k=BY["w7-reg"]&&ranked("w7-reg");
   if(k&&k.sum){
     const i=k.rows.findIndex(x=>x.n===O),me=k.rows[i];
-    if(i===0){const m=me.v-(k.rows[1]?.v||0);out.push({c:m/k.sum<.03?"warn":"good",t:`Bilal leads Ward 7 Regional by ${fmt(m)} votes`,s:`${(m/k.sum*100).toFixed(1)} pt margin over ${esc(k.rows[1]?.n)}`})}
-    else{const g=k.rows[0].v-me.v;out.push({c:g/k.sum<.03?"warn":"bad",t:`Bilal trails ${esc(k.rows[0].n)} by ${fmt(g)} votes`,s:`Place ${i+1} of ${k.rows.length} · ${(g/k.sum*100).toFixed(1)} pt gap`})}
+    const fin=k.r?.final;
+    if(i===0){const m=me.v-(k.rows[1]?.v||0);out.push({c:"good",t:fin?`Bilal Kader elected in Ward 7 Regional by ${fmt(m)} votes`:`Bilal leads Ward 7 Regional by ${fmt(m)} votes`,s:`${(m/k.sum*100).toFixed(1)} pt margin over ${esc(k.rows[1]?.n)}`})}
+    else{const g=k.rows[0].v-me.v;out.push({c:fin?"":(g/k.sum<.03?"warn":"bad"),t:fin?`${esc(k.rows[0].n)} re-elected in Ward 7 Regional. Bilal Kader second with ${fmt(me.v)} votes (${(me.v/k.sum*100).toFixed(1)}%)`:`Bilal trails ${esc(k.rows[0].n)} by ${fmt(g)} votes`,s:fin?`${fmt(g)} votes behind (${(g/k.sum*100).toFixed(1)} points). See the Analysis tab.`:`Place ${i+1} of ${k.rows.length} · ${(g/k.sum*100).toFixed(1)} pt gap`})}
   }
+  if(RES.stats)out.push({c:"",t:`Turnout ${RES.stats.turnout}%: ${fmt(RES.stats.ballots)} of ${fmt(RES.stats.electors)} electors voted`,s:`${RES.stats.closedTabulators} of ${RES.stats.tabulators} tabulators reported`});
   for(const r of CFG.races){if(r.id==="w7-reg")continue;if(status(r.id).cls==="close"){const q=ranked(r.id);out.push({c:"warn",t:`${esc(r.name)} is too close to call`,s:`${esc(q.rows[0].n)} ahead of ${esc(q.rows[1].n)} by ${fmt(q.rows[0].v-q.rows[1].v)}`})}}
   const fin=CFG.races.filter(r=>RES.races?.[r.id]?.final).length;
   if(fin)out.push({c:"",t:`${fin} of ${CFG.races.length} races final`,s:"From the Town of Oakville"});
@@ -205,6 +210,7 @@ function render(){
   document.querySelectorAll("nav button").forEach(b=>b.setAttribute("aria-selected",b.dataset.tab===tab));
   const v=$("#view");
   if(!CFG.races.length){v.innerHTML=`<div class="empty">Loading races…</div>`;return}
+  if(tab==="analysis"){ v.innerHTML=analysis(); return; }
   if(tab==="outlook"){
     v.innerHTML=outlook();
     const t=$("#c-turn"),e=$("#c-elec");
@@ -227,6 +233,25 @@ function render(){
     v.innerHTML=`<section class="sect"><h2>Go to the source</h2><div class="list">${SOURCES.map(s=>`<div class="item"><a href="${s.u}" target="_blank" rel="noopener">${esc(s.n)}</a><span class="chip">${s.t}</span></div>`).join("")}</div>
     <p class="note">X, Instagram and Facebook do not allow automatic reading, so they open as live searches.</p></section>`;
   }
+}
+/* ---- Analysis (after results) ---- */
+function wardBars(){
+  const w=RES.stats?.wards;if(!w)return"";
+  const rows=Object.entries(w),top=Math.max(...rows.map(x=>x[1])),avg=rows.reduce((a,b)=>a+b[1],0)/rows.length;
+  return `<div class="race static"><div class="rhead"><span class="rname">Ballots cast by ward</span><span class="chip">avg ${fmt(Math.round(avg))}</span></div>
+  ${rows.map(([n,v])=>`<div class="row"><span class="nm ${n==="Ward 7"?"ours":""}">${esc(n)}</span><span class="v">${fmt(v)} · ${(v/RES.stats.ballots*100).toFixed(1)}%</span><div class="bar"><i class="${n==="Ward 7"?"ours":""}" style="width:${(v/top*100).toFixed(1)}%"></i></div></div>`).join("")}</div>`;
+}
+function analysis(){
+  if(!ANA)return`<div class="empty">Analysis is loading.</div>`;
+  return `<div class="alert good"><b>Results are in</b><small>${esc(ANA.status)}</small></div>`+
+  ANA.sections.map(s=>`<section class="sect"><h2>${esc(s.title)}</h2>
+    <p class="lede">${esc(s.headline)}</p>
+    <div class="stats">${s.cards.map(c=>`<div class="stat"><b>${esc(c.v)}</b><span>${esc(c.l)}</span></div>`).join("")}</div>
+    ${s.race&&BY[s.race]?`<div class="grid">${card(s.race)}</div>`:""}
+    ${s.id==="turnout"?wardBars():""}
+    <div class="race static"><div class="rhead"><span class="rname">What it means</span></div><ul class="facts">${s.points.map(p=>`<li>${esc(p)}</li>`).join("")}</ul></div>
+  </section>`).join("")+
+  `<section class="sect"><h2>Sources</h2><div class="list">${ANA.sources.map(x=>`<div class="item"><a href="${esc(x.u)}" target="_blank" rel="noopener">${esc(x.t)}</a></div>`).join("")}</div></section>`;
 }
 /* ---- Outlook (before results) ---- */
 function calcOut(){

@@ -216,7 +216,49 @@ async function resultPages() {
   return pages;
 }
 
+/* ---------- official Town data file ---------- */
+const TOWN_JSON = "https://www.oakville.ca/2026results/data/arearesults.json";
+const clean = s => decode(String(s || "")).replace(/\s+/g, " ").trim();
+export function fromTown(d, cfg) {
+  const st = d.statistics || {};
+  const out = { stats: { electors: st.eligibleVoters, ballots: st.globBallotCast, turnout: parseFloat(st.globTurnout), tabulators: st.globTabulators, closedTabulators: st.globClosedTabulators, wards: {} }, races: {} };
+  const byNames = cfg.races.map(r => ({ r, set: new Set(r.c.map(n => n.toLowerCase())) }));
+  for (const blk of d.areaResults || []) for (const a of Object.values(blk)) {
+    for (const c of a.contestResults || []) {
+      const ch = c.choiceResults || [];
+      if (c.isAcclaimed || !ch.length) continue;
+      const names = ch.map(x => clean(x.choiceName).toLowerCase());
+      const hit = byNames.find(b => names.length === b.set.size && names.every(n => b.set.has(n)));
+      if (!hit) continue;
+      const totals = {}; for (const x of ch) totals[hit.r.c.find(n => n.toLowerCase() === clean(x.choiceName).toLowerCase())] = x.votes;
+      const winner = ch.find(x => x.isWinner); const s = a.statistics || {};
+      out.races[hit.r.id] = { totals, ballots: s.ballotCast, winner: winner ? clean(winner.choiceName) : null,
+        pollsReporting: s.closedTabulators, pollsTotal: s.tabulators, final: s.tabulators > 0 && s.closedTabulators === s.tabulators,
+        source: "Town of Oakville", url: "https://www.oakville.ca/2026results/", updatedAt: NOW };
+      const w = String(c.contestName).match(/^TOWN COUNCILLOR - WARD (\d)/i);
+      if (w) out.stats.wards["Ward " + w[1]] = s.ballotCast;
+    }
+  }
+  return out;
+}
+
 async function collectResults() {
+  const cfgTown = await readJson("data/races.json", { races: [] });
+  try {
+    const town = fromTown(JSON.parse(await get(TOWN_JSON + "?t=" + Date.now())), cfgTown);
+    if (Object.keys(town.races).length) {
+      const manual = await readJson("data/manual.json", {});
+      for (const [id, r] of Object.entries(manual)) if (!id.startsWith("_") && r?.totals) town.races[id] = { ...r, source: "Team entry", updatedAt: r.updatedAt || NOW };
+      const tb = town.stats;
+      await writeJson("data/results.json", { generatedAt: NOW, pollsText: `${tb.closedTabulators} of ${tb.tabulators} tabulators reporting`, sources: [TOWN_JSON], stats: tb, races: town.races });
+      log("results from Town data file:", Object.keys(town.races).length, "races");
+      return;
+    }
+  } catch (e) { log("town json skip", e.message.slice(0, 100)); }
+  await collectResultsFromPages();
+}
+
+async function collectResultsFromPages() {
   const cfg = await readJson("data/races.json", { races: [] });
   const prev = await readJson("data/results.json", { races: {} });
   const manual = await readJson("data/manual.json", {});

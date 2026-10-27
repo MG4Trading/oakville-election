@@ -1,0 +1,84 @@
+{
+ "updated": "2026-10-27T03:00:00.000Z",
+ "status": "Unofficial results with all 57 tabulators reported. The Town Clerk declares the official results.",
+ "sections": [
+  {
+   "id": "turnout",
+   "title": "Turnout",
+   "headline": "One in three electors voted, and ballots rose by nearly half since 2022",
+   "cards": [
+    {"v": "34.26%", "l": "turnout: 60,638 of 176,984 eligible electors"},
+    {"v": "+47.8%", "l": "more ballots than 2022 (41,021)"},
+    {"v": "24.4%", "l": "voted early: 14,787 advance ballots (26.4% in 2022)"},
+    {"v": "+52%", "l": "election-day ballots: 45,851 vs 30,209 in 2022"}
+   ],
+   "points": [
+    "Two in three eligible electors did not vote. That is why winners can take office with a small share of residents: the new mayor's 21,866 votes equal 12.4% of eligible electors.",
+    "Advance voting grew 37%, yet its share of all ballots fell from 26.4% to 24.4%. Election-day voting grew even faster, which points to late deciders and a high-interest race at the top of the ballot.",
+    "Ward 7 cast the fewest ballots of any ward: 5,846, or 9.6% of the town total, against an average of 8,663 per ward. Ward 4 cast the most at 12,400. The Town does not publish electors by ward, so exact ward turnout cannot be calculated from its results.",
+    "Some voters skip races further down the ballot. 422 ballots (0.7%) had no vote for mayor, against 296 (5.1%) for Ward 7 Town and Regional and 290 (5.0%) for Ward 7 Town Councillor.",
+    "In Ward 7, the Town and Regional race drew 61% more votes than in 2022 (3,438 to 5,550), and the Town Councillor race 58% more (3,527 to 5,556)."
+   ]
+  },
+  {
+   "id": "mayor",
+   "title": "Mayor",
+   "race": "mayor",
+   "headline": "Jeff Knoll elected mayor with 36.3%. Rob Burton, mayor since 2006, finishes third",
+   "cards": [
+    {"v": "21,866", "l": "votes for Jeff Knoll (36.3%)"},
+    {"v": "8,299", "l": "vote margin over Sean O'Meara (13.8 points)"},
+    {"v": "-38.6%", "l": "Rob Burton's votes vs 2022 (19,949 to 12,254)"}
+   ],
+   "points": [
+    "A clear change vote: 79.6% of voters chose someone other than the incumbent, while turnout rose almost 48%.",
+    "Knoll won a plurality, not a majority. 63.7% voted for another candidate, which is normal in a five-way race.",
+    "Vote splitting did not decide the winner. The anti-incumbent vote spread across Knoll, O'Meara and Hanna, but Knoll still finished 8,299 votes ahead of second place.",
+    "The two sitting councillors in the race finished first and second. Years of ward-level name recognition carried them town-wide.",
+    "Julia Hanna fell from 47.1% in the 2022 two-way race to 17.7%. A crowded field changes the math completely.",
+    "The Town publishes the mayoral result town-wide only, so there is no ward-by-ward mayor breakdown."
+   ]
+  },
+  {
+   "id": "w7-town",
+   "title": "Ward 7 Town Councillor",
+   "race": "w7-town",
+   "headline": "Scott Xie re-elected with a majority of 54.5%",
+   "cards": [
+    {"v": "3,027", "l": "votes for Scott Xie (54.5%)"},
+    {"v": "1,382", "l": "vote margin over Zulfi Malik (24.9 points)"},
+    {"v": "+269%", "l": "Xie's votes vs 2022 (820 to 3,027)"}
+   ],
+   "points": [
+    "Xie went from 23.3% in a nine-way race in 2022 to a majority in a three-way race. Four years in office let him consolidate.",
+    "Zulfi Malik placed second with 29.6% and Ali Hosny third with 15.9%.",
+    "Both Ward 7 races were on the same 5,846 ballots. The gap between the two incumbents (Xie 54.5%, Nanda 40.5%) comes from the candidates, not from turnout."
+   ]
+  },
+  {
+   "id": "w7-reg",
+   "title": "Ward 7 Town & Regional",
+   "race": "w7-reg",
+   "headline": "Nav Nanda re-elected with 40.5%. Bilal Kader second, 376 votes behind",
+   "cards": [
+    {"v": "2,245", "l": "votes for Nav Nanda (40.5%)"},
+    {"v": "1,869", "l": "votes for Bilal Kader (33.7%)"},
+    {"v": "376", "l": "vote margin (6.8 points)"},
+    {"v": "1,436", "l": "votes for the other three candidates (25.9%)"}
+   ],
+   "points": [
+    "Second-closest council race in Oakville tonight by votes, after Ward 5 Town Councillor (202 votes).",
+    "The incumbent held the seat but lost ground. His share fell from 57.7% to 40.5%. He added 261 votes (+13%) while total votes in the race rose 61%, so almost all new votes went to challengers.",
+    "Of the five races with a sitting councillor on the ballot, this gave the incumbent his lowest share (40.5%) and the challenger his highest (33.7%). The others: Chisholm 73.1%, Longo 80.4%, Lishchyna 65.1%, Xie 54.5%.",
+    "The other three candidates took 1,436 votes, almost four times the winning margin. Vick Walia led them with 833 (15.0%).",
+    "The arithmetic of the gap: 189 voters switching from Nanda to Kader, or 377 more net votes for Kader, would have changed the result."
+   ]
+  }
+ ],
+ "sources": [
+  {"t": "Town of Oakville 2026 results", "u": "https://www.oakville.ca/2026results/"},
+  {"t": "Town of Oakville 2022 results with percentages", "u": "https://www.oakville.ca/town-hall/elections/past-elections/2022-municipal-election/2022-municipal-election-results-summary-with-percentages/"},
+  {"t": "2022 ballots cast per location", "u": "https://cmstest.oakville.ca/town-hall/elections/past-elections/2022-municipal-election/2022-municipal-election-ballots-cast-per-location/"},
+  {"t": "Town release: 2026 advance voting", "u": "https://www.oakville.ca/town-hall/news-notices/2026-news-releases-archive/close-to-15-000-ballots-cast-during-advance-voting-for-2026-municipal-election/"}
+ ]
+}

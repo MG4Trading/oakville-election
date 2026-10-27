@@ -1,10 +1,294 @@
 {
- "generatedAt": "2026-10-27T02:51:26.958Z",
- "pollsText": "",
+ "generatedAt": "2026-10-27T02:50:00.000Z",
+ "pollsText": "57 of 57 tabulators reporting",
  "sources": [
-  "https://www.poliwave.com/ca/on/live/municipal-2026/oakville"
+  "https://www.oakville.ca/2026results/data/arearesults.json"
  ],
+ "stats": {
+  "electors": 176984,
+  "ballots": 60638,
+  "turnout": 34.26,
+  "tabulators": 57,
+  "closedTabulators": 57,
+  "wards": {
+   "Ward 1": 8920,
+   "Ward 2": 8452,
+   "Ward 3": 7580,
+   "Ward 4": 12400,
+   "Ward 5": 9689,
+   "Ward 6": 7751,
+   "Ward 7": 5846
+  }
+ },
  "races": {
+  "w1-town": {
+   "totals": {
+    "Alexandra Caldwell": 4133,
+    "Amir Henry": 533,
+    "David Imrie": 687,
+    "Pierce Lang": 1166,
+    "Nancy Ortenburg": 2033
+   },
+   "ballots": 8920,
+   "winner": "Alexandra Caldwell",
+   "pollsReporting": 16,
+   "pollsTotal": 16,
+   "final": true,
+   "source": "Town of Oakville",
+   "url": "https://www.oakville.ca/2026results/",
+   "updatedAt": "2026-10-27T02:54:15.755Z"
+  },
+  "w2-town": {
+   "totals": {
+    "Ray Chisholm": 5774,
+    "Ayesha Khawaja": 1003,
+    "Sana Waqar": 1121
+   },
+   "ballots": 8452,
+   "winner": "Ray Chisholm",
+   "pollsReporting": 17,
+   "pollsTotal": 17,
+   "final": true,
+   "source": "Town of Oakville",
+   "url": "https://www.oakville.ca/2026results/",
+   "updatedAt": "2026-10-27T02:54:15.755Z"
+  },
+  "w3-town": {
+   "totals": {
+    "Morgan Elliott": 5551,
+    "Jen Zhou": 1761
+   },
+   "ballots": 7580,
+   "winner": "Morgan Elliott",
+   "pollsReporting": 19,
+   "pollsTotal": 19,
+   "final": true,
+   "source": "Town of Oakville",
+   "url": "https://www.oakville.ca/2026results/",
+   "updatedAt": "2026-10-27T02:54:15.755Z"
+  },
+  "w4-town": {
+   "totals": {
+    "Peter Longo": 9528,
+    "Luba Slanina": 856,
+    "Syed Tahir": 1469
+   },
+   "ballots": 12400,
+   "winner": "Peter Longo",
+   "pollsReporting": 17,
+   "pollsTotal": 17,
+   "final": true,
+   "source": "Town of Oakville",
+   "url": "https://www.oakville.ca/2026results/",
+   "updatedAt": "2026-10-27T02:54:15.755Z"
+  },
+  "w5-town": {
+   "totals": {
+    "Jerome Adamo": 1115,
+    "Mirsab Fasih": 444,
+    "Sue Heddle": 1873,
+    "Thane Mitches": 547,
+    "Matt Ray Smith": 2455,
+    "Audrey Wubbenhorst": 2657
+   },
+   "ballots": 9689,
+   "winner": "Audrey Wubbenhorst",
+   "pollsReporting": 17,
+   "pollsTotal": 17,
+   "final": true,
+   "source": "Town of Oakville",
+   "url": "https://www.oakville.ca/2026results/",
+   "updatedAt": "2026-10-27T02:54:15.755Z"
+  },
+  "w6-town": {
+   "totals": {
+    "Natalia Lishchyna": 4849,
+    "Pierre Sauvageot": 1535,
+    "Smita Tulsani": 1069
+   },
+   "ballots": 7751,
+   "winner": "Natalia Lishchyna",
+   "pollsReporting": 15,
+   "pollsTotal": 15,
+   "final": true,
+   "source": "Town of Oakville",
+   "url": "https://www.oakville.ca/2026results/",
+   "updatedAt": "2026-10-27T02:54:15.755Z"
+  },
+  "w7-town": {
+   "totals": {
+    "Ali Hosny": 884,
+    "Zulfi Malik": 1645,
+    "Scott Xie": 3027
+   },
+   "ballots": 5846,
+   "winner": "Scott Xie",
+   "pollsReporting": 16,
+   "pollsTotal": 16,
+   "final": true,
+   "source": "Town of Oakville",
+   "url": "https://www.oakville.ca/2026results/",
+   "updatedAt": "2026-10-27T02:54:15.755Z"
+  },
+  "w2-reg": {
+   "totals": {
+    "Zena Al-Mudaris": 741,
+    "Desmond Jordan": 1896,
+    "Sarah Perkin": 2202,
+    "Stacey Saunders": 3002
+   },
+   "ballots": 8452,
+   "winner": "Stacey Saunders",
+   "pollsReporting": 17,
+   "pollsTotal": 17,
+   "final": true,
+   "source": "Town of Oakville",
+   "url": "https://www.oakville.ca/2026results/",
+   "updatedAt": "2026-10-27T02:54:15.755Z"
+  },
+  "w4-reg": {
+   "totals": {
+    "Kashif (Kash) Chaudry": 1051,
+    "Suzan Chong": 3130,
+    "Vandana Giri": 471,
+    "Roger Lapworth": 3994,
+    "Hutchison Lee": 2090,
+    "Farah Shamim": 1023
+   },
+   "ballots": 12400,
+   "winner": "Roger Lapworth",
+   "pollsReporting": 17,
+   "pollsTotal": 17,
+   "final": true,
+   "source": "Town of Oakville",
+   "url": "https://www.oakville.ca/2026results/",
+   "updatedAt": "2026-10-27T02:54:15.755Z"
+  },
+  "w5-reg": {
+   "totals": {
+    "Mackenzie Grant": 3910,
+    "Orla Johnston": 1794,
+    "Michael Reid": 3277
+   },
+   "ballots": 9689,
+   "winner": "Mackenzie Grant",
+   "pollsReporting": 17,
+   "pollsTotal": 17,
+   "final": true,
+   "source": "Town of Oakville",
+   "url": "https://www.oakville.ca/2026results/",
+   "updatedAt": "2026-10-27T02:54:15.755Z"
+  },
+  "w7-reg": {
+   "totals": {
+    "Gaganpreet Darar": 202,
+    "Bilal Kader": 1869,
+    "Nav Nanda": 2245,
+    "Ajay Rosha": 401,
+    "Vick Walia": 833
+   },
+   "ballots": 5846,
+   "winner": "Nav Nanda",
+   "pollsReporting": 16,
+   "pollsTotal": 16,
+   "final": true,
+   "source": "Town of Oakville",
+   "url": "https://www.oakville.ca/2026results/",
+   "updatedAt": "2026-10-27T02:54:15.755Z"
+  },
+  "hdsb-12": {
+   "totals": {
+    "Carole Baxter": 9388,
+    "Zafar Kayani": 1252,
+    "Hamzah Khan": 779
+   },
+   "ballots": 17372,
+   "winner": "Carole Baxter",
+   "pollsReporting": 23,
+   "pollsTotal": 23,
+   "final": true,
+   "source": "Town of Oakville",
+   "url": "https://www.oakville.ca/2026results/",
+   "updatedAt": "2026-10-27T02:54:15.755Z"
+  },
+  "hdsb-36": {
+   "totals": {
+    "Rebecca Mayville": 8291,
+    "Vinay Paramanand": 1246,
+    "Tausif Sabir": 940
+   },
+   "ballots": 15331,
+   "winner": "Rebecca Mayville",
+   "pollsReporting": 24,
+   "pollsTotal": 24,
+   "final": true,
+   "source": "Town of Oakville",
+   "url": "https://www.oakville.ca/2026results/",
+   "updatedAt": "2026-10-27T02:54:15.755Z"
+  },
+  "hdsb-4": {
+   "totals": {
+    "Ira Davidov": 3203,
+    "Virginia Nsitem": 2519,
+    "Deepak Pathania": 1291,
+    "Florin Cristian Vilcu": 859
+   },
+   "ballots": 12400,
+   "winner": "Ira Davidov",
+   "pollsReporting": 17,
+   "pollsTotal": 17,
+   "final": true,
+   "source": "Town of Oakville",
+   "url": "https://www.oakville.ca/2026results/",
+   "updatedAt": "2026-10-27T02:54:15.755Z"
+  },
+  "hdsb-57": {
+   "totals": {
+    "Lily Bharat": 2369,
+    "Azra Ghumman": 2079,
+    "Ahmed Gohar": 504,
+    "Ashish Maggo": 375,
+    "Kim Tait": 2996,
+    "Jake Zhu": 2564
+   },
+   "ballots": 15535,
+   "winner": "Kim Tait",
+   "pollsReporting": 23,
+   "pollsTotal": 23,
+   "final": true,
+   "source": "Town of Oakville",
+   "url": "https://www.oakville.ca/2026results/",
+   "updatedAt": "2026-10-27T02:54:15.755Z"
+  },
+  "hcdsb-123": {
+   "totals": {
+    "Martin Gegus": 941,
+    "Mario Jelic": 2336,
+    "Tom Murad": 1252
+   },
+   "ballots": 24952,
+   "winner": "Mario Jelic",
+   "pollsReporting": 32,
+   "pollsTotal": 32,
+   "final": true,
+   "source": "Town of Oakville",
+   "url": "https://www.oakville.ca/2026results/",
+   "updatedAt": "2026-10-27T02:54:15.755Z"
+  },
+  "hcdsb-56": {
+   "totals": {
+    "Helena Karabela": 2563,
+    "Sean McCarthy": 1555
+   },
+   "ballots": 17440,
+   "winner": "Helena Karabela",
+   "pollsReporting": 22,
+   "pollsTotal": 22,
+   "final": true,
+   "source": "Town of Oakville",
+   "url": "https://www.oakville.ca/2026results/",
+   "updatedAt": "2026-10-27T02:54:15.755Z"
+  },
   "mayor": {
    "totals": {
     "Rob Burton": 12254,
@@ -13,10 +297,14 @@
     "Jeff Knoll": 21866,
     "Sean O'Meara": 13567
    },
-   "source": "Poliwave",
-   "url": "https://www.poliwave.com/ca/on/live/municipal-2026/oakville",
-   "updatedAt": "2026-10-27T02:51:26.958Z",
-   "final": false
+   "ballots": 60638,
+   "winner": "Jeff Knoll",
+   "pollsReporting": 57,
+   "pollsTotal": 57,
+   "final": true,
+   "source": "Town of Oakville",
+   "url": "https://www.oakville.ca/2026results/",
+   "updatedAt": "2026-10-27T02:54:15.755Z"
   }
  }
 }
