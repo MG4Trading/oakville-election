@@ -1,0 +1,1869 @@
+{
+	"statistics": {
+		"projectName": "Town of Oakville 2026 Municipal Election",
+		"official": "2401",
+		"timeStamp": "2026-09-11 17:39:44",
+		"eligibleVoters": 176984,
+		"globTurnout": "34.26%",
+		"globBallotCast": 60638,
+		"globTabulators": 57,
+		"globClosedTabulators": 57,
+		"globStartedPolls": 0,
+		"globPolls": 47,
+		"globClosedPolls": 47,
+		"countinggroups": [
+				{
+					"countingGroupId": "1",
+					"countingGroupName": "Election Day",
+					"tabulators": 49,
+					"closedTabulators": 49
+				},
+				{
+					"countingGroupId": "2",
+					"countingGroupName": "Advance",
+					"tabulators": 8,
+					"closedTabulators": 8
+				}
+			]
+,
+		"partyStats": [
+			]
+	},
+	"areaResults": [
+		{
+			"26": {
+				"statistics": {
+					"eligibleVoters": 176984,
+					"turnout": "34.26%",
+					"turnout2": "34.26%",
+					"ballotCast": 60638,
+					"ballotCast2": 60638,
+					"tabulators": 57,
+					"closedTabulators": 57,
+					"startedPolls": 0,
+					"polls": 47,
+					"closedPolls": 47,
+					"countinggroups": [
+							{
+								"countingGroupId": "1",
+								"countingGroupName": "Election Day",
+								"tabulators": 49,
+								"closedTabulators": 49
+							},
+							{
+								"countingGroupId": "2",
+								"countingGroupName": "Advance",
+								"tabulators": 8,
+								"closedTabulators": 8
+							}
+						]
+				},
+				"contestResults": [
+					{
+						"id": "1001",
+						"contestName": "MAYOR",
+						"voteFor": 1,
+						"isAcclaimed": false,
+						"eligibleVoters": 176984,
+						"turnout": "34.26%",
+						"ballotCast": 60638,
+						"sort": 1,
+						"choiceResults": [
+							{
+								"id": "1",
+								"choiceName": "Rob Burton",
+								"votes": 12254,
+								"percentage": "20.35%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "2",
+								"choiceName": "Arvind Choudhary",
+								"votes": 1887,
+								"percentage": "3.13%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "3",
+								"choiceName": "Julia Hanna",
+								"votes": 10642,
+								"percentage": "17.67%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "4",
+								"choiceName": "Jeff Knoll",
+								"votes": 21866,
+								"percentage": "36.31%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 1,
+								"partyBreakdown": []
+							},
+							{
+								"id": "5",
+								"choiceName": "Sean O'Meara",
+								"votes": 13567,
+								"percentage": "22.53%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							}
+						]
+					}
+				]
+			},
+			"3": {
+				"statistics": {
+					"eligibleVoters": 176984,
+					"turnout": "5.04%",
+					"turnout2": "5.04%",
+					"ballotCast": 8920,
+					"ballotCast2": 8920,
+					"tabulators": 16,
+					"closedTabulators": 16,
+					"startedPolls": 0,
+					"polls": 13,
+					"closedPolls": 13,
+					"countinggroups": [
+							{
+								"countingGroupId": "1",
+								"countingGroupName": "Election Day",
+								"tabulators": 8,
+								"closedTabulators": 8
+							},
+							{
+								"countingGroupId": "2",
+								"countingGroupName": "Advance",
+								"tabulators": 8,
+								"closedTabulators": 8
+							}
+						]
+				},
+				"contestResults": [
+					{
+						"id": "1003",
+						"contestName": "TOWN COUNCILLOR - WARD 1",
+						"voteFor": 1,
+						"isAcclaimed": false,
+						"eligibleVoters": 176984,
+						"turnout": "5.04%",
+						"ballotCast": 8920,
+						"sort": 2,
+						"choiceResults": [
+							{
+								"id": "6",
+								"choiceName": "Alexandra Caldwell",
+								"votes": 4133,
+								"percentage": "48.33%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 1,
+								"partyBreakdown": []
+							},
+							{
+								"id": "7",
+								"choiceName": "Amir Henry",
+								"votes": 533,
+								"percentage": "6.23%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "8",
+								"choiceName": "David Imrie",
+								"votes": 687,
+								"percentage": "8.03%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "9",
+								"choiceName": "Pierce Lang",
+								"votes": 1166,
+								"percentage": "13.63%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "10",
+								"choiceName": "Nancy Ortenburg",
+								"votes": 2033,
+								"percentage": "23.77%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							}
+						]
+					}
+				]
+			},
+			"4": {
+				"statistics": {
+					"eligibleVoters": 0,
+					"turnout": "0%",
+					"turnout2": "0%",
+					"ballotCast": 8452,
+					"ballotCast2": 8452,
+					"tabulators": 17,
+					"closedTabulators": 17,
+					"startedPolls": 0,
+					"polls": 14,
+					"closedPolls": 14,
+					"countinggroups": [
+							{
+								"countingGroupId": "1",
+								"countingGroupName": "Election Day",
+								"tabulators": 9,
+								"closedTabulators": 9
+							},
+							{
+								"countingGroupId": "2",
+								"countingGroupName": "Advance",
+								"tabulators": 8,
+								"closedTabulators": 8
+							}
+						]
+				},
+				"contestResults": [
+					{
+						"id": "1004",
+						"contestName": "TOWN COUNCILLOR - WARD 2",
+						"voteFor": 1,
+						"isAcclaimed": false,
+						"eligibleVoters": 0,
+						"turnout": "0%",
+						"ballotCast": 8452,
+						"sort": 3,
+						"choiceResults": [
+							{
+								"id": "11",
+								"choiceName": "Ray Chisholm",
+								"votes": 5774,
+								"percentage": "73.11%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 1,
+								"partyBreakdown": []
+							},
+							{
+								"id": "12",
+								"choiceName": "Ayesha Khawaja",
+								"votes": 1003,
+								"percentage": "12.70%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "13",
+								"choiceName": "Sana Waqar",
+								"votes": 1121,
+								"percentage": "14.19%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							}
+						]
+					}
+				]
+			},
+			"5": {
+				"statistics": {
+					"eligibleVoters": 0,
+					"turnout": "0%",
+					"turnout2": "0%",
+					"ballotCast": 7580,
+					"ballotCast2": 7580,
+					"tabulators": 19,
+					"closedTabulators": 19,
+					"startedPolls": 0,
+					"polls": 15,
+					"closedPolls": 15,
+					"countinggroups": [
+							{
+								"countingGroupId": "1",
+								"countingGroupName": "Election Day",
+								"tabulators": 11,
+								"closedTabulators": 11
+							},
+							{
+								"countingGroupId": "2",
+								"countingGroupName": "Advance",
+								"tabulators": 8,
+								"closedTabulators": 8
+							}
+						]
+				},
+				"contestResults": [
+					{
+						"id": "1005",
+						"contestName": "TOWN COUNCILLOR - WARD 3",
+						"voteFor": 1,
+						"isAcclaimed": false,
+						"eligibleVoters": 0,
+						"turnout": "0%",
+						"ballotCast": 7580,
+						"sort": 4,
+						"choiceResults": [
+							{
+								"id": "18",
+								"choiceName": "Morgan Elliott",
+								"votes": 5551,
+								"percentage": "75.92%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 1,
+								"partyBreakdown": []
+							},
+							{
+								"id": "19",
+								"choiceName": "Jen Zhou",
+								"votes": 1761,
+								"percentage": "24.08%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							}
+						]
+					}
+				]
+			},
+			"6": {
+				"statistics": {
+					"eligibleVoters": 0,
+					"turnout": "0%",
+					"turnout2": "0%",
+					"ballotCast": 12400,
+					"ballotCast2": 12400,
+					"tabulators": 17,
+					"closedTabulators": 17,
+					"startedPolls": 0,
+					"polls": 14,
+					"closedPolls": 14,
+					"countinggroups": [
+							{
+								"countingGroupId": "1",
+								"countingGroupName": "Election Day",
+								"tabulators": 9,
+								"closedTabulators": 9
+							},
+							{
+								"countingGroupId": "2",
+								"countingGroupName": "Advance",
+								"tabulators": 8,
+								"closedTabulators": 8
+							}
+						]
+				},
+				"contestResults": [
+					{
+						"id": "1006",
+						"contestName": "TOWN COUNCILLOR - WARD 4",
+						"voteFor": 1,
+						"isAcclaimed": false,
+						"eligibleVoters": 0,
+						"turnout": "0%",
+						"ballotCast": 12400,
+						"sort": 5,
+						"choiceResults": [
+							{
+								"id": "20",
+								"choiceName": "Peter Longo",
+								"votes": 9528,
+								"percentage": "80.38%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 1,
+								"partyBreakdown": []
+							},
+							{
+								"id": "21",
+								"choiceName": "Luba Slanina",
+								"votes": 856,
+								"percentage": "7.22%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "22",
+								"choiceName": "Syed Tahir",
+								"votes": 1469,
+								"percentage": "12.39%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							}
+						]
+					}
+				]
+			},
+			"7": {
+				"statistics": {
+					"eligibleVoters": 0,
+					"turnout": "0%",
+					"turnout2": "0%",
+					"ballotCast": 9689,
+					"ballotCast2": 9689,
+					"tabulators": 17,
+					"closedTabulators": 17,
+					"startedPolls": 0,
+					"polls": 14,
+					"closedPolls": 14,
+					"countinggroups": [
+							{
+								"countingGroupId": "1",
+								"countingGroupName": "Election Day",
+								"tabulators": 9,
+								"closedTabulators": 9
+							},
+							{
+								"countingGroupId": "2",
+								"countingGroupName": "Advance",
+								"tabulators": 8,
+								"closedTabulators": 8
+							}
+						]
+				},
+				"contestResults": [
+					{
+						"id": "1007",
+						"contestName": "TOWN COUNCILLOR - WARD 5",
+						"voteFor": 1,
+						"isAcclaimed": false,
+						"eligibleVoters": 0,
+						"turnout": "0%",
+						"ballotCast": 9689,
+						"sort": 6,
+						"choiceResults": [
+							{
+								"id": "29",
+								"choiceName": "Jerome Adamo",
+								"votes": 1115,
+								"percentage": "12.26%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "30",
+								"choiceName": "Mirsab Fasih",
+								"votes": 444,
+								"percentage": "4.88%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "31",
+								"choiceName": "Sue Heddle",
+								"votes": 1873,
+								"percentage": "20.60%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "32",
+								"choiceName": "Thane Mitches",
+								"votes": 547,
+								"percentage": "6.02%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "33",
+								"choiceName": "Matt Ray Smith",
+								"votes": 2455,
+								"percentage": "27.00%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "34",
+								"choiceName": "Audrey Wubbenhorst",
+								"votes": 2657,
+								"percentage": "29.23%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 1,
+								"partyBreakdown": []
+							}
+						]
+					}
+				]
+			},
+			"8": {
+				"statistics": {
+					"eligibleVoters": 0,
+					"turnout": "0%",
+					"turnout2": "0%",
+					"ballotCast": 7751,
+					"ballotCast2": 7751,
+					"tabulators": 15,
+					"closedTabulators": 15,
+					"startedPolls": 0,
+					"polls": 12,
+					"closedPolls": 12,
+					"countinggroups": [
+							{
+								"countingGroupId": "1",
+								"countingGroupName": "Election Day",
+								"tabulators": 7,
+								"closedTabulators": 7
+							},
+							{
+								"countingGroupId": "2",
+								"countingGroupName": "Advance",
+								"tabulators": 8,
+								"closedTabulators": 8
+							}
+						]
+				},
+				"contestResults": [
+					{
+						"id": "1008",
+						"contestName": "TOWN COUNCILLOR - WARD 6",
+						"voteFor": 1,
+						"isAcclaimed": false,
+						"eligibleVoters": 0,
+						"turnout": "0%",
+						"ballotCast": 7751,
+						"sort": 7,
+						"choiceResults": [
+							{
+								"id": "38",
+								"choiceName": "Natalia Lishchyna",
+								"votes": 4849,
+								"percentage": "65.06%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 1,
+								"partyBreakdown": []
+							},
+							{
+								"id": "39",
+								"choiceName": "Pierre Sauvageot",
+								"votes": 1535,
+								"percentage": "20.60%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "40",
+								"choiceName": "Smita Tulsani",
+								"votes": 1069,
+								"percentage": "14.34%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							}
+						]
+					}
+				]
+			},
+			"9": {
+				"statistics": {
+					"eligibleVoters": 0,
+					"turnout": "0%",
+					"turnout2": "0%",
+					"ballotCast": 5846,
+					"ballotCast2": 5846,
+					"tabulators": 16,
+					"closedTabulators": 16,
+					"startedPolls": 0,
+					"polls": 13,
+					"closedPolls": 13,
+					"countinggroups": [
+							{
+								"countingGroupId": "1",
+								"countingGroupName": "Election Day",
+								"tabulators": 8,
+								"closedTabulators": 8
+							},
+							{
+								"countingGroupId": "2",
+								"countingGroupName": "Advance",
+								"tabulators": 8,
+								"closedTabulators": 8
+							}
+						]
+				},
+				"contestResults": [
+					{
+						"id": "1009",
+						"contestName": "TOWN COUNCILLOR - WARD 7",
+						"voteFor": 1,
+						"isAcclaimed": false,
+						"eligibleVoters": 0,
+						"turnout": "0%",
+						"ballotCast": 5846,
+						"sort": 8,
+						"choiceResults": [
+							{
+								"id": "41",
+								"choiceName": "Ali Hosny",
+								"votes": 884,
+								"percentage": "15.91%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "42",
+								"choiceName": "Zulfi Malik",
+								"votes": 1645,
+								"percentage": "29.61%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "43",
+								"choiceName": "Scott Xie",
+								"votes": 3027,
+								"percentage": "54.48%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 1,
+								"partyBreakdown": []
+							}
+						]
+					}
+				]
+			},
+			"10": {
+				"statistics": {
+					"eligibleVoters": 176984,
+					"turnout": "5.04%",
+					"turnout2": "5.04%",
+					"ballotCast": 8920,
+					"ballotCast2": 8920,
+					"tabulators": 16,
+					"closedTabulators": 16,
+					"startedPolls": 0,
+					"polls": 13,
+					"closedPolls": 13,
+					"countinggroups": [
+							{
+								"countingGroupId": "1",
+								"countingGroupName": "Election Day",
+								"tabulators": 8,
+								"closedTabulators": 8
+							},
+							{
+								"countingGroupId": "2",
+								"countingGroupName": "Advance",
+								"tabulators": 8,
+								"closedTabulators": 8
+							}
+						]
+				},
+				"contestResults": [
+					{
+						"id": "1010",
+						"contestName": "TOWN AND REGIONAL COUNCILLOR - WARD 1",
+						"voteFor": 1,
+						"isAcclaimed": true,
+						"eligibleVoters": 176984,
+						"turnout": "0.00%",
+						"ballotCast": 0,
+						"sort": 9,
+						"choiceResults": [
+							{
+								"id": "70",
+								"choiceName": "Jonathan McNeice",
+								"votes": 0,
+								"percentage": "0%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 1,
+								"partyBreakdown": []
+							}
+						]
+					}
+				]
+			},
+			"11": {
+				"statistics": {
+					"eligibleVoters": 0,
+					"turnout": "0%",
+					"turnout2": "0%",
+					"ballotCast": 8452,
+					"ballotCast2": 8452,
+					"tabulators": 17,
+					"closedTabulators": 17,
+					"startedPolls": 0,
+					"polls": 14,
+					"closedPolls": 14,
+					"countinggroups": [
+							{
+								"countingGroupId": "1",
+								"countingGroupName": "Election Day",
+								"tabulators": 9,
+								"closedTabulators": 9
+							},
+							{
+								"countingGroupId": "2",
+								"countingGroupName": "Advance",
+								"tabulators": 8,
+								"closedTabulators": 8
+							}
+						]
+				},
+				"contestResults": [
+					{
+						"id": "1011",
+						"contestName": "TOWN AND REGIONAL COUNCILLOR - WARD 2",
+						"voteFor": 1,
+						"isAcclaimed": false,
+						"eligibleVoters": 0,
+						"turnout": "0%",
+						"ballotCast": 8452,
+						"sort": 10,
+						"choiceResults": [
+							{
+								"id": "14",
+								"choiceName": "Zena Al-Mudaris",
+								"votes": 741,
+								"percentage": "9.45%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "15",
+								"choiceName": "Desmond Jordan",
+								"votes": 1896,
+								"percentage": "24.18%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "16",
+								"choiceName": "Sarah Perkin",
+								"votes": 2202,
+								"percentage": "28.08%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "17",
+								"choiceName": "Stacey Saunders",
+								"votes": 3002,
+								"percentage": "38.29%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 1,
+								"partyBreakdown": []
+							}
+						]
+					}
+				]
+			},
+			"12": {
+				"statistics": {
+					"eligibleVoters": 0,
+					"turnout": "0%",
+					"turnout2": "0%",
+					"ballotCast": 7580,
+					"ballotCast2": 7580,
+					"tabulators": 19,
+					"closedTabulators": 19,
+					"startedPolls": 0,
+					"polls": 15,
+					"closedPolls": 15,
+					"countinggroups": [
+							{
+								"countingGroupId": "1",
+								"countingGroupName": "Election Day",
+								"tabulators": 11,
+								"closedTabulators": 11
+							},
+							{
+								"countingGroupId": "2",
+								"countingGroupName": "Advance",
+								"tabulators": 8,
+								"closedTabulators": 8
+							}
+						]
+				},
+				"contestResults": [
+					{
+						"id": "1012",
+						"contestName": "TOWN AND REGIONAL COUNCILLOR - WARD 3",
+						"voteFor": 1,
+						"isAcclaimed": true,
+						"eligibleVoters": 0,
+						"turnout": "0%",
+						"ballotCast": 0,
+						"sort": 11,
+						"choiceResults": [
+							{
+								"id": "71",
+								"choiceName": "Janet Haslett-Theall",
+								"votes": 0,
+								"percentage": "0%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 1,
+								"partyBreakdown": []
+							}
+						]
+					}
+				]
+			},
+			"13": {
+				"statistics": {
+					"eligibleVoters": 0,
+					"turnout": "0%",
+					"turnout2": "0%",
+					"ballotCast": 12400,
+					"ballotCast2": 12400,
+					"tabulators": 17,
+					"closedTabulators": 17,
+					"startedPolls": 0,
+					"polls": 14,
+					"closedPolls": 14,
+					"countinggroups": [
+							{
+								"countingGroupId": "1",
+								"countingGroupName": "Election Day",
+								"tabulators": 9,
+								"closedTabulators": 9
+							},
+							{
+								"countingGroupId": "2",
+								"countingGroupName": "Advance",
+								"tabulators": 8,
+								"closedTabulators": 8
+							}
+						]
+				},
+				"contestResults": [
+					{
+						"id": "1013",
+						"contestName": "TOWN AND REGIONAL COUNCILLOR - WARD 4",
+						"voteFor": 1,
+						"isAcclaimed": false,
+						"eligibleVoters": 0,
+						"turnout": "0%",
+						"ballotCast": 12400,
+						"sort": 12,
+						"choiceResults": [
+							{
+								"id": "23",
+								"choiceName": "Kashif (Kash) Chaudry",
+								"votes": 1051,
+								"percentage": "8.94%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "24",
+								"choiceName": "Suzan Chong",
+								"votes": 3130,
+								"percentage": "26.62%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "25",
+								"choiceName": "Vandana Giri",
+								"votes": 471,
+								"percentage": "4.01%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "26",
+								"choiceName": "Roger Lapworth",
+								"votes": 3994,
+								"percentage": "33.97%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 1,
+								"partyBreakdown": []
+							},
+							{
+								"id": "27",
+								"choiceName": "Hutchison Lee",
+								"votes": 2090,
+								"percentage": "17.77%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "28",
+								"choiceName": "Farah Shamim",
+								"votes": 1023,
+								"percentage": "8.70%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							}
+						]
+					}
+				]
+			},
+			"14": {
+				"statistics": {
+					"eligibleVoters": 0,
+					"turnout": "0%",
+					"turnout2": "0%",
+					"ballotCast": 9689,
+					"ballotCast2": 9689,
+					"tabulators": 17,
+					"closedTabulators": 17,
+					"startedPolls": 0,
+					"polls": 14,
+					"closedPolls": 14,
+					"countinggroups": [
+							{
+								"countingGroupId": "1",
+								"countingGroupName": "Election Day",
+								"tabulators": 9,
+								"closedTabulators": 9
+							},
+							{
+								"countingGroupId": "2",
+								"countingGroupName": "Advance",
+								"tabulators": 8,
+								"closedTabulators": 8
+							}
+						]
+				},
+				"contestResults": [
+					{
+						"id": "1014",
+						"contestName": "TOWN AND REGIONAL COUNCILLOR - WARD 5",
+						"voteFor": 1,
+						"isAcclaimed": false,
+						"eligibleVoters": 0,
+						"turnout": "0%",
+						"ballotCast": 9689,
+						"sort": 13,
+						"choiceResults": [
+							{
+								"id": "35",
+								"choiceName": "Mackenzie Grant",
+								"votes": 3910,
+								"percentage": "43.54%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 1,
+								"partyBreakdown": []
+							},
+							{
+								"id": "36",
+								"choiceName": "Orla Johnston",
+								"votes": 1794,
+								"percentage": "19.98%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "37",
+								"choiceName": "Michael Reid",
+								"votes": 3277,
+								"percentage": "36.49%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							}
+						]
+					}
+				]
+			},
+			"15": {
+				"statistics": {
+					"eligibleVoters": 0,
+					"turnout": "0%",
+					"turnout2": "0%",
+					"ballotCast": 7751,
+					"ballotCast2": 7751,
+					"tabulators": 15,
+					"closedTabulators": 15,
+					"startedPolls": 0,
+					"polls": 12,
+					"closedPolls": 12,
+					"countinggroups": [
+							{
+								"countingGroupId": "1",
+								"countingGroupName": "Election Day",
+								"tabulators": 7,
+								"closedTabulators": 7
+							},
+							{
+								"countingGroupId": "2",
+								"countingGroupName": "Advance",
+								"tabulators": 8,
+								"closedTabulators": 8
+							}
+						]
+				},
+				"contestResults": [
+					{
+						"id": "1015",
+						"contestName": "TOWN AND REGIONAL COUNCILLOR - WARD 6",
+						"voteFor": 1,
+						"isAcclaimed": true,
+						"eligibleVoters": 0,
+						"turnout": "0%",
+						"ballotCast": 0,
+						"sort": 14,
+						"choiceResults": [
+							{
+								"id": "75",
+								"choiceName": "Tom Adams",
+								"votes": 0,
+								"percentage": "0%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 1,
+								"partyBreakdown": []
+							}
+						]
+					}
+				]
+			},
+			"16": {
+				"statistics": {
+					"eligibleVoters": 0,
+					"turnout": "0%",
+					"turnout2": "0%",
+					"ballotCast": 5846,
+					"ballotCast2": 5846,
+					"tabulators": 16,
+					"closedTabulators": 16,
+					"startedPolls": 0,
+					"polls": 13,
+					"closedPolls": 13,
+					"countinggroups": [
+							{
+								"countingGroupId": "1",
+								"countingGroupName": "Election Day",
+								"tabulators": 8,
+								"closedTabulators": 8
+							},
+							{
+								"countingGroupId": "2",
+								"countingGroupName": "Advance",
+								"tabulators": 8,
+								"closedTabulators": 8
+							}
+						]
+				},
+				"contestResults": [
+					{
+						"id": "1016",
+						"contestName": "TOWN AND REGIONAL COUNCILLOR - WARD 7",
+						"voteFor": 1,
+						"isAcclaimed": false,
+						"eligibleVoters": 0,
+						"turnout": "0%",
+						"ballotCast": 5846,
+						"sort": 15,
+						"choiceResults": [
+							{
+								"id": "44",
+								"choiceName": "Gaganpreet Darar",
+								"votes": 202,
+								"percentage": "3.64%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "45",
+								"choiceName": "Bilal Kader",
+								"votes": 1869,
+								"percentage": "33.68%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "46",
+								"choiceName": "Nav Nanda",
+								"votes": 2245,
+								"percentage": "40.45%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 1,
+								"partyBreakdown": []
+							},
+							{
+								"id": "47",
+								"choiceName": "Ajay Rosha",
+								"votes": 401,
+								"percentage": "7.23%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "48",
+								"choiceName": "Vick Walia",
+								"votes": 833,
+								"percentage": "15.01%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							}
+						]
+					}
+				]
+			},
+			"17": {
+				"statistics": {
+					"eligibleVoters": 176984,
+					"turnout": "9.82%",
+					"turnout2": "9.82%",
+					"ballotCast": 17372,
+					"ballotCast2": 17372,
+					"tabulators": 23,
+					"closedTabulators": 23,
+					"startedPolls": 0,
+					"polls": 19,
+					"closedPolls": 19,
+					"countinggroups": [
+							{
+								"countingGroupId": "1",
+								"countingGroupName": "Election Day",
+								"tabulators": 15,
+								"closedTabulators": 15
+							},
+							{
+								"countingGroupId": "2",
+								"countingGroupName": "Advance",
+								"tabulators": 8,
+								"closedTabulators": 8
+							}
+						]
+				},
+				"contestResults": [
+					{
+						"id": "1017",
+						"contestName": "HALTON DISTRICT SCHOOL BOARD TRUSTEE - WARDS 1 and 2",
+						"voteFor": 1,
+						"isAcclaimed": false,
+						"eligibleVoters": 0,
+						"turnout": "0%",
+						"ballotCast": 13403,
+						"sort": 16,
+						"choiceResults": [
+							{
+								"id": "49",
+								"choiceName": "Carole Baxter",
+								"votes": 9388,
+								"percentage": "82.21%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 1,
+								"partyBreakdown": []
+							},
+							{
+								"id": "50",
+								"choiceName": "Zafar Kayani",
+								"votes": 1252,
+								"percentage": "10.96%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "51",
+								"choiceName": "Hamzah Khan",
+								"votes": 779,
+								"percentage": "6.82%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							}
+						]
+					}
+				]
+			},
+			"18": {
+				"statistics": {
+					"eligibleVoters": 0,
+					"turnout": "0%",
+					"turnout2": "0%",
+					"ballotCast": 15331,
+					"ballotCast2": 15331,
+					"tabulators": 24,
+					"closedTabulators": 24,
+					"startedPolls": 0,
+					"polls": 19,
+					"closedPolls": 19,
+					"countinggroups": [
+							{
+								"countingGroupId": "1",
+								"countingGroupName": "Election Day",
+								"tabulators": 16,
+								"closedTabulators": 16
+							},
+							{
+								"countingGroupId": "2",
+								"countingGroupName": "Advance",
+								"tabulators": 8,
+								"closedTabulators": 8
+							}
+						]
+				},
+				"contestResults": [
+					{
+						"id": "1018",
+						"contestName": "HALTON DISTRICT SCHOOL BOARD TRUSTEE - WARD 3 and 6",
+						"voteFor": 1,
+						"isAcclaimed": false,
+						"eligibleVoters": 0,
+						"turnout": "0%",
+						"ballotCast": 12020,
+						"sort": 17,
+						"choiceResults": [
+							{
+								"id": "52",
+								"choiceName": "Rebecca Mayville",
+								"votes": 8291,
+								"percentage": "79.14%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 1,
+								"partyBreakdown": []
+							},
+							{
+								"id": "53",
+								"choiceName": "Vinay Paramanand",
+								"votes": 1246,
+								"percentage": "11.89%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "54",
+								"choiceName": "Tausif Sabir",
+								"votes": 940,
+								"percentage": "8.97%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							}
+						]
+					}
+				]
+			},
+			"19": {
+				"statistics": {
+					"eligibleVoters": 0,
+					"turnout": "0%",
+					"turnout2": "0%",
+					"ballotCast": 12400,
+					"ballotCast2": 12400,
+					"tabulators": 17,
+					"closedTabulators": 17,
+					"startedPolls": 0,
+					"polls": 14,
+					"closedPolls": 14,
+					"countinggroups": [
+							{
+								"countingGroupId": "1",
+								"countingGroupName": "Election Day",
+								"tabulators": 9,
+								"closedTabulators": 9
+							},
+							{
+								"countingGroupId": "2",
+								"countingGroupName": "Advance",
+								"tabulators": 8,
+								"closedTabulators": 8
+							}
+						]
+				},
+				"contestResults": [
+					{
+						"id": "1019",
+						"contestName": "HALTON DISTRICT SCHOOL BOARD TRUSTEE - WARD 4",
+						"voteFor": 1,
+						"isAcclaimed": false,
+						"eligibleVoters": 0,
+						"turnout": "0%",
+						"ballotCast": 9039,
+						"sort": 18,
+						"choiceResults": [
+							{
+								"id": "55",
+								"choiceName": "Ira Davidov",
+								"votes": 3203,
+								"percentage": "40.69%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 1,
+								"partyBreakdown": []
+							},
+							{
+								"id": "56",
+								"choiceName": "Virginia Nsitem",
+								"votes": 2519,
+								"percentage": "32.00%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "57",
+								"choiceName": "Deepak Pathania",
+								"votes": 1291,
+								"percentage": "16.40%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "58",
+								"choiceName": "Florin Cristian Vilcu",
+								"votes": 859,
+								"percentage": "10.91%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							}
+						]
+					}
+				]
+			},
+			"20": {
+				"statistics": {
+					"eligibleVoters": 0,
+					"turnout": "0%",
+					"turnout2": "0%",
+					"ballotCast": 15535,
+					"ballotCast2": 15535,
+					"tabulators": 23,
+					"closedTabulators": 23,
+					"startedPolls": 0,
+					"polls": 19,
+					"closedPolls": 19,
+					"countinggroups": [
+							{
+								"countingGroupId": "1",
+								"countingGroupName": "Election Day",
+								"tabulators": 15,
+								"closedTabulators": 15
+							},
+							{
+								"countingGroupId": "2",
+								"countingGroupName": "Advance",
+								"tabulators": 8,
+								"closedTabulators": 8
+							}
+						]
+				},
+				"contestResults": [
+					{
+						"id": "1020",
+						"contestName": "HALTON DISTRICT SCHOOL BOARD TRUSTEE - WARDS 5 and 7",
+						"voteFor": 1,
+						"isAcclaimed": false,
+						"eligibleVoters": 0,
+						"turnout": "0%",
+						"ballotCast": 12173,
+						"sort": 19,
+						"choiceResults": [
+							{
+								"id": "59",
+								"choiceName": "Lily Bharat",
+								"votes": 2369,
+								"percentage": "21.76%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "60",
+								"choiceName": "Azra Ghumman",
+								"votes": 2079,
+								"percentage": "19.10%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "61",
+								"choiceName": "Ahmed Gohar",
+								"votes": 504,
+								"percentage": "4.63%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "62",
+								"choiceName": "Ashish Maggo",
+								"votes": 375,
+								"percentage": "3.44%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "63",
+								"choiceName": "Kim Tait",
+								"votes": 2996,
+								"percentage": "27.52%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 1,
+								"partyBreakdown": []
+							},
+							{
+								"id": "64",
+								"choiceName": "Jake Zhu",
+								"votes": 2564,
+								"percentage": "23.55%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							}
+						]
+					}
+				]
+			},
+			"21": {
+				"statistics": {
+					"eligibleVoters": 176984,
+					"turnout": "14.10%",
+					"turnout2": "14.10%",
+					"ballotCast": 24952,
+					"ballotCast2": 24952,
+					"tabulators": 32,
+					"closedTabulators": 32,
+					"startedPolls": 0,
+					"polls": 26,
+					"closedPolls": 26,
+					"countinggroups": [
+							{
+								"countingGroupId": "1",
+								"countingGroupName": "Election Day",
+								"tabulators": 24,
+								"closedTabulators": 24
+							},
+							{
+								"countingGroupId": "2",
+								"countingGroupName": "Advance",
+								"tabulators": 8,
+								"closedTabulators": 8
+							}
+						]
+				},
+				"contestResults": [
+					{
+						"id": "1021",
+						"contestName": "HALTON CATHOLIC DISTRICT SCHOOL BOARD TRUSTEE - WARDS 1, 2 and 3",
+						"voteFor": 1,
+						"isAcclaimed": false,
+						"eligibleVoters": 0,
+						"turnout": "0%",
+						"ballotCast": 5018,
+						"sort": 20,
+						"choiceResults": [
+							{
+								"id": "65",
+								"choiceName": "Martin Gegus",
+								"votes": 941,
+								"percentage": "20.78%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							},
+							{
+								"id": "66",
+								"choiceName": "Mario Jelic",
+								"votes": 2336,
+								"percentage": "51.58%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 1,
+								"partyBreakdown": []
+							},
+							{
+								"id": "67",
+								"choiceName": "Tom Murad",
+								"votes": 1252,
+								"percentage": "27.64%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							}
+						]
+					}
+				]
+			},
+			"22": {
+				"statistics": {
+					"eligibleVoters": 0,
+					"turnout": "0%",
+					"turnout2": "0%",
+					"ballotCast": 18246,
+					"ballotCast2": 18246,
+					"tabulators": 23,
+					"closedTabulators": 23,
+					"startedPolls": 0,
+					"polls": 19,
+					"closedPolls": 19,
+					"countinggroups": [
+							{
+								"countingGroupId": "1",
+								"countingGroupName": "Election Day",
+								"tabulators": 15,
+								"closedTabulators": 15
+							},
+							{
+								"countingGroupId": "2",
+								"countingGroupName": "Advance",
+								"tabulators": 8,
+								"closedTabulators": 8
+							}
+						]
+				},
+				"contestResults": [
+					{
+						"id": "1022",
+						"contestName": "HALTON CATHOLIC DISTRICT SCHOOL BOARD TRUSTEE - WARDS 4 and 7",
+						"voteFor": 1,
+						"isAcclaimed": true,
+						"eligibleVoters": 0,
+						"turnout": "0%",
+						"ballotCast": 0,
+						"sort": 21,
+						"choiceResults": [
+							{
+								"id": "72",
+								"choiceName": "Chris Saunders",
+								"votes": 0,
+								"percentage": "0%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 1,
+								"partyBreakdown": []
+							}
+						]
+					}
+				]
+			},
+			"23": {
+				"statistics": {
+					"eligibleVoters": 0,
+					"turnout": "0%",
+					"turnout2": "0%",
+					"ballotCast": 17440,
+					"ballotCast2": 17440,
+					"tabulators": 22,
+					"closedTabulators": 22,
+					"startedPolls": 0,
+					"polls": 18,
+					"closedPolls": 18,
+					"countinggroups": [
+							{
+								"countingGroupId": "1",
+								"countingGroupName": "Election Day",
+								"tabulators": 14,
+								"closedTabulators": 14
+							},
+							{
+								"countingGroupId": "2",
+								"countingGroupName": "Advance",
+								"tabulators": 8,
+								"closedTabulators": 8
+							}
+						]
+				},
+				"contestResults": [
+					{
+						"id": "1023",
+						"contestName": "HALTON CATHOLIC DISTRICT SCHOOL BOARD TRUSTEE - WARDS 5 and 6",
+						"voteFor": 1,
+						"isAcclaimed": false,
+						"eligibleVoters": 0,
+						"turnout": "0%",
+						"ballotCast": 4379,
+						"sort": 22,
+						"choiceResults": [
+							{
+								"id": "68",
+								"choiceName": "Helena Karabela",
+								"votes": 2563,
+								"percentage": "62.24%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 1,
+								"partyBreakdown": []
+							},
+							{
+								"id": "69",
+								"choiceName": "Sean McCarthy",
+								"votes": 1555,
+								"percentage": "37.76%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 0,
+								"partyBreakdown": []
+							}
+						]
+					}
+				]
+			},
+			"24": {
+				"statistics": {
+					"eligibleVoters": 176984,
+					"turnout": "34.26%",
+					"turnout2": "34.26%",
+					"ballotCast": 60638,
+					"ballotCast2": 60638,
+					"tabulators": 57,
+					"closedTabulators": 57,
+					"startedPolls": 0,
+					"polls": 47,
+					"closedPolls": 47,
+					"countinggroups": [
+							{
+								"countingGroupId": "1",
+								"countingGroupName": "Election Day",
+								"tabulators": 49,
+								"closedTabulators": 49
+							},
+							{
+								"countingGroupId": "2",
+								"countingGroupName": "Advance",
+								"tabulators": 8,
+								"closedTabulators": 8
+							}
+						]
+				},
+				"contestResults": [
+					{
+						"id": "1024",
+						"contestName": "TRUSTEE, CONSEIL SCOLAIRE VIAMONDE - AT LARGE",
+						"voteFor": 1,
+						"isAcclaimed": true,
+						"eligibleVoters": 0,
+						"turnout": "0%",
+						"ballotCast": 0,
+						"sort": 23,
+						"choiceResults": [
+							{
+								"id": "74",
+								"choiceName": "Sonia Macaluso",
+								"votes": 0,
+								"percentage": "0%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 1,
+								"partyBreakdown": []
+							}
+						]
+					}
+				]
+			},
+			"25": {
+				"statistics": {
+					"eligibleVoters": 176984,
+					"turnout": "34.26%",
+					"turnout2": "34.26%",
+					"ballotCast": 60638,
+					"ballotCast2": 60638,
+					"tabulators": 57,
+					"closedTabulators": 57,
+					"startedPolls": 0,
+					"polls": 47,
+					"closedPolls": 47,
+					"countinggroups": [
+							{
+								"countingGroupId": "1",
+								"countingGroupName": "Election Day",
+								"tabulators": 49,
+								"closedTabulators": 49
+							},
+							{
+								"countingGroupId": "2",
+								"countingGroupName": "Advance",
+								"tabulators": 8,
+								"closedTabulators": 8
+							}
+						]
+				},
+				"contestResults": [
+					{
+						"id": "1025",
+						"contestName": "TRUSTEE, CONSEIL SCOLAIRE CATHOLIQUE MONAVENIR - AT LARGE",
+						"voteFor": 1,
+						"isAcclaimed": true,
+						"eligibleVoters": 0,
+						"turnout": "0%",
+						"ballotCast": 0,
+						"sort": 24,
+						"choiceResults": [
+							{
+								"id": "73",
+								"choiceName": "Diane Courchesne",
+								"votes": 0,
+								"percentage": "0%",
+								"isIncumbent": 0,
+								"isDisabled": 0,
+								"gender": "Unknown",
+								"isWinner": 1,
+								"partyBreakdown": []
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}
