@@ -1,4 +1,4 @@
-# Oakville Election Night
+# Oakville Election 2026
 
 Results and 360 analysis of the Oakville 2026 municipal election, with a Ward 7 deep dive. Built for iPhone.
 
@@ -9,7 +9,6 @@ On iPhone: open in Safari, tap Share, then **Add to Home Screen**.
 - `.github/workflows/update.yml` runs every 6 hours (and whenever you tap **Run workflow** under the Actions tab).
 - `scripts/update.mjs` reads:
   - **Results:** the Town of Oakville results data file (`2026results/data/arearesults.json`).
-  - **News:** Google News searches, Oakville News, Inside Halton, CHCH, Reddit r/oakville, and YouTube channels (CHCH, CP24, CBC, YourTV).
 - It writes `data/results.json`. Analysis text lives in `data/analysis.json`; 2022 baselines in `data/baseline2022.json`.
 
 ## If the automatic count misses a race
