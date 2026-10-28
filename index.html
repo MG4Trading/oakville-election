@@ -91,6 +91,21 @@ tr:last-child td{border-bottom:0}
 .note{font-size:12.5px;color:var(--muted);margin:0}
 .empty{background:var(--card);border:1px dashed var(--line);border-radius:8px;padding:16px;color:var(--muted)}
 a{color:var(--blue)}
+.seg{display:flex;gap:6px;flex-wrap:wrap}
+.seg button{background:var(--card);border:1px solid var(--line);color:var(--ink);border-radius:99px;padding:7px 12px;font:600 13px var(--display);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#fff}
+h2.yr{margin-top:6px}
+.calist{display:flex;flex-direction:column;gap:8px}
+.cal{display:grid;grid-template-columns:64px minmax(0,1fr);gap:12px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px}
+.cal.you{border-color:var(--orange);box-shadow:inset 3px 0 0 var(--orange)}
+.cal.now{border-color:var(--good);box-shadow:inset 3px 0 0 var(--good)}
+.cdate{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center;font-family:var(--mono);font-size:11px;color:var(--muted);line-height:1.25;padding-top:2px}
+.cdate b{font-family:var(--display);font-weight:800;font-stretch:112%;font-size:15px;color:var(--ink)}
+.cbody{display:flex;flex-direction:column;gap:6px;min-width:0}
+.when2{font-family:var(--mono);font-size:11.5px;color:var(--muted);white-space:nowrap}
+.chips{display:flex;gap:4px;flex-wrap:wrap}
+.chip.you{border-color:var(--orange);color:var(--orange-text)}
+.src{font-size:12px;color:var(--blue);text-decoration:none}
 button:focus-visible,a:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
 </style>
 </head>
@@ -108,6 +123,7 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--orange);outline-off
       <button role="tab" data-tab="ward7" aria-selected="true">Ward 7</button>
       <button role="tab" data-tab="town" aria-selected="false">Oakville 360</button>
       <button role="tab" data-tab="races" aria-selected="false">All races</button>
+      <button role="tab" data-tab="calendar" aria-selected="false">Calendar</button>
       <button role="tab" data-tab="sources" aria-selected="false">Sources</button>
     </nav>
   </div>
@@ -115,8 +131,8 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--orange);outline-off
 <main><div class="wrap" id="view"><div class="empty">Loading results…</div></div></main>
 
 <script>
-let CFG={races:[]},RES={races:{}},ANA=null,BASE={races:{}},BY={};
-const TABS=["ward7","town","races","sources"];
+let CFG={races:[]},RES={races:{}},ANA=null,BASE={races:{}},BY={},CAL=null,calFilter="All";
+const TABS=["ward7","town","races","calendar","sources"];
 let tab=TABS.includes(location.hash.slice(1))?location.hash.slice(1):"ward7";
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -179,6 +195,37 @@ function section(s){
   ${s.points?`<div class="box"><div class="rname">What it means</div><ul class="facts">${s.points.map(p=>`<li>${esc(p)}</li>`).join("")}</ul></div>`:""}
   </section>`;
 }
+/* ---- election calendar ---- */
+const DAY=864e5;
+function todayToronto(){const s=new Date().toLocaleDateString("en-CA",{timeZone:"America/Toronto"});return new Date(s+"T00:00:00")}
+function dParts(iso){const d=new Date(iso+"T00:00:00");return{d,wd:d.toLocaleDateString("en-CA",{weekday:"short"}),md:d.toLocaleDateString("en-CA",{month:"short",day:"numeric"}),y:d.getFullYear()}}
+function untilText(days){if(days===0)return"Today";if(days===1)return"Tomorrow";if(days<0)return`${-days} days ago`;if(days<60)return`in ${days} days`;const m=Math.round(days/30.44);return m<24?`in ${m} months`:`in ${(days/365.25).toFixed(1)} years`}
+const CAL_FILTERS=[["All",()=>true],["Oakville voters",x=>x.you],["Federal",x=>x.level==="Federal"],["Provincial & territorial",x=>x.level==="Provincial"||x.level==="Territorial"],["Municipal",x=>x.level==="Municipal"],["By-elections",x=>x.level==="By-election"]];
+function calItem(x,t){
+  const p=dParts(x.date),days=Math.round((p.d-t)/DAY),src=CAL.sources[x.src];
+  const kindCls=x.kind==="Fixed date"?"win":x.kind==="Held"?"":/No fixed|Expected/.test(x.kind)?"lost":"open";
+  return `<div class="cal ${x.you?"you":""} ${days===0?"now":""}">
+   <div class="cdate"><span>${x.dateText?"":esc(p.wd)}</span><b>${esc(x.dateText||p.md)}</b><span>${x.dateText?"":p.y}</span></div>
+   <div class="cbody"><div class="rhead"><span class="rname">${esc(x.title)}</span><span class="when2">${x.kind==="Held"?"Held":untilText(days)}</span></div>
+    <div class="chips"><span class="chip">${esc(x.level)}</span><span class="chip">${esc(x.where)}</span><span class="chip ${kindCls}">${esc(x.kind)}</span>${x.you?`<span class="chip you">Oakville votes</span>`:""}</div>
+    ${x.note?`<p class="note">${esc(x.note)}</p>`:""}
+    ${src?`<a class="src" href="${esc(src.u)}" target="_blank" rel="noopener">${esc(src.t)}</a>`:""}</div></div>`;
+}
+function calendarView(){
+  if(!CAL)return`<div class="empty">Loading the election calendar…</div>`;
+  const t=todayToronto(),f=CAL_FILTERS.find(x=>x[0]===calFilter)[1];
+  const all=[...CAL.items].sort((a,b)=>a.date.localeCompare(b.date));
+  const up=all.filter(x=>x.kind!=="Held"&&new Date(x.date+"T00:00:00")>=t&&f(x));
+  const recent=all.filter(x=>(x.kind==="Held"||new Date(x.date+"T00:00:00")<t)&&(t-new Date(x.date+"T00:00:00"))/DAY<=75&&f(x)).reverse();
+  const next=all.find(x=>x.kind!=="Held"&&x.you&&new Date(x.date+"T00:00:00")>=t);
+  const years=[...new Set(up.map(x=>x.date.slice(0,4)))];
+  const nextBox=next?`<div class="stats"><div class="stat"><b>${esc(next.dateText||dParts(next.date).md+", "+dParts(next.date).y)}</b><span>Next election Oakville residents vote in: ${esc(next.title)} (${untilText(Math.round((new Date(next.date+"T00:00:00")-t)/DAY))})</span></div><div class="stat"><b>${all.filter(x=>x.kind!=="Held"&&new Date(x.date+"T00:00:00")>=t).length}</b><span>upcoming elections and by-election deadlines across Canada</span></div></div>`:"";
+  return `<section class="sect"><h2>Election calendar</h2><p class="lede">Every upcoming election in Canada, from federal to municipal</p>${nextBox}
+   <div class="seg">${CAL_FILTERS.map(([n])=>`<button data-cf="${esc(n)}" aria-pressed="${n===calFilter}">${esc(n)}</button>`).join("")}</div>
+   ${years.length?years.map(y=>`<h2 class="yr">${y}</h2><div class="calist">${up.filter(x=>x.date.startsWith(y)).map(x=>calItem(x,t)).join("")}</div>`).join(""):`<div class="empty">No upcoming items in this view.</div>`}
+   ${recent.length?`<h2 class="yr">Recently held</h2><div class="calist">${recent.map(x=>calItem(x,t)).join("")}</div>`:""}
+   <p class="note">${esc(CAL.note)} Last checked ${esc(CAL.updated)}.</p></section>`;
+}
 function render(){
   document.querySelectorAll("nav button").forEach(b=>b.setAttribute("aria-selected",b.dataset.tab===tab));
   const v=$("#view");
@@ -186,6 +233,7 @@ function render(){
   const banner=`<div class="banner"><b>Results are in.</b> ${esc(ANA.status)}</div>`;
   if(tab==="ward7") v.innerHTML=banner+ANA.ward7.map(section).join("");
   else if(tab==="town") v.innerHTML=banner+ANA.overview.map(section).join("");
+  else if(tab==="calendar") v.innerHTML=calendarView();
   else if(tab==="races"){
     const groups=[...new Set(CFG.races.map(r=>r.group))];
     v.innerHTML=`<p class="note"><b>Effective candidates</b> shows how divided a race was: 1.0 means one candidate took every vote, and 3.0 means a vote split evenly three ways. <b>Ballots skipped race</b> counts ballots that left this race blank.</p>`+
@@ -200,13 +248,17 @@ async function load(){
   try{
     const [c,r,a,b]=await Promise.all([getJSON("data/races.json"),getJSON("data/results.json"),getJSON("data/analysis.json"),getJSON("data/baseline2022.json").catch(()=>({races:{}}))]);
     CFG=c;RES=r;ANA=a;BASE=b;BY=Object.fromEntries(CFG.races.map(x=>[x.id,x]));
+    CAL=await getJSON("data/calendar.json").catch(()=>null);
     const s=RES.stats;
     if(s){$("#turn").innerHTML=`<b>${s.turnout}%</b><br>turnout · ${fmt(s.ballots)} ballots`;
       $("#status").textContent=`${s.closedTabulators} of ${s.tabulators} tabulators · unofficial`;}
   }catch(e){$("#status").textContent="Could not load results. Pull to refresh."}
   render();
 }
-document.addEventListener("click",e=>{const t=e.target.closest("[data-tab]");if(t){tab=t.dataset.tab;history.replaceState(null,"","#"+tab);render();scrollTo(0,0)}});
+document.addEventListener("click",e=>{
+  const t=e.target.closest("[data-tab]");if(t){tab=t.dataset.tab;history.replaceState(null,"","#"+tab);render();scrollTo(0,0);return}
+  const c=e.target.closest("[data-cf]");if(c){calFilter=c.dataset.cf;render()}
+});
 load();
 </script>
 </body>

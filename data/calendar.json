@@ -1,0 +1,70 @@
+{
+ "updated": "2026-10-28",
+ "note": "Dates are fixed by law unless marked otherwise. Any government can call an early general election, and by-election dates are set when the writ is issued. Confirm with the election agency before planning around a date.",
+ "sources": {
+  "psc": {"t": "Public Service Commission of Canada: election calendar", "u": "https://www.canada.ca/en/public-service-commission/services/political-activities/election-calendar.html"},
+  "muni": {"t": "Muniscope: municipal election schedule in Canada", "u": "https://www.muniscope.ca/research/municipal_facts/elections"},
+  "ecvac": {"t": "Elections Canada: vacant seats in the House of Commons", "u": "https://www.elections.ca/content.aspx?section=res&dir=cir%2Fdis&document=vacant_2025&lang=e"},
+  "fixed": {"t": "Fixed election dates in Canada (rules and next dates)", "u": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Fixed_election_dates_in_Canada"},
+  "cal26": {"t": "2026 Canadian electoral calendar", "u": "https://en.wikipedia.org/wiki/2026_Canadian_electoral_calendar"},
+  "fed": {"t": "46th Canadian federal election", "u": "https://en.wikipedia.org/wiki/46th_Canadian_federal_election"},
+  "bc": {"t": "44th British Columbia general election", "u": "https://en.wikipedia.org/wiki/44th_British_Columbia_general_election"},
+  "sk": {"t": "31st Saskatchewan general election", "u": "https://en.wikipedia.org/wiki/31st_Saskatchewan_general_election"},
+  "nb": {"t": "42nd New Brunswick general election", "u": "https://en.wikipedia.org/wiki/42nd_New_Brunswick_general_election"},
+  "ns": {"t": "Parliamentum: Nova Scotia repeals fixed-date elections", "u": "https://parliamentum.org/2025/02/19/nova-scotia-poised-to-repeal-its-fixed-date-elections-law/"},
+  "on": {"t": "CTV News: Ontario to scrap fixed election dates", "u": "https://www.ctvnews.ca/toronto/politics/queens-park/article/ontario-to-scrap-fixed-election-dates-raise-donation-limit-to-5000-under-new-bill/"},
+  "qc": {"t": "2026 Quebec general election", "u": "https://en.wikipedia.org/wiki/2026_Quebec_general_election"},
+  "ab": {"t": "Elections Alberta: Alberta's next election", "u": "https://www.elections.ab.ca/elections/albertas-next-election/"},
+  "oak": {"t": "Town of Oakville 2026 results", "u": "https://www.oakville.ca/2026results/"}
+ },
+ "items": [
+  {"date": "2026-10-05", "level": "Provincial", "where": "Quebec", "title": "Quebec general election", "kind": "Held", "note": "Parti Québécois won 59 of 127 seats, a minority. Next election expected October 7, 2030.", "src": "qc"},
+  {"date": "2026-10-17", "level": "Municipal", "where": "British Columbia", "title": "BC municipal and school trustee elections", "kind": "Held", "src": "psc"},
+  {"date": "2026-10-19", "level": "Municipal", "where": "Northwest Territories", "title": "City of Yellowknife municipal election", "kind": "Held", "src": "psc"},
+  {"date": "2026-10-26", "level": "Municipal", "where": "Ontario", "title": "Ontario municipal and school board elections", "kind": "Held", "note": "Oakville turnout 34.26%. See the Ward 7 and Oakville 360 tabs.", "src": "oak", "you": true},
+
+  {"date": "2026-10-28", "level": "Municipal", "where": "Manitoba", "title": "Manitoba municipal and school board elections", "kind": "Fixed date", "note": "Fourth Wednesday in October, every four years.", "src": "psc"},
+  {"date": "2026-11-02", "level": "Municipal", "where": "Prince Edward Island", "title": "PEI municipal elections", "kind": "Fixed date", "note": "First Monday in November, every four years.", "src": "psc"},
+  {"date": "2026-11-09", "level": "Municipal", "where": "Saskatchewan", "title": "Rural municipalities, even-numbered divisions", "kind": "Fixed date", "src": "psc"},
+  {"date": "2026-12-14", "level": "Municipal", "where": "Northwest Territories", "title": "NWT hamlet elections", "kind": "Fixed date", "src": "psc"},
+
+  {"date": "2026-12-19", "level": "By-election", "where": "Quebec", "title": "Federal by-election: Saint-Hyacinthe—Bagot—Acton", "kind": "Deadline to call", "note": "Vacant since June 2026. The Prime Minister must set a date by this deadline.", "src": "ecvac"},
+  {"date": "2027-02-13", "level": "By-election", "where": "Ontario", "title": "Federal by-election: Scarborough North", "kind": "Deadline to call", "note": "Vacant since August 2026.", "src": "ecvac"},
+  {"date": "2027-02-22", "level": "By-election", "where": "Quebec", "title": "Federal by-election: Rosemont—La Petite-Patrie", "kind": "Deadline to call", "note": "Vacant since August 2026.", "src": "ecvac"},
+  {"date": "2027-02-27", "level": "By-election", "where": "Quebec", "title": "Federal by-election: Laurier—Sainte-Marie", "kind": "Deadline to call", "note": "Vacant since August 2026.", "src": "ecvac"},
+  {"date": "2027-02-28", "level": "By-election", "where": "Saskatchewan", "title": "Federal by-election: Yorkton—Melville", "kind": "Deadline to call", "note": "Vacant since September 2026.", "src": "ecvac"},
+  {"date": "2027-03-20", "level": "By-election", "where": "Ontario", "title": "Federal by-election: Brantford—Brant South", "kind": "Deadline to call", "note": "Vacant since September 2026.", "src": "ecvac"},
+  {"date": "2027-03-28", "level": "By-election", "where": "British Columbia", "title": "Provincial by-election: Vancouver-Strathcona", "kind": "Latest possible date", "note": "Must be held on or before this date.", "src": "cal26"},
+
+  {"date": "2027-10-04", "level": "Provincial", "where": "Prince Edward Island", "title": "PEI general election", "kind": "Fixed date", "note": "First Monday in October, every four years.", "src": "psc"},
+  {"date": "2027-10-05", "level": "Provincial", "where": "Manitoba", "title": "Manitoba general election", "kind": "Fixed date", "note": "First Tuesday in October. Can move if it overlaps a federal campaign.", "src": "psc"},
+  {"date": "2027-10-05", "level": "Territorial", "where": "Northwest Territories", "title": "NWT general election", "kind": "Fixed date", "src": "psc"},
+  {"date": "2027-10-18", "level": "Provincial", "where": "Alberta", "title": "Alberta general election", "kind": "Fixed date", "note": "Third Monday in October (2024 amendment).", "src": "ab"},
+  {"date": "2027-10-18", "level": "Municipal", "where": "Northwest Territories", "title": "NWT municipal elections", "kind": "Fixed date", "src": "psc"},
+  {"date": "2027-10-25", "level": "Municipal", "where": "Nunavut", "title": "Nunavut municipal elections", "kind": "Fixed date", "src": "psc"},
+
+  {"date": "2028-10-16", "level": "Provincial", "where": "New Brunswick", "title": "New Brunswick general election", "kind": "Fixed date", "note": "Third Monday in October.", "src": "nb"},
+  {"date": "2028-10-19", "level": "Municipal", "where": "Yukon", "title": "Yukon municipal elections", "kind": "Fixed date", "src": "muni"},
+  {"date": "2028-10-21", "level": "Provincial", "where": "British Columbia", "title": "BC general election", "kind": "Fixed date", "note": "Third Saturday in October.", "src": "bc"},
+  {"date": "2028-10-21", "level": "Municipal", "where": "Nova Scotia", "title": "Nova Scotia municipal elections", "kind": "Fixed date", "src": "muni"},
+  {"date": "2028-10-30", "level": "Provincial", "where": "Saskatchewan", "title": "Saskatchewan general election", "kind": "Fixed date", "note": "Last Monday in October.", "src": "sk"},
+  {"date": "2028-11-08", "level": "Municipal", "where": "Saskatchewan", "title": "Saskatchewan urban and rural (odd-numbered divisions) municipal elections", "kind": "Fixed date", "src": "muni"},
+
+  {"date": "2029-09-25", "level": "Municipal", "where": "Newfoundland and Labrador", "title": "NL municipal elections", "kind": "Fixed date", "src": "muni"},
+  {"date": "2029-10-09", "level": "Provincial", "where": "Newfoundland and Labrador", "title": "NL general election", "kind": "Fixed date", "note": "Second Tuesday in October.", "src": "fixed"},
+  {"date": "2029-10-15", "level": "Federal", "where": "Canada", "title": "Federal general election (46th)", "kind": "Fixed date", "note": "Third Monday in October. The Liberal government now holds a majority, so an early election is less likely, but Parliament can still be dissolved sooner.", "src": "fed", "you": true},
+  {"date": "2029-10-15", "level": "Municipal", "where": "Alberta", "title": "Alberta municipal elections", "kind": "Fixed date", "src": "muni"},
+  {"date": "2029-10-29", "level": "Territorial", "where": "Nunavut", "title": "Nunavut general election", "kind": "Fixed date", "note": "Last Monday in October.", "src": "fixed"},
+  {"date": "2029-11-04", "level": "Municipal", "where": "Quebec", "title": "Quebec municipal elections", "kind": "Fixed date", "src": "muni"},
+  {"date": "2029-11-05", "level": "Territorial", "where": "Yukon", "title": "Yukon general election", "kind": "Fixed date", "note": "First Monday in November.", "src": "fixed"},
+  {"date": "2029-11-26", "level": "Provincial", "where": "Nova Scotia", "title": "Nova Scotia general election", "kind": "No fixed date", "note": "Nova Scotia repealed its fixed-date law in 2025. The five-year constitutional limit means an election by about November 2029, and it can be called any time before.", "src": "ns"},
+
+  {"date": "2030-03-01", "dateText": "By early 2030", "level": "Provincial", "where": "Ontario", "title": "Ontario general election", "kind": "No fixed date", "note": "Ontario ended fixed election dates in 2025. The five-year constitutional limit from the February 27, 2025 election means a vote by early 2030, and the Premier can call it any time before.", "src": "on", "you": true},
+  {"date": "2030-05-13", "level": "Municipal", "where": "New Brunswick", "title": "New Brunswick municipal elections", "kind": "Fixed date", "src": "muni"},
+  {"date": "2030-10-07", "level": "Provincial", "where": "Quebec", "title": "Quebec general election", "kind": "Expected", "note": "First Monday in October under the fixed-date rule. The new minority government could fall sooner.", "src": "qc"},
+  {"date": "2030-10-19", "level": "Municipal", "where": "British Columbia", "title": "BC municipal and school trustee elections", "kind": "Expected", "note": "Third Saturday in October under the current rule.", "src": "muni"},
+  {"date": "2030-10-23", "level": "Municipal", "where": "Manitoba", "title": "Manitoba municipal and school board elections", "kind": "Expected", "note": "Fourth Wednesday in October under the current rule.", "src": "muni"},
+  {"date": "2030-10-28", "level": "Municipal", "where": "Ontario", "title": "Ontario municipal and school board elections (Oakville, Ward 7)", "kind": "Expected", "note": "Fourth Monday in October under the Municipal Elections Act. Nominations normally open on May 1 of the election year.", "src": "muni", "you": true},
+  {"date": "2030-11-04", "level": "Municipal", "where": "Prince Edward Island", "title": "PEI municipal elections", "kind": "Expected", "note": "First Monday in November under the current rule.", "src": "muni"}
+ ]
+}
